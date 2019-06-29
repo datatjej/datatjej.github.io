@@ -13,8 +13,8 @@ Lagen visade sig kunna appliceras p책 fler omr책den 채n frekvensordlistor i spr�
 
 H채r 채r en rolig och pedagogisk video om Zipfs lag: 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=fCn8zs912OE&t=" target="_blank"><img src="/images/zipfmystery2.PNG" 
-alt="The Zipf Mystery" width="480" height="360" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=fCn8zs912OE&t=" target="_blank"><p align="center"><img src="/images/zipfmystery2.PNG" 
+alt="The Zipf Mystery" width="480" height="360" border="10" /></p></a>
    
 <sup>1</sup> https://www.lifewire.com/google-books-ngram-viewer-1616701
 
