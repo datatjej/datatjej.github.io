@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ordvektorer, AKA "You shall know a word by the company it keeps"[^*]
+title: Ordvektorer, AKA "You shall know a word by the company it keeps"*
 ---
 
 Häromdagen stötte på jag begreppet **word2vec** och var tvungen att luska i vad det innebär. Enligt den engelskspråkiga [Wikipedia-artikeln](https://en.wikipedia.org/wiki/Word2vec) refererar det till en grupp datamodeller som används för att generera s.k. **"word embeddings"**, d.v.s. ord som vektorer av reella tal, utifrån träningsdata. Vektorer är matematiska storheter som har såväl storlek som riktning (till skillnad från skalära storheter som enbart har en storlek, t.ex. temperatur eller ljusstyrka)[[1](https://sv.wikipedia.org/wiki/Vektor)]. 
