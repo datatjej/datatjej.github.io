@@ -20,4 +20,4 @@ alt="Tomáš Mikolov: Neural Networks for Natural Language Processingy" width="4
 Och [här](http://vectors.nlpl.eu/explore/embeddings/en/) är ett roligt verktyg att hitta semantiska relationer mellan ord på engelska och norska. 
 
 
-\* <font size="2"> Citat av brittiske lingvisten [John Rupert Firth](https://en.wikipedia.org/wiki/John_Rupert_Firth) (1890-1960).</font> 
+\* <font size="2"> Citat av brittiske lingvisten John Rupert Firth (1890-1960).</font> 
