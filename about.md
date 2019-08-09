@@ -4,7 +4,7 @@ title: Om mig
 permalink: /about/
 ---
 
-Språknörd som till HT19 ska påbörja masterstudier i språkteknologi/datalingvistik vid GU. Här dokumenterar jag nya saker jag lär mig.
+Språknörd som till HT19 ska påbörja masterstudier i språkteknologi/datalingvistik vid GU. Här dokumenterar jag nya saker som jag lär mig.
 
 ### Kontakta mig
 
