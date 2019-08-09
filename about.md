@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: Om mig
 permalink: /about/
 ---
 
-Some information about you!
+Språknörd som till HT19 ska påbörja masterstudier i språkteknologi/datalingvistik vid GU. Här dokumenterar jag nya saker jag lär mig.
 
-### More Information
+### Kontakta mig
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[tova.erben@gmail.com.com](mailto:tova.erben@gmail.com)
