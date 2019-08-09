@@ -8,4 +8,4 @@ Språknörd som till HT19 ska påbörja masterstudier i språkteknologi/dataling
 
 ### Kontakta mig
 
-[tova.erben@gmail.com.com](mailto:tova.erben@gmail.com)
+[tova.erben@gmail.com](mailto:tova.erben@gmail.com)
