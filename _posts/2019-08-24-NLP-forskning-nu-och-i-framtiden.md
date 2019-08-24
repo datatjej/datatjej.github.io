@@ -3,7 +3,7 @@ layout: post
 title: NLP-forskning nu och i framtiden
 ---
 
-I en [intressant artikel [1]](https://www.sentic.net/jumping-nlp-curves.pdf) från tidskriften *IEEE Computational Intelligence Magazine* från 2014 beskriver författarna Cambria och White det språkteknologiska landskapet så som det såg ut då, och siar om hur den kommer att utveckla sig de närmaste årtiondena. Även om den har några år på nacken så ger den ändå en hygglig introduktion till ämnesområdet och de tekniker som används.
+I en [intressant artikel [1]](https://www.sentic.net/jumping-nlp-curves.pdf) från tidskriften *IEEE Computational Intelligence Magazine* från 2014 beskriver författarna Cambria och White det språkteknologiska landskapet så som det såg ut då, och siar om hur det kommer att utveckla sig de närmaste årtiondena. Även om den har några år på nacken så ger den ändå en hygglig introduktion till ämnesområdet och de tekniker som används.
 
 <p align="center">
 <img src="/images/evolution.PNG" alt="NLP-evolution" width="480" height="360" border="10" /> <br>
@@ -15,4 +15,4 @@ För att språkteknologin på allvar ska gå in i nästa utvecklingsfas - **den 
 
 Den tredje och sista fasen som författarna förutspår är den så kallade **pragmatiska kurvan**. I det stadiet förstår maskinen inte bar innehållet på synatisk och semantisk nivå, utan kan också tolka det utifrån kontexten och därmed förstå avsikten: *"Intent, in particular, will be key for tasks such as sentiment analysis— a concept that generally has a negative connotation, e.g., small seat, might turn out to be positive, e.g., if the intent is for an infant to be safely seated in it"* [[1](https://www.sentic.net/jumping-nlp-curves.pdf)]. Även om språkteknologin inte är där riktigt än finns det exempel på forskning som rör sig ditåt. Man nämner Patrick Winstons datamodeller för narrativ, som utgår tanken om att mänsklig intelligens grundar sig i historieberättande. Utifrån detta har man utvecklat progroammet **Genesis System**, som med hjälp av *"low-level common sense rules and higher level reflection patterns"* [[1](https://www.sentic.net/jumping-nlp-curves.pdf)], har kunnit lista ut att en sammanfattning av Shakespears *McBeth* och händelserna kring det rysk-estniska cyberkriget 2007 både grundar sig i hämnd - trots att vare sig begreppet *hämnd* eller dess synonymer förekommer i texterna.   
 
-Jag fortfarande är en novis i ämnet språkteknologi, som till en början kommer att fokusera på teorier och tekniker på främst syntakiskt plan. Men jag ser fram emot att lära mig mer om forskning och applikationer kring de högre nivåerna längre fram. :D
+Jag fortfarande är en novis i ämnet språkteknologi, som till en början kommer att fokusera på teorier och tekniker på främst syntaktiskt plan. Men jag ser fram emot att lära mig mer om forskning och applikationer kring de högre nivåerna längre fram. :D
