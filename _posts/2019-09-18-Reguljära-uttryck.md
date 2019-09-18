@@ -17,7 +17,7 @@ Vissa tecken har **företräde** (eng. *precedence*) framför andra. Hierarkin (
 |-------------------|--------------|
 | Parentes          | ()           |
 | Räknetecken       | * + ? {}     |
-| Ankare            | the ^my end$ |
+| Ankare            | ^my end$     |
 | Disjunktion       |    \|        |
 
 Reguljära uttryck är **giriga**, vilket innebär att de försöker matcha så stor del av en substräng som möjligt. Mönstret **/[a-z]\*/** matchar till exempel hela substrängen "blötdjur", och inte bara "b" eller "blöt" (även om det skulle kunna det).
