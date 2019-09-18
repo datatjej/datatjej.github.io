@@ -13,7 +13,7 @@ Ett mönster innehållande frågetecken, t.ex. **[klor?]**, matchar strängar in
 
 Vissa tecken har **företräde** (eng. *precedence*) framför andra. Hierarkin (med högst till lägst prioritet) redovisas i tabellen nedan: 
 
-| Benämning         | Tecken       |
+|Benämning          | Tecken       |
 |-------------------|--------------|
 | Parentes          | ()           |
 | Räknetecken       | * + ? {}     |
