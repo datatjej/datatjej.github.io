@@ -17,7 +17,3 @@ Vissa tecken har **företräde** (en. precedence) framför andra. Hierarkin (med
 | Räknetecken      | * + ? {}    |
 | Sekvenser/ankare | the ^my end$|
 | Disjunktion      |      |      |
-
-Mönster är **giriga**, vilket innebär att uttrycket \[a-z]*\ kommer att matcha så mycket som möjligt av applicerbara strängar, t.ex. "blötdjur" och inte bara "b" eller "blöt".  
-
-   
