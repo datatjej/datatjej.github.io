@@ -3,7 +3,7 @@ layout: post
 title: 6. Finite-state transducers och finita transduktorer
 ---
 
-Finita transduktorer (FT) är något som behandlas i kapitel 3 av *Speech and language processing*, i anslutning till **morfologisk parsning**: "[p]arsing means taking an input and producing some sort of linguistic structure for it" (Jurafsky & Martin 2009:45). För att bygga en morfologisk parser krävs:
+**Finita transduktorer** (FT) är något som behandlas i kapitel 3 av *Speech and language processing*, i anslutning till **morfologisk parsning**: "[p]arsing means taking an input and producing some sort of linguistic structure for it" (Jurafsky & Martin 2009:45). För att bygga en morfologisk parser krävs:
 
 - **Lexikon**: en lista över stammar och affix och grundläggande information om dem.
 - **Morfotaktik**: information om vilka morfem som kan följa andra morfem i ett ord.
