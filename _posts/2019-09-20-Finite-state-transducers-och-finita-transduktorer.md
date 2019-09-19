@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finite-state transducers och finita transduktorer
+title: 6. Finite-state transducers och finita transduktorer
 ---
 
 Finita transduktorer (FT) är något som behandlas i kapitel 3 av *Speech and language processing*, i anslutning till **morfologisk parsning**: "[p]arsing means taking an input and producing some sort of linguistic structure for it" (Jurafsky & Martin 2009:45). För att bygga en morfologisk parser krävs:

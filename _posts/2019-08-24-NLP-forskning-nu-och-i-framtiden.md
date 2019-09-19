@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NLP-forskning nu och i framtiden
+title: 3. NLP-forskning nu och i framtiden
 ---
 
 I en [intressant artikel [1]](https://www.sentic.net/jumping-nlp-curves.pdf) från tidskriften *IEEE Computational Intelligence Magazine* från 2014 beskriver författarna Cambria och White det språkteknologiska landskapet så som det såg ut då, och siar om hur det kommer att utveckla sig de närmaste årtiondena. Även om den har några år på nacken så ger den ändå en hygglig introduktion till ämnesområdet och de tekniker som används.

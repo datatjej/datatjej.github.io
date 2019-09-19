@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reguljära uttryck
+title: 4. Reguljära uttryck
 ---
 
 **Reguljära uttryck** är något som dykt upp i vår programmeringskurs på MLT-programmet redan andra veckan. Det är en algebraisk standardnotation för att definiera textsöksträngar i diverse applikationer. Strängen kan bestå av vilka alfanumeriska tecken som helst (inklusive kommatering och mellanslag: ␣). Det reguljära uttrycket kräver ett **mönster**, som i sin enklaste form kan vara ett enskilt tecken eller ord, t.ex. **/?/** eller **/ekorre/**. De är också **skiftlägeskänsliga**; **/a/** ger inte samma resultat som **/A/**.         

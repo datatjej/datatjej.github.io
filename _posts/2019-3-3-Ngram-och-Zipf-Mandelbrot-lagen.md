@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ngram och Zipf-Mandelbrot-lagen
+title: 1. Ngram och Zipf-Mandelbrot-lagen
 ---
 
 Inleder den här bloggen med att förkovra mig i de begrepp och verktyg som figurerar i en [artikel](https://www.degruyter.com/view/j/cllt.2018.14.issue-1/cllt-2014-0049/cllt-2014-0049.xml) publicerad 2018 i tidskriften *Corpus Linguistics and Linguistic Theory*. Författaren har utifrån korpora skapade i Google Ngram Viewer velat undersöka hur språkliga förändringar (lexikala, syntaktiska och stilistiska) kan kvantifieras och visualiseras genom parametrarna i Zipf-Mandelbrot-lagen – en potens- eller exponentlag (”power law”) för sannolikhetsfördelning. 

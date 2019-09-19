@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finite-state machines och ändliga automater
+title: 5. Finite-state machines och ändliga automater
 ---
 
 **Finite-state machines**, **finite-state automata** eller **ändlig/finita automater** på svenska är (tydligen!) en viktig del i datalingvistiken. Det refererar till matematiska beräkningsmodeller som bland annat används för att implementera reguljära uttryck. Men omvänt uttryckt så kan reguljära uttryck även användas för att beskriva en finit automat: *"any finite-state automation can be described with a regular expression"* (Jurafsky & Martin 2009:26). Förvirrande? Vi har bara börjat!
