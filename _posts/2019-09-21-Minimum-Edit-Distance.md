@@ -7,7 +7,7 @@ Algoritmen för **minsta editeringsavstånd** är en **icke-probibalistisk algor
 
 <p align="center">
 <img src="/images/editdistance1.PNG" alt="strängar i alignment" width="240" height="180" border="10" /> <br>
-.</p>
+Jämförelse av strängarna INTENTION och EXECUTION (Jurafsky & Martin 2009).</p>
 
 Genom rada upp orden bredvid varandra parallellt (eng. **alignment**) kan man se hur de skiljer sig från varandra genom att mappa tecken mot tecken. I bilden nedan, snodd från Jurafsky & Martin (2009), ser man hur orden INTENTION och EXECUTION skiljer sig åt genom fem editeringsoperationer. Det första i:et i INTENTION finns exempelvis inte alls representerat i EXECUTION-strängen, vilket får etiketten d (**deletion**). Man kan tillskriva olika kostnad eller vikt för varje editeringsoperation om man vill. För att beräkna **Levenshtein-distansen** mellan två strängar kan man helt enkelt ge varje operation kostanden 1, vilket skulle sätta distansen mellan strängarna i bilden ovan till 5. 
 
