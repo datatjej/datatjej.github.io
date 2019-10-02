@@ -7,6 +7,10 @@ Grundidén bakom **taligenkänning** (eng. *speech recognition*) och **talsyntes
 
 Fonem i form av vokaler och konstanter kombineras i **stavelser** (eng. *syllables*) som består av en **stavelsekärna** (eng. *nucleus*) i form av en vokal. De kringliggande konsanterna kan delas upp i den initiala **ansatsen** (eng. *onset*), t.ex. /s/ i [sol] eller /gr/ i [gris], och en efterföljande **koda** (eng. *coda*), t.ex. /l/ i [sol]. Stavelsekärnan plus kodan bildar stavelsens **rim** (eng. *rime*). Att bryta ner ord och meningar från mänskligt tal eller skrift till stavelser kallas **stavelsedelning** (eng. *syllabification*). Reglerna för vilka fonem som får förekomma tillsammans i en stavelses ansats eller rim i ett givet språk behandlas i det som kallas **fonotax** (eng. *phonotactics*). Inom språkteknologin är detta något som antingen kan tas i beaktning genom ett 1) regelstyrt system i form av en villkorslista eller en ändlig automat över möjliga fonsekvenser, eller genom 2) en probabilistisk modell där man tränat en n-gram-hanterare på fonsekvenser.
 
+<p align="center">
+<img src="/images/stavelse.png" alt="Stavelseuppbyggnad" width="480" height="360" border="10" /> <br>
+Stavelse med ansats (onset), stavelsekärna (nucleus) och koda (coda) (Wikimedia Commons 2019).</p>
+
 Men vad är då ljud? Ljud är i grund och botten mekaniska vågor som orsakar ändringar i lufttrycket samt kännetecknas av frekvens och amplitud. **Frekvens** är antalet gånger i sekunden som en våg upprepar sig själv, ofta mätt i **cykler per sekund** - hertz (Hz) - och där cykeln motsvarar den övre (positiva) och nedre (negativa) delen av vågen. **Amplitud** avser avståndet mellan ett ytterläge och ett nolläge i en svängningsrörelse, alltså botten och toppen av ljudvågen. Akustisk analys grundar sig i de trigonometriska sinus- och cosinus-funktionerna.
 
 När man gör en analog till digital konverting av ljud (dvs. från analoga elektriska signaler till digitala) ingår två steg: sampling och kvantifiering. Vid **sampling** av en signal mäter man dess amplitud vid en given tidpunkt. Ju fler **samplingar per sekund** som görs, desto större amplititudriktighet - men minsta möjliga antal samlplingar är två per cykel. **Nyquist-frekvensen** (namngiven efter svensk-amerikanen [Harry Nyquist](https://sv.wikipedia.org/wiki/Harry_Nyquist) som gjorde många bidrag till signalöverföringsforksningen) säger att den kritiska frekvensen för en signal är hälften av samplingsfrekvensen. **Kvantifieringen** avser representeringen av ljudinput i heltal (eng. *integers*) - antingen lagrade i 8 eller 16 bitar - med de avrundningar och trunkeringar som detta innebär. 
@@ -15,7 +19,7 @@ För att mäta genomsnittsamplituden hos en signal använder man det kvadratrisk
 
 <p align="center">
 <img src="/images/ljudupptagning.png" alt="Ljudupptagning" width="480" height="360" border="10" /> <br>
-Spektrum och spektrogram av ordet "ljudupptagning" i mjukvaran Praat. Vokalerna syns tydligast.</p>'
+Spektrum och spektrogram av ordet "ljudupptagning" i mjukvaran Praat. Vokalerna syns tydligast.</p>
 
 Vid visuella representationer av ljudvågor i ett **spektrum** kan man se att **vokaler**, som ju alltid är tonande, syns allra tydligast eftersom de är längre och starkare än konsonanterna. **Klusilerna** (eng. *stop consonants*), t.ex. b, d, och g, känns ofta igen på en period av tysnad och sedan en viss stegring i amplituden när luften som hållits inne frigörs. **Frikativerna** (eng. *fricatives*), t.ex. s- och tj-ljudet, känns istället igen på sin lite bullriga och oregelbundna vågformation. 
 
