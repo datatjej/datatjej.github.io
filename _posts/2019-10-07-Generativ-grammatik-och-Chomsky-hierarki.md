@@ -19,6 +19,6 @@ Nästa språkgrupp är de **milt kontext-känsliga språken**, som inte ingår i
 
 <p align="center">
 <img src="/images/chomskyhierarki.PNG" alt="Chomsky-hierarki" width="512" height="369" border="10" /> <br>
-Chomsky-hierarkin visar fyra olika sorters språk av skiftande komplexitet. (Bild: [J. Finkelstein](https://commons.wikimedia.org/wiki/File:Chomsky-hierarchy.svg))</p>   
+Chomsky-hierarkin visar fyra olika sorters språk av skiftande komplexitet (bild: [J. Finkelstein](https://commons.wikimedia.org/wiki/File:Chomsky-hierarchy.svg)).</p>   
 
 Det är av intresse att veta vilken av dessa typer som ett givet system faller under, för att veta hur vi ska behandla det. Om det som vi vill kunna generera eller parsa är regelbundet, kan vi till exempel använda oss av reguljära uttryck och ändliga automater för att processa reglerna. Lyckligtvis finns det metoder för att avgöra vilken typ ett givet system faller under. Det bästa sättet att bevisa om ett språk är regelbundet eller inte är faktiskt försöka skapa reguljära uttryck för det. Men om man vill visa att det språk *inte* är regelbundet kan man använda sig av ett **pumplemma** (eng. *pumping lemma*). Pumplemmat beskriver en egenskap hos reguljära språk som innebär att en tillräckligt lång sträng i språket kan **pumpas upp** - dvs. att någon del innuti strängen kan upprepa sig ett visst antal gånger. Denna egenskap återfinns även hos icke-reguljära språk, men eftersom den är nödvändig hos reguljära språk kan avsaknaden av den åtminstone användas för att avgöra om ett språk *inte* är reguljärt.
