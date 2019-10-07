@@ -18,6 +18,10 @@ För att mäta **kraften** eller snarare **komplexiteten** i de formella mekanis
 Nästa språkgrupp är de **milt kontext-känsliga språken**, som inte ingår i originalhierarkin men som kan användas för att beskriva formalismer som CCG (eng. *combinatory categorial grammar*) och TAG (eng. *tree-adjoining grammar*). De milt kontext-känsliga språken är mindre komplexa än de **konext-känsliga språken**, som karaktäriseras av regler som skriver om en icke-terminal symbol A i kontexten αAβ till vilken icke-tom symbolsträng som helst (αγβ). Ytterligare ett steg uppåt i hierarkin hittar vi de **rekursivt uppräkningsbara språken** (eng. *recursively enumerable languages*), som också kallas Turing-ekvivalenta eftersom deras strängar kan räknas upp av en Turing-maskin. Dessa språk har inga begräsningar i sina regler, utan vilken icke-tom sträng som helst kan skrivas om till vilken annan sträng som helst.
 
 <p align="center">
+<img src="/images/chomskyhierarki.PNG" alt="strängar i alignment" width="240" height="180" border="10" /> <br>
+Chomsky-hierarkin visar fyra olika sorters språk av skiftande komplexitet. (Bild: [J. Finkelstein](https://commons.wikimedia.org/wiki/File:Chomsky-hierarchy.svg)).</p>
+
+<p align="center">
 <img src="/images/chomskyhierarki.PNG" alt="Chomsky-hierarki" width="512" height="369" border="10" /> <br>
 Chomsky-hierarkin visar fyra olika sorters språk av skiftande komplexitet (bild: [J. Finkelstein](https://commons.wikimedia.org/wiki/File:Chomsky-hierarchy.svg)).</p>   
 
