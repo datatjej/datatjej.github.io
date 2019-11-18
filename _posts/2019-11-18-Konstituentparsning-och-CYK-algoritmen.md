@@ -18,7 +18,4 @@ Grammtiken som används med CYK måste vara i **Chomskys normalform**, vilket in
 <p align="center">
 <a title="Trougnouf [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CYK_algorithm_animation_showing_every_step_of_a_sentence_parsing.gif"><img width="512" alt="CYK algorithm animation showing every step of a sentence parsing" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/CYK_algorithm_animation_showing_every_step_of_a_sentence_parsing.gif/512px-CYK_algorithm_animation_showing_every_step_of_a_sentence_parsing.gif"></a><br>Trougnouf [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]</p>
 
-Algoritmen arbetar nerifrån och upp (eng. **bottom-up**) genom att först undersöka giltigheten hos var och en av de allra minsta understrängarna (len 1), vilket kan motsvara enskilda ord eller tecken. Den går därefter vidare till att undersöka giltigheten hos varje understräng av len 2, sedan len 3, och så vidare. En giltig sträng är en sträng vars olika komponenter på något plan uppfyllerna reglerna i grammatiken som algoritmen jobbar utifrån, och kännetecknas av startsymbolen S i toppen av tabellen.     
-
-Källor:
-    
+Algoritmen arbetar nerifrån och upp (eng. **bottom-up**) genom att först undersöka giltigheten hos var och en av de allra minsta understrängarna (len 1), vilket kan motsvara enskilda ord eller tecken. Den går därefter vidare till att undersöka giltigheten hos varje understräng av len 2, sedan len 3, och så vidare. En giltig sträng är en sträng vars olika komponenter på något plan uppfyllerna reglerna i grammatiken som algoritmen jobbar utifrån, och kännetecknas av startsymbolen S i toppen av tabellen.
