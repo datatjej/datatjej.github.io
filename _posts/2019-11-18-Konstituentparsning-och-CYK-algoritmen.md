@@ -3,7 +3,7 @@ layout: post
 title: 11. Konstituentparsning och CYK-algoritmen
 ---
 
-Tillbringar måndagskvällen med att läsa kapitel 13 om **konstituentparsning** (eng. *constituency parsing*) i Jurafsky & Martin (2009). Man nämner två ambiguitetsproblem kopplade till den här typen av parsning: 1) attachment ambiguity, och 2) coordination ambiguity. 
+Tillbringar måndagskvällen med att läsa kapitel 13 om **konstituentparsning** (eng. *constituency parsing*) i Jurafsky & Martin (2009). Man nämner två ambiguitetsproblem kopplade till den här typen av parsning: *attachment ambiguity* och *coordination ambiguity*. 
 
 **Attachment ambiguity** avser de tillfällen då en konstituent kan kopplas samman till ett parsträd på fler än ett ställe. ETT vanligt exempel på detta är meningar av typen "Mary såg mannen med teleskopet", där *med teleskopet* kan tillskrivas antingen verbfrasen *såg* eller substantivfrasen *mannen*. **Coordination ambiguity** avser istället tvetydigheten i fraser sammanbundna av konjunktioner som *och*, t.ex. *blinda katter och hundar*, som antingen kan parsas som *[blinda [katter och hundar]]* eller *[blinda katter] och [hundar]*. 
 
