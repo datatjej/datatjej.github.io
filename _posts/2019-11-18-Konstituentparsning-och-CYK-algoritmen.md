@@ -7,7 +7,7 @@ Tillbringar måndagskvällen med att läsa kapitel 13 om **konstituentparsning**
 
 **Attachment ambiguity** avser de tillfällen då en konstituent kan kopplas samman till ett parsträd på fler än ett ställe. ETT vanligt exempel på detta är meningar av typen "Mary såg mannen med teleskopet", där *med teleskopet* kan tillskrivas antingen verbfrasen *såg* eller substantivfrasen *mannen*. **Coordination ambiguity** avser istället tvetydigheten i fraser sammanbundna av konjunktioner som *och*, t.ex. *blinda katter och hundar*, som antingen kan parsas som *[blinda [katter och hundar]]* eller *[blinda katter] och [hundar]*. 
 
-Den här typen av tvetydighet löses med hjälp av **syntaktisk disambiguering**, som kräver "[...] statistical, semantic and contextual knowledge sources that vary in how well they can be integreated into parsing algorithms" (Jurafsky & Martin 2009: KÄLLA!). 
+Den här typen av tvetydighet löses med hjälp av **syntaktisk disambiguering**, som kräver "[...] statistical, semantic, and contextucal knowledge sources that vary in how well they can be integrated into parsing algorithms" (Jurafsky & Martin 2009). 
 
 En känd parsningsalgoritm är **CYK** (förkortning för upphovsmännen Cocke-Younger-Kasami). Den är en del av den dynamiska progammeringen, som i kort går ut på att angripa problem genom att bryta ner dem i underproblem vars lösningar sparas i tabellform. 
 
