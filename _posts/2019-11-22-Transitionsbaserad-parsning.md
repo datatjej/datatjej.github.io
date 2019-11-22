@@ -15,5 +15,5 @@ Arc-eager tillåter ord med högerledsrelation att kopplas ihop med sin dependen
 På nätet finner man en hel del presentationer som i tabellform förklarar arc-standard och arc-eager-algoritmerna steg för steg. Men jag rekommenderar videon nedan för en begriplig redogörelse av den närbesläktade shift-reduce-modellen:
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=f5-hTA9hA3s"><img src="/images/searchreduce.PNG" 
+<a href="https://www.youtube.com/watch?v=f5-hTA9hA3s"><img src="/images/shiftreduce.PNG" 
 alt="Dependency Parsing: Shift-Reduce Models" width="480" height="360" border="10" /></a></p>
