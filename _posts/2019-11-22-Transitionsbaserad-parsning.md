@@ -16,4 +16,4 @@ På nätet finner man en hel del presentationer som i tabellform förklarar arc-
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=f5-hTA9hA3s"><img src="/images/shiftreduce.PNG" 
-alt="Dependency Parsing: Shift-Reduce Models" width="600" height="360" border="10" /></a></p>
+alt="Dependency Parsing: Shift-Reduce Models" width="80%" height="auto" border="10" /></a></p>
