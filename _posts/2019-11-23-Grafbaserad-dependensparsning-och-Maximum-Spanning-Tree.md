@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 14. Grafbaserad dependensparsning och Maximum Spanning Tree
+title: 14. Grafbaserad dependensparsning och maximalt utspännande träd
 ---
 
 De finns flera olika metoder för dependensparsning, bl.a. dynamisk programmering (Eisner-algoritmen), regelstyrd parsning och transitionsbaserad parsning (som behandlats i tidigare inlägg). **Grafbaserad parsning** är en fjärde metod som involverar letandet efter ett dependensträd som uppfyller ett visst värde i ett grafsystem med **viktade kanter** (verkar också kunna kallas **bågar**) som innefattar alla möjliga variationer av träd. 
