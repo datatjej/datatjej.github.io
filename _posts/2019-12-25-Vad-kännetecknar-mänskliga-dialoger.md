@@ -22,5 +22,5 @@ Dialogsystemen måste slutligen ockå kunna hantera det som Grice (1975) kallar 
 Utmaningarna är därför många, men fördelarna med välfungerande dialogsystem är fler än de uppenbart bekvämlighetsrelaterade. I videon nedan argumentar den välrenommerade datavetaren Raj Reddy för vinsterna med att tillgängliggöra röststyrd teknik för jordens fattiga och analfabeta befolkningar.
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=m81KPZVqB70"><img src="/images/radreddy.PNG" 
-alt="4th HLF – Hot Topic: Artificial Intelligence – Presentation Raj Reddy" width="480" height="360" border="10" /></a></p>
+<a href="https://www.youtube.com/watch?v=m81KPZVqB70"><img src="/images/rajreddy.PNG" 
+alt="4th HLF – Hot Topic: Artificial Intelligence – Presentation Raj Reddy" width="100%" height="auto" border="10" /></a></p>
