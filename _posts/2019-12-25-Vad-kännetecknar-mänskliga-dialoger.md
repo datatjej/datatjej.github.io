@@ -19,7 +19,7 @@ Dialoger kännetecknas även av **initiativ**, vilket avser intiativet - och dä
 
 Dialogsystemen måste slutligen ockå kunna hantera det som Grice (1975) kallar **konversationell implikatur**. Människor utgår ofta ifrån att den information man får från motparten i ett dialogutbyte har relevans för det ämne som för närvarande avhandlas. Om någon på frågan "När vill du resa till Paris?" svarar med att konstatera att hen måste vara på konferens där mellan 29 februari till 3 mars, så kan man anta att detta har relevans för önskat in- och utresedatum. Detta är uppenbart för en människa, men svårare att få ett dialogsystem att förstå.
 
-Utmaningarna är därför många, men fördelarna med välfungerande dialogsystem är fler än de uppenbart bekvämlighetsrelaterade. I videon nedan argumentar den välrenommerade datavetaren Raj Reddy för vinsterna med att **tillgängliggöra röststyrd teknik för jordens fattiga och analfabeta befolkningar**.
+Utmaningarna är därför många, men fördelarna med välfungerande dialogsystem är fler än de uppenbart bekvämlighetsrelaterade. I videon nedan argumentar den välrenommerade datavetaren Raj Reddy för vinsterna med att **utveckla och tillgängliggöra röststyrd teknik för jordens fattiga och analfabeta befolkningar**:
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=m81KPZVqB70"><img src="/images/rajreddy.PNG" 
