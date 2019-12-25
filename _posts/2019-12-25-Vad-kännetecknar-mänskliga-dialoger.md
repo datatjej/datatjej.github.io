@@ -7,7 +7,7 @@ Häromveckan gick NLP-kursen in på det som mer än något annat symboliserar sp
  
 Vari ligger då svårigheterna i att utveckla system som kan hantera dialoger med användaren på ett så övertygande sätt att det klarar [Turing-testet](https://en.wikipedia.org/wiki/Turing_test)? Mänskliga dialoger är ett komplext maskineri som kännetecknas av **talarbyte**, **talakter**, **grounding**, **subdialoger**, **initiativ** samt **implikatur** (Jurafsky & Martin 2019). 
  
-**Talarbyte** (eng. *turns*) omfattar två problem: dels att systemet måste kunna avgöra när användaren talat klart, s.k. *endpoint detection* (vilket kan vara svårt pga störande ljud eller pauser mitt i mening), och dels att det måste kunna avgöra när det själv ska sluta tala p.g.a. av avbrott från användaren för exempelvis rättning eller precisering.  
+**Talarbyte** (eng. *turns*) omfattar två problem: dels att systemet måste kunna avgöra när användaren talat klart, sk *endpoint detection* (vilket kan vara svårt pga störande ljud eller pauser mitt i mening), och dels att det måste kunna avgöra när det själv ska sluta tala pga av avbrott från användaren för exempelvis rättning eller precisering.  
 
 **Talakter** avser teorin om att alla yttranden i en dialog kan betraktas som handlingar, framförallt då konstateranden, direktiv, förpliktelser och bekräftanden. En fråga är till exempel ofta ett gömt direktiv, om den frågande förväntar sig ett svar. Genom att sätta korrekt talakt på ett yttrande kan systemet lättare avgöra hur det ska besvara det.
 
