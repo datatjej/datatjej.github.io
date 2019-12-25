@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 16. Vad kännetecknar mänskliga dialoger?
+title: 17. Vad kännetecknar mänskliga dialoger?
 ---
 
 Häromveckan gick NLP-kursen in på det som mer än något annat symboliserar språkteknologins reella framsteg och baksteg: **dialogsystemen**. Även om virtuella assistenter som Alexa och Google Home blivit allt vanligare år 2019, har den röststyrda tekniken ännu inte helt ersatt tangenterna och musklicken i våra datorer och mobiler.               
