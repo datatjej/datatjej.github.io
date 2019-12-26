@@ -11,7 +11,7 @@ Vari ligger då svårigheterna i att utveckla system som kan hantera dialoger me
 
 **Talakter** avser teorin om att alla yttranden i en dialog kan betraktas som handlingar, framförallt då konstateranden, direktiv, förpliktelser och bekräftanden. En fråga är till exempel ofta ett gömt direktiv, om den frågande förväntar sig ett svar. Genom att sätta korrekt talakt på ett yttrande kan systemet lättare avgöra hur det ska besvara det.
 
-Dialoger är ofta strukturerade kring talakater i par, s.k. *adjacency pairs*, som kan vara av typen FRÅGA/SVAR, FÖRSLAG/ACCEPTERANDE, KOMPLIMANG/BORTVIFTANDE, osv. Men ibland förekommer **subdialoger** eller **sidosekvenser** mellan första och andra delen av paren, vilket ett system måste vara utrustat för att hantera. Exempel på det är rättningssekvenser, där en person som bett om biljetter för ett visst datum plötsligt ändrar sig och frågar om ett annat datum. 
+Dialoger är ofta strukturerade kring talakater i par, s.k. *adjacency pairs*, som kan vara av typen FRÅGA/SVAR, FÖRSLAG/ACCEPTERANDE, KOMPLIMANG/AVFÄRDANDEN, osv. Men ibland förekommer **subdialoger** eller **sidosekvenser** mellan första och andra delen av paren, vilket ett system måste vara utrustat för att hantera. Exempel på det är rättningssekvenser, där en person som bett om biljetter för ett visst datum plötsligt ändrar sig och frågar om ett annat datum. 
 
 Begreppet **grounding** handlar om att talare måste hitta *common grounds*, på svenska "gemensamma ståndpunkter" eller en "gemensam plattform". Men läser man Jurafsky & Martin (2019) verkar det snarare handla om att bekräfta att man förstår vad den andra säger, vilket kan ske genom att upprepa vad den andra just har sagt, eller bara genom ett enkelt "okej".
 
