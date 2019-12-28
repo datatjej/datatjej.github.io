@@ -3,7 +3,7 @@ layout: post
 title: 18. "I'm sorry to hear you are depressed"
 ---
 
-Det finns två typer av dialogsystem: 1) **uppgiftorienterade**, som hjälper till med saker som att boka biljetter, hitta närliggande restauranger, eller ringa upp någon åt dig, och 2) **chatbotar**, vars syfte är att så naturligt som möjligt simulera mänskliga konversationer, både för nytta (i uppgiftorienterade dialogsystem) och rent nöje (Jurafsky & Martin 2019).  
+Det finns två typer av dialogsystem: 1) **uppgiftorienterade**, som hjälper till med saker som att boka biljetter, hitta närliggande restauranger eller ringa upp någon åt dig, och 2) **chatbotar**, vars syfte är att så naturligt som möjligt simulera mänskliga konversationer, både för nytta (i uppgiftorienterade dialogsystem) och rent nöje (Jurafsky & Martin 2019).  
 
 Man talar om tre olika typer av chatbotsarkitektur:
 
