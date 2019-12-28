@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 18. "I'm sorry to hear you are depressed"
+title: 18. "I am sorry to hear you are depressed"
 ---
 
 Det finns två typer av dialogsystem: 1) **uppgiftorienterade**, som hjälper till med saker som att boka biljetter, hitta närliggande restauranger eller ringa upp någon åt dig, och 2) **chatbotar**, vars syfte är att så naturligt som möjligt simulera mänskliga konversationer, både för nytta (i uppgiftorienterade dialogsystem) och rent nöje (Jurafsky & Martin 2019).  
@@ -18,7 +18,7 @@ Den första typen - de rent **regelbaserade systemen** - återfinnar man främst
 <p align="center">
 <img src="/images/eliza_transkription.PNG" alt="Samtal med Eliza" width="100%" height="auto" border="10" /><br></p>
 
-Exempel på samtal med ELIZA ([Weizenbaumm 1996](https://dl-acm-org.ezp.sub.su.se/citation.cfm?id=357991)).
+Exempel på samtal med ELIZA ([Weizenbaumm 1966](https://dl-acm-org.ezp.sub.su.se/citation.cfm?id=357991)).
 
 Den andra två typerna av chatbotsarkitektur förlitar sig istället för regler på **korpusar** med transkriptioner av andra samtal. De **informationshämtningsbaserade systemen** (eller IR-systemen, från eng. *information retrieval*) använder sig av olika algoritmer för att hitta ett lämpligt svar i korpusen, givet användarens input. Antingen brukar de försöka hitta det yttrande i korpusen som har högst cosinus-likhet med användarens senaste input, och ge det svar som följer på det yttrandet, eller så jämförs input med alla tänkabara svar i korpusen rakt av, utifrån tanken att ett passande svar borde dela många ord med själva inputsträngen. Intressant nog, påpekar Jurafsky & Martin (2019), verkar den senare strategin fungera bättre.
 
