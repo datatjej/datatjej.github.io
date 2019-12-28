@@ -6,8 +6,11 @@ title: 18. "I'm sorry to hear you are depressed"
 Det finns två typer av dialogsystem: 1) **uppgiftorienterade**, som hjälper till med saker som att boka biljetter, hitta närliggande restauranger, eller ringa upp någon åt dig, och 2) **chatbotar**, vars syfte är att så naturligt som möjligt simulera mänskliga konversationer, både för nytta (i uppgiftorienterade dialogsystem) och rent nöje (Jurafsky & Martin 2019).  
 
 Man talar om tre olika typer av chatbotsarkitektur:
-1) **regelbaserade system**
+
+1) **regelbaserade system** 
+
 2) **informationshämtningssystem** (korpus-baserad)
+
 3) **maskininlärningsbaserade system** (korpus-baserad)
 
 Den första typen - de rent **regelbaserade systemen** - återfinnar man främst i de tidigaste chatbotarna. Det kändaste exemplet är antagligen ELIZA, en chatbot från 60-talet som i enlighet med den Rogerianska grenen av kliniskt psykologi programmerats för att upprepa patientens yttranden, ställa földjfrågor utifrån **nyckelord** samt klassiska frågor av typen "Hur får det dig att känna?". Nyckelorden får då olika rankningar utifrån hur generella eller specifika de är. Tack vare **minnesstacken** kan programmet också återuppta ämnen som nämnts tidigare i samtalet ("Earlier you said that you...").
