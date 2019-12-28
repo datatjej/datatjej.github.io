@@ -7,13 +7,13 @@ Det finns två typer av dialogsystem: 1) **uppgiftorienterade**, som hjälper ti
 
 Man talar om tre olika typer av chatbotsarkitektur:
 
-1) **regelbaserade system** 
+1) **regelstyrda system** 
 
 2) **informationshämtningssystem** (korpus-baserad)
 
 3) **maskininlärningsbaserade system** (korpus-baserad)
 
-Den första typen - de rent **regelbaserade systemen** - återfinnar man främst i de tidigaste chatbotarna. Det kändaste exemplet är antagligen ELIZA, en chatbot från 60-talet som i enlighet med den Rogerianska grenen av kliniskt psykologi programmerats för att upprepa patientens yttranden, ställa földjfrågor utifrån **nyckelord** samt klassiska frågor av typen "Hur får det dig att känna?". Nyckelorden får då olika rankningar utifrån hur generella eller specifika de är. Tack vare **minnesstacken** kan programmet också återuppta ämnen som nämnts tidigare i samtalet (*"Earlier you said that you..."*).
+Den första typen - de rent **regelstyrda systemen** - återfinnar man främst i de tidigaste chatbotarna. Det kändaste exemplet är antagligen ELIZA, en chatbot från 60-talet som i enlighet med den Rogerianska grenen av kliniskt psykologi programmerats för att upprepa patientens yttranden, samt ställa földjfrågor utifrån **nyckelord** och klassiska frågor av typen "Hur får det dig att känna?". Nyckelorden får då olika rankningar utifrån hur generella eller specifika de är. Tack vare **minnesstacken** kan programmet också återuppta ämnen som nämnts tidigare i samtalet (*"Earlier you said that you..."*).
 
 <p align="center">
 <img src="/images/eliza_transkription.PNG" alt="Samtal med Eliza" width="100%" height="auto" border="10" /><br></p>
