@@ -42,7 +42,7 @@ Den här typen av system användar sig av **dialogue-state trackers** för att h
 <p align="center">
 <img src="/images/dialogue_state_tracker.PNG" alt="Exempel på dialogue-state-tracking" width="100%" height="auto" border="10" /><br></p>
 
-Exempel på dialogue-state-tracking([Jurafsky & Martin 2019](https://web.stanford.edu/~jurafsky/slp3/26.pdf)).
+Exempel på dialogue-state-tracking ([Jurafsky & Martin 2019](https://web.stanford.edu/~jurafsky/slp3/26.pdf)).
 
 Om användaren säger något fel och därför vill korrigera sig själv, måste systemet även kunna identifiera korrigeringsakten, vilket är lättare sagt än gjort. Människor som korrigerar sig själva tenderar att **hyperartikulera** ("Jag sa STO-CK-HOLMMMM"), något som ironiskt nog kan göra det svårare för språkigenkänningskomponenten i systemet att förstå. Men i kombination med andra vanligt förekommande korrigeringsmönster (tex svärord!) kan systemet ändå tränas till att bättre uppfatta korrigeringar som just rättning av äldre information, och inte som helt ny information. 
 
