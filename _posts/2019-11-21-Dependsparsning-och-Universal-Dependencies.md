@@ -9,7 +9,7 @@ title: 12. Dependensparsning och Universal Dependencies
 <a title="Tjo3ya [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:UD_picture_1.1.jpg"><img width="128" alt="UD picture 1.1" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/UD_picture_1.1.jpg"></a>
 </p>
 
-Dessa relationer är **riktade grafer** som matematiskt kan skrivas *G = (V,A)*, där *V* är en uppsättning noder som motsvarar morfem och/eller satstecken i en mening, och *A* är en uppsättning ordnade nodpar som också kallas **bågar**. Bågarna motsvarar relationerna mellan elementen i *V*. Vidare måste grafen uppfylla följande kriterier:
+Dessa relationer är **riktade grafer** som matematiskt kan skrivas *G = (V,A)*, där *V* är en uppsättning noder som motsvarar morfem och/eller satstecken i en mening, och *A* är en uppsättning ordnade nodpar som också kallas **bågar**. Bågarna motsvarar relationerna mellan elementen i *V*. Vidare måste grafen uppfylla följande kriterier:<br>
 1) ...att det finns en enskild **rotnod** som inte har några inkommande bågar.  
 2) ...att alla noder, med undantag för rotnoden, har en och enbart en inkommande båge.
 3) ... att det finns en unik väg från rotnoden till varje nod i *V*.        
