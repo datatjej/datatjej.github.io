@@ -9,11 +9,11 @@ Vi börjar med lite historia. Lambdakalkyl definieras på svenska [Wikipedia](ht
 
 Tidigare hade man inte haft en bra beskrivning av effektiv beräkningsbarhet (mer än om den kunde utföras med penna och papper), men framväxten av tre olika formella beräkningssystem -- 1) Gödels och Herbrands generella rekursiva funktioner, 2) Churchs lamdakalkyl och 3) Turings Turingmaskin -- gjorde att man kunde fastställa sambandet i Church-Turings hypotes. Det visade sig nämligen att dessa tre system hänger ihop; en funktion som är lambda-beräkningsbar är också alltid Turing-kompatibel och även generellt rekursiv. 
 
-Men tillbaka till där vi började. Vad ska lambdakalkyl överhuvudtaget vara bra för inom lingvistiken? Videon nedan ger en lysande och koncis förklaring, men i kort så verkar det handla om att enklare kunna utvärdera sanningsvärden i meningar (vilket är ju kärnan av semantiken som vetenskapsdisciplin) genom att ta bryta upp stora, komplicerade semantiska uttryck/funktioner i mindre sådana, så kallad **currying**. Detta är exempelvis hjälpsamt när man har ett transitivt verb i formen av ett predikat inom första ordningens logik (FOL), *gilla(Anna, äpplen)* (för "Anna gillar äpplen"), och vill kunna sätta in objektet *äpplen* i funktionen innan man vet vem subjektet är.          
+Men tillbaka till där vi började. Vad ska lambdakalkyl överhuvudtaget vara bra för inom lingvistiken? Videon nedan ger en lysande och koncis förklaring, men i kort så verkar det handla om att enklare kunna utvärdera sanningsvärden i meningar (vilket är ju kärnan av semantiken som vetenskapsdisciplin) genom att ta bryta upp stora, komplicerade semantiska uttryck/funktioner i mindre sådana, så kallad **currying**. Detta är exempelvis hjälpsamt när man har ett transitivt verb i formen av ett predikat inom första ordningens logik (FOL), *gilla(Anna, äpplen)* (för "Anna gillar äpplen"), och vill kunna sätta in objektet *äpplen* i funktionen innan man vet vem subjektet är.
+          
 <p align="center">
-<a href="https://www.youtube.com/watch?v=BwWQDzXBuwg><img src="/images/lambdakalkyl.PNG" 
+<a href="https://www.youtube.com/watch?v=BwWQDzXBuwg"><img src="/images/lambdakalkyl.PNG" 
 alt="How Can One Greek Letter Help Us Understand Language? Lambda Calculus" width="100%" height="100%" border="10" /></a></p>
 
-      
-
-***fortsätta senare***
+ 
+*23/4: fortsätter skriva lite senare*
