@@ -5,7 +5,7 @@ title: 5. Finite-state machines och ändliga automater
 
 **Finite-state machines**, **finite-state automata** eller **ändlig/finita automater** på svenska är (tydligen!) en viktig del i datalingvistiken. Det refererar till matematiska beräkningsmodeller som bland annat används för att implementera reguljära uttryck. Men omvänt uttryckt så kan reguljära uttryck även användas för att beskriva en finit automat: *"any finite-state automation can be described with a regular expression"* (Jurafsky & Martin 2009:26). Förvirrande? Vi har bara börjat!
 
-En finit automat kan representeras som en **riktad graf** (eng. *directed graph), som enligt Wikipedia är en graf där vars **bågar** (eng. *arcs*) "...har en definierad riktning mellan de två noder [eng. *vertice*/*node*] som bågen förbinder, bågen är så att säga enkelriktad"[[1]](https://sv.wikipedia.org/wiki/Riktad_graf). Inte helt lättförstått, men här är i alla fall en fin bild: 
+En finit automat kan representeras som en **riktad graf** (eng. *directed graph*), som enligt Wikipedia är en graf vars **bågar** (eng. *arcs*) "...har en definierad riktning mellan de två **noder** (eng. *vertice*/*nodes*) som bågen förbinder, bågen är så att säga enkelriktad"[[1]](https://sv.wikipedia.org/wiki/Riktad_graf). Inte helt lättförstått, men här är i alla fall en fin bild: 
 
 <p align="center">
 <img src="/images/directed.svg" alt="rigraf" width="480" height="360" border="10" /> <br>
