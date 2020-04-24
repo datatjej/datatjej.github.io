@@ -9,7 +9,7 @@ En finit automat kan representeras som en **riktad graf** (eng. *directed graph*
 
 <p align="center">
 <img src="/images/directed.svg" alt="rigraf" width="480" height="360" border="10" /> <br>
-Illustration av enkelriktad graf (Wikipedia 2019).</p>'
+Illustration av enkelriktad graf (Wikipedia 2019).</p>
 
 Automaten består av ett antal **tillstånd** (eng. *states*) som representeras av noderna i grafen, och där tillstånd 0 är **startillståndet**. Tanken är att maskinen börjar från nod 0 (starttillståndet) och sedan kollar av varje tecken i en sträng. Om nästa tecken i strängen stämmer överens med den symbol som bågen till nästa tillstånd representerar, så korsar den bågen över till nästa nod. Om stränginputen tagit slut när vi kommit till **slutnoden** i grafen (eng. *final state*/*accepting state*) så har den lyckats matcha den eftersökta strängen. Om ett givet tecken inte accepteras av maskinen hamnar den automatiskt i ett **tomt tillstånd**, på engelska *fail state* eller *sink state*.
 
@@ -20,4 +20,4 @@ Det finns **tre lösningar** på det problemet:
 * **look-ahead**: kikar på nästa input i förväg för att avgöra vilken väg som är rätt. 
 * **parallellism**: kika på en alternativ bana varje gång vi kommer till en flervalsnod. 
 
-Värt att notera är at vilken icke-deterministisk finit automat som helst kan omvandlas till en deterministisk finit automat.       
+Värt att notera är att vilken icke-deterministisk finit automat som helst kan omvandlas till en deterministisk finit automat.       
