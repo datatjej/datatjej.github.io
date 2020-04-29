@@ -6,7 +6,7 @@ title: 20. Lambdakalkyl med lite curry
 Inom kursen **komputationell semantik** (LT2213) konfronterades vi i förra veckan med något nytt och läskigt: **lambdakalkyl** (eng. *lambda calculus*). Sedan dess har jag skjutit upp att sätta mig in i det på allvar, men eftersom vi har en inlämningsuppgift på ämnet som strax måste in tänkte jag ta kvällen i akt och läsa på så mycket som möjligt innan jag går och lägger mig. Nu kör vi!
 
 <p align="center">
-<img src="/images/gillar.PNG" alt="Exempel på lambdauttryck" width="100%" height="auto" border="10" /><br>
+<img src="/images/gillar.png" alt="Exempel på lambdauttryck" width="100%" height="auto" border="10" /><br>
 </p>
 
 Vi börjar med lite historia. Lambdakalkyl definieras på svenska [Wikipedia](https://sv.wikipedia.org/wiki/Lambdakalkyl) som ett "formellt system som skapades för att undersöka funktioner och rekursion". Som upphovsman räkans den amerikanske matematikern och logikern [**Alonzo Church** (1903-1995)](https://sv.wikipedia.org/wiki/Alonzo_Church) som arbetade fram systemet på 1930-talet. Han har också gjort sig känd för [**Church-Turings hypotes**](https://sv.wikipedia.org/wiki/Church-Turings_hypotes), som säger att en matematisk funktion är **effektivt beräkningsbar** om och endast om den kan beräknas med hjälp av en algoritm på en Turing-maskin.[1] Men det var en annan amerikan, [Richard Montague (1930-1971)](https://en.wikipedia.org/wiki/Richard_Montague), som introducerade lambdakalkylen till lingvistiken.  
