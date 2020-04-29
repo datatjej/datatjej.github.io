@@ -16,7 +16,7 @@ Så vad ska lambdakalkyl överhuvudtaget vara bra för inom språkteknologin? Vi
 När man har en mening i naturligt språk, t.ex. "Anna gillar äpplen" så kan den delas upp i ett syntaktiskt träd där nominalfrasen (NP) har en undernod, *Anna*, och verbfrasen (VP) "gillar äpplen" två stycken: *gillar* och *äpplen*. När vi sedan vill konstruera vår semantiska representation av meningen börjar vi från undernoderna i VP:t och märker på en gång att predikatet *gillar* kräver två variabler, en som gillar och något som gillas: gillar(x,y). 
 
 
-För att lösa detta beräkningsmässigt bryter vi ut x:et och y:et till ett lambdauttryck, så att vi kan hålla till godo innan vi når objektet *äpplen* och nominalfrasen *Anna*: \y \x.(gillar(x,y). Placeringen av lambda-y innan lambda-x innebär att y:et är den första variabeln som pluggas in i funktionen, som då får formen \x.gillar(x,äpplen), innan vi går vidare och pluggar in subjektvariabeln x.    
+För att lösa detta beräkningsmässigt bryter vi ut x:et och y:et till ett lambdauttryck, så att vi kan hålla till godo innan vi når objektet *äpplen* och nominalfrasen *Anna*: λy λx.(gillar(x,y). Placeringen av lambda-y innan lambda-x innebär att y:et är den första variabeln som pluggas in i funktionen, som då får formen λx.gillar(x,äpplen), innan vi går vidare och pluggar in subjektvariabeln x.    
                    
 <p align="center">
 <a href="https://www.youtube.com/watch?v=BwWQDzXBuwg"><img src="/images/lambdakalkyl.PNG" 
