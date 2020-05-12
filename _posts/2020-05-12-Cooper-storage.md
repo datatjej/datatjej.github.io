@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 21. I tveksamhetens tid: Cooper storage
+title: 21. Cooper storage
 ---
 
 I semantikkursen har vi den senaste veckan stiftat bekantskap med en teknik för att bryta ner och tolka meningar som innehåller kvantifikatorer: **Cooper storage**. Eftersom den är utvecklad av professor emeritus Robin Cooper från Göteborgs universitet (se [Quantifications and Syntactic Theory](https://link-springer-com.ezp.sub.su.se/book/10.1007/978-94-015-6932-3#about) från 1983) kändes det givet att ägna den lite extra uppmärksamhet här i bloggen. 
