@@ -15,7 +15,7 @@ Det är här Cooper-förrådet kommer in i bilden. Om man tänker sig att mening
 ...där (1) är den konventionella tolkningen och (2) är Beyoncé-tolkningen, så kan man oavsett tolkningsval ändå konstatera att den finns en underliggande betydelse i meningen – nämligen att någon beundras. Detta illusteras i bilden nedan, som jag har ritat med inspiration av ett annat exempel från [kapitel 10:4.5 i NLTK-boken](http://www.nltk.org/book_1ed/ch10.html) (Bird, Klein, Loper 2009).
 
 <p align="center">
-<img src="/images/beundra.JPG" alt="Strukturen hos meningen Alla beundrar någon" width="480" height="360" border="10" /> <br>
+<img src="/images/beundra.jpg" alt="Strukturen hos meningen Alla beundrar någon" border="10" /> <br>
 Olika läsningar av meningen "Alla beundrar någon". De grekiska bokstäverna Φ [fi] och ψ [psi] står som platshållare för det kvantifikatorn avser.</p>
 
 "Förrådet" i Cooper storage-metoden innehåller just den här nedskalade betydelsen, **kärnan** (eng. *core*), av meningen, *beundra (x,y)* eller *x beundrar y*, samt en lista över **operatorer** (eng. *binding operators*) som motsvarar de kvantifierade nominalfraser som står ovanför *beundra(x,y)* i bilden ovan, fast i lambda-format (så *∀x.(person(x) -> Φ* blir exempelvis *λQ.∀x.(person(x) -> Q(x)*). Beroende på i vilken ordning vi sedan väljer att plugga in endera operator i kärnan får vi olika betydelse av meningen (antingen att alla beundrar olika personer eller en och samma person). Detta kallas **s-retrieval**. 
