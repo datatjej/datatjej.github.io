@@ -2,7 +2,7 @@
 layout: post
 title: 22. Vektorrumsmodeller
 ---
-Inför veckans semantikseminarium fick vi som hemläxa att läsa tre artiklar om distributionell semantik och **vektorrumsmodeller**. En av dem var översiktsartikeln ["From Frequency to Meanings: Vector Space Models of Semantics"](https://arxiv.org/abs/1003.1141) av Turney & Pantel (2010) som går igenom de tre övergripande vektorrumsmodellerna (VRM): 1) **term-dokument**, 2) **ord-kontext** och 3) **par-mönster-matriser**. 
+Inför veckans semantikseminarium fick vi som hemläxa att läsa tre artiklar om distributionell semantik och **vektorrumsmodeller**. En av dem var översiktsartikeln ["From Frequency to Meanings: Vector Space Models of Semantics"](https://arxiv.org/abs/1003.1141) av Turney & Pantel (2010) som går igenom de tre övergripande vektorrumsmodellerna (VRM): 1) *term-dokument-matriser*, 2) *ord-kontext-matriser* och 3) *par-mönster-matriser*. 
 
 >"We draw attention to the fact that VSMs are arguably the most successful approach to semantics, so far." (Turney & Pantel 2010)
 
