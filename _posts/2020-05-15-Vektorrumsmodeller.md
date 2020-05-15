@@ -4,8 +4,7 @@ title: 22. Vektorrumsmodeller
 ---
 Inför veckans semantikseminarium fick vi som hemläxa att läsa tre artiklar om distributionell semantik och **vektorrumsmodeller**. En av dem var översiktsartikeln ["From Frequency to Meanings: Vector Space Models of Semantics"](https://arxiv.org/abs/1003.1141) av Turney & Pantel (2010) som går igenom de tre övergripande vektorrumsmodellerna (VRM): 1) **term-dokument**, 2) **ord-kontext** och 3) **par-mönster-matriser**. 
 
->"We draw attention to the fact that VSMs are arguably the most successful approach to semantics, so far. (Turney & Pantel 2010)
-"
+>"We draw attention to the fact that VSMs are arguably the most successful approach to semantics, so far." (Turney & Pantel 2010)
 
 VRM utvecklades i början av 70-talet av datorforskaren [Gerard Salton](https://en.wikipedia.org/wiki/Gerard_Salton) och kollegor för informationshämtningssystemet SMART vid Cornell University. Det gjorde det möjligt att representera varje dokument i en dokumentsamling som en punkt i ett vektorrum, med avståndet mellan punkterna som ett uttryck för graden av semantisk likhet mellan dem. Även användarens söksträng blir då till en punkt i samma vektorrum, ett *pseudodokument*, och dokumenten presenteras sedan för användaren i den ordning som de ligger avståndsmässigt från söksträngens vektor (Turney & Pantel 2010). Det här fungerade så bra i informationshämtningssammanhang att man började applicera VRM även på andra språkteknologiska problem.
 
