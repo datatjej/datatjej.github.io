@@ -41,11 +41,3 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   python3 -m pip install matplotlib
   
   **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook!* 
-  
-  **Ifall du vill använda miljön i Juputer Notebook:**
-  
-  **Steg 5)** Öppna Jupyter Notebook:
-  
-  {% highlight bash %}
-   jupyter notebook
-  {% endhighlight %}
