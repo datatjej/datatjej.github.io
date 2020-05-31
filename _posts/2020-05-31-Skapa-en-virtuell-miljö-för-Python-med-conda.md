@@ -9,7 +9,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
 
  ## Skapa en virtuell miljö
 
-  **Steg 1) Skapa och namnge miljön**
+  **Steg 1) Skapa och namnge miljön:**
   
   {% highlight bash %}
   conda create -n "namn_på_miljön" python==3.7
@@ -20,12 +20,12 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   En lista över moduler som kommar att installeras för miljön.
   </p>
   
-  **Steg 2) Tryck *y + enter* för att gå vidare**
+  **Steg 2) Tryck ja för att gå vidare:**
   {% highlight bash %}
     y + enter
   {% endhighlight %}
   
-  **Steg 3) Aktivera miljön**
+  **Steg 3) Aktivera miljön:**
   {% highlight bash %}
   conda activate namn_på_miljön
   {% endhighlight %}
@@ -57,5 +57,5 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   **Steg 6) Klistra in någon av URL-koderna i webbläsaren:**
   <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
   
-  **Steg 7) Byt miljön i kärnan**:
+  **Steg 7) Byt miljön i kärnan:**
   <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
