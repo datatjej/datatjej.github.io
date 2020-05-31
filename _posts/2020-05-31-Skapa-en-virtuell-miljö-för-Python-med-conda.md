@@ -22,7 +22,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   
   **Steg 2) Tryck ja för att gå vidare:**
   {% highlight bash %}
-    y + enter
+    y + <kbd>Enter</kbd>
   {% endhighlight %}
   
   **Steg 3) Aktivera miljön:**
