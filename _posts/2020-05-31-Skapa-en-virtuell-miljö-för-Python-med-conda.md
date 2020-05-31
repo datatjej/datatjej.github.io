@@ -26,9 +26,10 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   conda activate namn_på_miljön
   {% endhighlight %}
   
-    <p align="center">
+  <p align="center">
   <img src="/images/activate_environment.PNG" alt="Aktivering av den virtuella miljön" border="10" /> <br>
-  Observera övergången från (base) till den virtuella miljön (i det här fallet namngiven som "pythorchEnv") efter att den virtuella miljön aktiverats.</p>
+  Observera övergången från (base) till den virtuella miljön (i det här fallet namngiven som "pythorchEnv") efter att den virtuella miljön aktiverats.
+  </p>
   
   **Steg 4)** Installera ytterligare moduler du vill ha, exempelvis:
   {% highlight bash %}
@@ -46,12 +47,11 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   **Steg 5)** Öppna Jupyter Notebook:
   
   {% highlight bash %}
-  jupyter notebook
+   jupyter notebook
   {% endhighlight %}
   
   **Steg 6)** Klistra in någon av URL-koderna i webbläsaren:
-   <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
+  <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
   
   **Steg 7)** Byt miljön i kärnan:
-   <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
-  
+  <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
