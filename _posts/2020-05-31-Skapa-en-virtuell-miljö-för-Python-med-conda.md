@@ -49,9 +49,3 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   {% highlight bash %}
    jupyter notebook
   {% endhighlight %}
-  
-  **Steg 6)** Klistra in någon av URL-koderna i webbläsaren:
-  <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
-  
-  **Steg 7)** Byt miljön i kärnan:
-  <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
