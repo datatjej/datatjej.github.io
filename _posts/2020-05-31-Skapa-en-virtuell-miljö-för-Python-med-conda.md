@@ -3,7 +3,7 @@ layout: post
 title: 23. Skapa en virtuell miljö för Python med conda
 ---
 
-Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environment*) när man jobbar i olika Python-projekt. Det gör det nämligen möjligt att anpassa versionen av olika Python-moduler (t.ex. PyTorch) för enskilda projekt utan att det påverkar andra projekt. När man skapar en virtuell miljö skapar man en **individuellt namngiven kopia av Python** som håller koll på sina egna filer, mappar och path-variabler[[1](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)]. I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuell miljö med hjälp av paket- och miljöhanteraren [conda](https://docs.conda.io/projects/conda/en/latest/index.html), som ursprungligen var en del av distributionssystemet [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution) innan det bröts ut och släpptes som ett eget paket. 
+Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environment*) när man jobbar i olika Python-projekt. Det gör det nämligen möjligt att anpassa versionen av olika Python-moduler (t.ex. PyTorch) för enskilda projekt utan att det påverkar andra projekt. När man skapar en virtuell miljö skapar man en **individuellt namngiven kopia av Python** som håller koll på sina egna filer, mappar och path-variabler [[1](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/)]. I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuell miljö med hjälp av paket- och miljöhanteraren [conda](https://docs.conda.io/projects/conda/en/latest/index.html), som ursprungligen var en del av distributionssystemet [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)) innan det bröts ut och släpptes som ett eget paket. 
 
   **Steg 1)** Skapa och namnge miljön
   
@@ -13,7 +13,8 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   
   <p align="center">
   <img src="/images/create_environment.PNG" alt="Lista över moduler som kommer att installeras för miljön" border="10" /> <br>
-  En lista över moduler som kommar att installeras för miljön. Skriv in "y" för att gå vidare.</p>
+  En lista över moduler som kommar att installeras för miljön. Skriv in "y" för att gå vidare.
+  </p>
   
   **Steg 2)** Tryck y + enter för att gå vidare
   {% highlight bash %}
@@ -43,6 +44,7 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   **Ifall du vill använda miljön i Juputer Notebook:**
   
   **Steg 5)** Öppna Jupyter Notebook:
+  
   {% highlight bash %}
   jupyter notebook
   {% endhighlight %}
