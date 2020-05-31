@@ -39,5 +39,19 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
   python3 -m ipykernel install --user --name namn_på_miljön --display-name "namn_på_miljön"
   python3 -m pip install pandas
   python3 -m pip install matplotlib
+  {% endhighlight %}
   
   **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook!* 
+  
+  **Om du vill använda den virtuella miljön i Juputer Notebook:**
+  
+  **Steg 5)** Öppna Jupyter Notebook:
+  {% highlight bash %}
+   jupyter notebook
+  {% endhighlight %}
+
+  **Steg 6)** Klistra in någon av URL-koderna i webbläsaren:
+  <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
+  
+  **Steg 7)** Byt miljön i kärnan:
+  <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
