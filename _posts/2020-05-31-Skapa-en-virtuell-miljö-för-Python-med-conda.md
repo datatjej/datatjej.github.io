@@ -7,7 +7,7 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
 
 I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuell miljö med hjälp av paket- och miljöhanteraren [conda](https://docs.conda.io/projects/conda/en/latest/index.html), som ursprungligen var en del av distributionssystemet [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)) innan det bröts ut och släpptes som ett eget paket. 
 
- ##Skapa en virtuell miljö
+ ## Skapa en virtuell miljö
 
   **Steg 1) Skapa och namnge miljön**
   
@@ -47,7 +47,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   
   **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook!* 
   
-  ##Om du vill använda den virtuella miljön i Juputer Notebook:
+  ## Om du vill använda den virtuella miljön i Juputer Notebook:
   
   **Steg 5) Gå till rätt mapp på datorn och skriv in:**
   {% highlight bash %}
