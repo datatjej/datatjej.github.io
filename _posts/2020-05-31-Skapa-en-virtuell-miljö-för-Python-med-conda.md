@@ -21,7 +21,9 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   </p>
   
   **Steg 2) Tryck ja för att gå vidare:**
-    y + <kbd>Enter</kbd>
+  {% highlight bash %}
+  y + enter
+  {% endhighlight %}
   
   **Steg 3) Aktivera miljön:**
   {% highlight bash %}
