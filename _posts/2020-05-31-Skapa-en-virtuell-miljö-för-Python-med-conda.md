@@ -8,6 +8,8 @@ Ibland kan det vara bra att skapa en **virtuell miljö** (eng. *virtual environm
 I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuell miljö med hjälp av paket- och miljöhanteraren [conda](https://docs.conda.io/projects/conda/en/latest/index.html), som ursprungligen var en del av distributionssystemet [Anaconda](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)) innan det bröts ut och släpptes som ett eget paket. 
 
  <h2>Skapa en virtuell miljö</h2>
+ 
+ Börja med att öppna terminalen. Jag använder [Ubuntu-terminalen](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#1-overview) för Windows 10. 
 
   **Steg 1) Skapa och namnge miljön:**
   
