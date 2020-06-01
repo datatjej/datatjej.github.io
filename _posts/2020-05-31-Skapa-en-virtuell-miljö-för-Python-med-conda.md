@@ -49,7 +49,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   
   **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook!* 
   
-  <h2>Om du vill använda den virtuella miljön i Juputer Notebook:</h2>
+  <h2>Om du vill använda den virtuella miljön i Jupyter Notebook:</h2>
   
   **Steg 5) Gå till rätt mapp på datorn och skriv in:**
   {% highlight bash %}
