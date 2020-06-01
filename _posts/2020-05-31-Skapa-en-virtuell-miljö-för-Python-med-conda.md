@@ -60,6 +60,6 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   
   <img src="/images/jupyter_notebook_url.PNG" alt="Länkar genererade för Jupyter Notebook-filer" border="10" /> <br>
   
-  **Steg 7) Byt miljön i kärnan:**
+  **Steg 7) Byt ut miljön i kärnan:**
   
   <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
