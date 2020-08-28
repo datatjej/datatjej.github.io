@@ -17,7 +17,7 @@ Ett annat mer nutida exempel på ett projekt där det uttalade syftet var att ta
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=qH6KB7MrOPw" target="_blank"><img src="/images/q_tedx.PNG" 
-alt="How to create a genderless voice | Nis Nørgaard | TEDxUniversityofNicosia" width="480" height="360" border="10" /></a></p>
+alt="How to create a genderless voice | Nis Nørgaard | TEDxUniversityofNicosia" width="520" height="360" border="10" /></a></p>
 
 Jag grävde vidare lite i Google Scholar och hittade [den här artikeln](http://icphs2011.hk.lt.cityu.edu.hk/resources/OnlineProceedings/RegularSession/Poon/Poon.pdf) av Poon & Ng (2011) som undersöker vikten av grundfrekevens och formantfrekvenser när det kommer till att identifiera en talares biologiska kön. Man nämner **källa-filter-teorin** (som jag går in på lite kort i slutet av [det här](https://datatjej.github.io/Fonetik-fononologi-och-taligenk%C3%A4nning/) inlägget), enligt vilken mänskligt tal är att betrakta som ett resultat av av **stämbandens vibrationer** och den efterföljande **resonansen i ansatsröret** som förstärker vissa vibrationer och minskar andra (ibid).     
 
@@ -25,6 +25,6 @@ Poon & Ng fann att grundfrekvensen, precis som Nørgaard var inne på, är den f
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=jl4zGRSYqkE" target="_blank"><img src="/images/formanter.PNG" 
-alt="How Do We Change Our Mouths to Shape Waves? Formants" width="480" height="360" border="10" /></a></p>
+alt="How Do We Change Our Mouths to Shape Waves? Formants" width="520" height="360" border="10" /></a></p>
 
 För att runda av och komma tillbaka til de mer språkteknologiska aspekter av det här med röst och kön: Det går förstås att skapa AI som utifrån parametrarna ovan och annoterad data kan gissa talarens biologiska kön - men är det något vi *borde* göra? Vad skulle ett sådant verktyg kunna användas till? Ge mer könsriktad reklam till en användare? Kanske ge ett helt annat bemötande när en användare av ett visst (biologiskt) kön interagerar med en virtuell assistent? Det hela blir lätt problematiskt om det beräkande könet inte stämmer överens med det upplevda (t.ex. trans, icke-binär) eller om informationen används för förstärka könsnormer. [Den här artikeln](https://edition.cnn.com/2019/11/21/tech/ai-gender-recognition-problem/index.html) beskriver mer ingående farorna med AI som förutsäger kön.
