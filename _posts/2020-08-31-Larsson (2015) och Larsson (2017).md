@@ -3,7 +3,7 @@ layout: post
 title: 25. Larsson (2015) och Larsson (2017)
 ---
 
-Så här i början av höstterminen när man fortfarande ligger i fas och inte vill halka efter tänkte jag använde det här utrymmet så som jag från början avsåg att använda det - för rena kursanteckningar. För första lektion i dialogsystem II som börjar den här veckan har vi två läsanvisngar: (Larsson (2015)[https://flov.gu.se/digitalAssets/1536/1536925_semdial2015_godial_proceedings.pdf#page=197] och (Larsson (2017))[https://www.aclweb.org/anthology/W17-5503.pdf]. Den första artikeln har vi redan haft som läsning i NLP-kursen, men jag minns inte om jag tog några anteckningar då, så here we go!
+Så här i början av höstterminen när man fortfarande ligger i fas och inte vill halka efter tänkte jag använde det här utrymmet så som jag från början avsåg att använda det - för rena kursanteckningar. För första lektion i dialogsystem II som börjar den här veckan har vi två läsanvisngar: [Larsson (2015)](https://flov.gu.se/digitalAssets/1536/1536925_semdial2015_godial_proceedings.pdf#page=197) och [Larsson (2017)](https://www.aclweb.org/anthology/W17-5503.pdf). Den första artikeln har vi redan haft som läsning i NLP-kursen, men jag minns inte om jag tog några anteckningar då, så here we go!
 
 **Larsson (2015)** undersöker hur dialogsystemen hos Apple, Google och Microsoft hanterar några vanliga fenomen i mänskliga dialoger: 1) *over-answering*, 2) *other-answering* och 3) *answer revision*. **Over-answering** innebär att användaren **ger mer information än vad som förväntas**, t.ex.<br>
 
