@@ -10,7 +10,7 @@ Så här i början av höstterminen när man fortfarande ligger i fas och inte v
 - Ring ett samtal.<br>
 - Okej, vem vill du ringa?<br>
 - Miras mobil. <-- over-answering<br>
-- Okej, ringer Miras mobil.<br><br>
+- Okej, ringer Miras mobil.<br>
 
 Dialogen ovan är inte alls problematisk för en människa, men för ett dialogsystem som förväntar sig en bit information i taget (- Vem vill du ringa? - Mira - På vilket nummer, hem eller mobil? - Mobil) kan det bli förvirrande. Larssons undersökning visar också att dåvarande Siri och Cortana kunde hantera over-answering, men däremot inte Google Now (nuvarande Google Assistant).
 
@@ -18,7 +18,7 @@ Dialogen ovan är inte alls problematisk för en människa, men för ett dialogs
 
 - Ring ett samtal.<br>
 - Okej, vem vill du ringa?<br>
-- Mobil. <-- other-answering <br><br>
+- Mobil. <-- other-answering <br>
 
 Larssons undersökning visade att såväl Google Now som Cortana förväntade sig rätt svar vid rätt tillfälle från användaren (även om systemet tänkt fråga om vilket nummer som avses -- hem, arbete eller mobil -- redan i nästa fråga), medan Siri kunde hantera other-answering.
 
@@ -26,7 +26,7 @@ Den tredje och sista användarinputen som tas upp, **3) answer revision**, avser
 
 - Ring Mira. <br>
 - Ok, arbete eller mobil? <br>
-- Nej förresten, ring Peter. <-- answer revision <br><br>
+- Nej förresten, ring Peter. <-- answer revision <br>
 
 I idealfallet skulle systemet svara något i stil med: "Okej, ringer Peter istället. Arbete eller mobil?". Så som de undersökta systemen såg ut 2015 kunde ingen av dem hantera svarskorrigeringar. Siri ignorerade dem antingen helt eller avbröt hela processen vid nyckelord som "nej". Och man skulle vilja tro att mycket förbättrats på den här fronten de senaste åren, men en labb i NLP-kursen förra hösten visade att åtminstone Google Assistant inte kunde hantera over-answering, other-answering eller answer revision på svenska särskilt väl, se figur 1. 
 
@@ -41,7 +41,7 @@ Larsson testar hur några dialogsystem -- Siri, API.AI, Houndify, Cortana och Al
 
 - När vill du anlända?<br>
 - Imorgon<br>
-- Du vill anlända fredag den 3 januari<br><br>
+- Du vill anlända fredag den 3 januari<br>
 
 Han delar in de undersökte dialogsystemen i fyra olika kategorier:<br>
 - **Stängda system:** har en fast uppsättning icke-konfigurerbara dialogapplikationer, t.ex. Siri.<br>
@@ -63,7 +63,7 @@ Den andra delen av undersökningen tittade på hur väl systemen kunde hantera f
 - Ring ett samtal<br>
 - Vem vill du ringa?<br>
 - Vad är klockan?<br>
-- 20:00. Tillbaka till samtalsläge. Vem vill du ringa?<br><br>
+- 20:00. Tillbaka till samtalsläge. Vem vill du ringa?<br>
 
 Resultaten av den här delen visade att Siri och Alexa kunde hantera den nya fråga-om-klockan-uppgiften, men utan återgång till ursprungsuppgiften. API.AI och Cortana ignorerade istället den nya uppgiften och upprepade frågan kopplad till den ursprungliga uppgiften: Vem vill du ringa?
 
