@@ -37,7 +37,7 @@ Figur 1. Resultatet av min egen labbundersökning med Google Assistant på svens
 
 **Larsson (2017)** behandlar **användarinitierade underdialoger**, *"i.e. interactions where a system question is responded to with a question or request from the user, who thus unitiates a sub-dialogue"* (Larsson 2017:1). Han citerar [Łupkowski & Ginzburg (2013)](https://hal.archives-ouvertes.fr/hal-01138036/document) som lyfter fram att frågor som svar på frågor utgör så mycket som 20 % av alla frågosvar i British National Corpus - det är alltså inget marginellt fenomen. 
 
-Larsson testar hur några dialogsystem -- Siri, API.AI, Houndify, Cortana och Alexa -- reagerar på sådana underdialoger utifrån Trindi Tick-listan från [Bos et al. (1999)](https://gup.ub.gu.se/file/207630). Det är en lista över önskvärda beteenden hos ett dialogsystem, uttryckta i ja-och-nej-frågor som *Is utterance interpretation sensitive to context?*, t.ex:<br>
+Larsson testar hur några dialogsystem -- Siri, API.AI, Houndify, Cortana och Alexa -- reagerar på sådana underdialoger utifrån **Trindi Tick-listan** från [Bos et al. (1999)](https://gup.ub.gu.se/file/207630). Det är en lista över önskvärda beteenden hos ett dialogsystem, uttryckta i ja-och-nej-frågor som *"Is utterance interpretation sensitive to context?"*, t.ex:<br>
 
 - När vill du anlända?<br>
 - Imorgon<br>
