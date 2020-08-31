@@ -22,7 +22,7 @@ Dialogen ovan är inte alls problematisk för en människa, men för ett dialogs
 
 Larssons undersökning visade att såväl Google Now som Cortana förväntade sig rätt svar vid rätt tillfälle från användaren (även om systemet tänkt fråga om vilket nummer som avses -- hem, arbete eller mobil -- redan i nästa fråga), medan Siri kunde hantera other-answering.
 
-Den tredje och sista användarinputen som tas upp, **3) answer revision**, avser de tillfällen då användaren "rättar ett tidigare givet svar", t.ex:<br>
+Den tredje och sista användarinputen som tas upp, **3) answer revision**, avser de tillfällen då användaren **rättar ett tidigare givet svar**, t.ex:<br>
 
 - Ring Mira. <br>
 - Ok, arbete eller mobil? <br>
