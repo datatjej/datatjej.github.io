@@ -9,7 +9,7 @@ Det finns två sätt att synka en fork så att den uppdateras med de ändringar 
 
 1. Öppna Git Bash på forkmappen.
 
-***********KONFIGURERA REMOTE-REPO*****************************
+###################KONFIGURERA REMOTE-REPO######################
 *Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
 
 2. Lista de nuvarande konfigurerade remote-reporna för forken:
@@ -20,5 +20,5 @@ origin  https://github.com/datatjej/comp-syntax-2020.git (fetch)
 origin  https://github.com/datatjej/comp-syntax-2020.git (push)
 {% endhighlight %}
 
-***********SLUT PÅ KONFIGURERA REMOTE-REPO***********************
+################SLUT PÅ KONFIGURERA REMOTE-REPO################
 
