@@ -7,12 +7,13 @@ Det finns två sätt att synka en fork så att den uppdateras med de ändringar 
 
 # Synka i terminalen 
 
-1. Öppna Git Bash på forkmappen.
+### 1. Öppna Git Bash på forkmappen.
 
 ###################KONFIGURERA REMOTE-REPO######################
+
 *Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
 
-2. Lista de nuvarande konfigurerade remote-reporna för forken:
+### 2. Lista de nuvarande konfigurerade remote-reporna för forken:
 
 {% highlight git %}
 git remote -v
