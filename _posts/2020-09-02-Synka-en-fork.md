@@ -62,9 +62,14 @@ $ git fetch upstream
 $ git checkout master
 {% endhighlight %}
 
-7. Mergea ändringarna i upstream/master med din lokala masterbranch. Detta påverkar inte dina lokala ändringar på forken.
+**7. Mergea ändringarna i upstream/master med din lokala masterbranch. Detta påverkar inte dina lokala ändringar på forken.**
 
 {% highlight git %}
 $ git merge upstream/master
 {% endhighlight %}
+
+Klaaaart! :D
+
+# Synka via GitHub
+
 
