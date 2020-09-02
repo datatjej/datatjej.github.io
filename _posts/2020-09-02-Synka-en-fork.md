@@ -10,7 +10,7 @@ Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än
 
 **1. Öppna Git Bash på forkmappen.**
 
-*Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
+*Börja med att konfigurera en remote-repo som pekar mot den ursprungliga repon enligt följande:*
 
 **2. Lista de nuvarande konfigurerade remote-reporna för forken:**
 
