@@ -130,5 +130,5 @@ Har aldrig följt den här metoden tidgiare, så jag testar att göra det medan 
 <img src="/images/github_fork_confirm_merge.PNG" alt="Merge pull request-knappen." width="100%" height="auto" border="10" /><br>
 </p> 
 
-**9. Nu är din fork uppdaterad med det senaste! Kom ihåg att hämta ner ändringarna lokalt också med git pull. :)
+**9. Nu är din fork uppdaterad med det senaste! Kom ihåg att hämta ner ändringarna lokalt också med git pull. :)**
 
