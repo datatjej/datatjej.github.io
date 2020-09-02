@@ -6,11 +6,9 @@ title: 26. Synka en fork (GitHub)
 Det finns två sätt att synka en fork så att den uppdateras med de ändringar som gjorts i den ursprungliga repon (AKA "uppströmsrepon") efter forkningen.
 
 # Synka via terminalen 
-Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än så länge inte stött på några problem med den här metoden. Instruktionerna är hämtade från [GitHubs egna dokumentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork). 
+Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än så länge inte stött på några problem med den här metoden. Instruktionerna är hämtade från [GitHubs egna dokumentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork), men här har jag sammanfogat stegen för att konfigurera en remote-repo och mergea den med forken i en och samma steglista. 
 
 **1. Öppna Git Bash på forkmappen.**
-
-###########KONFIGURERA REMOTE-REPO##############
 
 *Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
 
@@ -39,8 +37,6 @@ $ git remote -v
 > upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (fetch)
 > upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (push)
 {% endhighlight %}
-
-##########SLUT PÅ KONFIGURERA REMOTE-REPO###########
 
 **5. Hämta uppströmsrepons grenar och tillhörande commits. Commits som gjorts i master-branchen förvaras i en lokal branch med namnet upstream/master.** 
 
