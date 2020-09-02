@@ -10,7 +10,7 @@ Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än
 
 **1. Öppna Git Bash på forkmappen.**
 
-## #############KONFIGURERA REMOTE-REPO##############
+## #########KONFIGURERA REMOTE-REPO###########
 
 *Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
 
@@ -40,7 +40,7 @@ $ git remote -v
 > upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (push)
 {% endhighlight %}
 
-## ###########SLUT PÅ KONFIGURERA REMOTE-REPO##########
+## ########SLUT PÅ KONFIGURERA REMOTE-REPO########
 
 **5. Hämta uppströmsrepons grenar och tillhörande commits. Commits som gjorts i master-branchen förvaras i en lokal branch med namnet upstream/master.** 
 
