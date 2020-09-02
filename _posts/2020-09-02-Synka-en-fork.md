@@ -5,16 +5,16 @@ title: 26. Synka en fork (GitHub)
 
 Det finns två sätt att synka en fork så att den uppdateras med de ändringar som gjorts i den ursprungliga repon (AKA "uppströmsrepon") efter forkningen.
 
-# Synka i terminalen 
+# Synka via terminalen 
 Det här ser kanske komplicerat ut men går förvånansvärt smidigt. Har än så länge inte stött på några problem med den här metoden. 
 
-1. Öppna Git Bash på forkmappen.
+**1. Öppna Git Bash på forkmappen.**
 
 ###################KONFIGURERA REMOTE-REPO######################
 
 *Börja med att konfigurera en remote-repo som pekar på den ursprungliga repon enligt följande:*
 
-2. Lista de nuvarande konfigurerade remote-reporna för forken:
+**2. Lista de nuvarande konfigurerade remote-reporna för forken:**
 
 {% highlight git %}
 $ git remote -v
@@ -22,7 +22,7 @@ $ git remote -v
 > origin  https://github.com/datatjej/comp-syntax-2020.git (push)
 {% endhighlight %}
 
-3. Lägg till uppströmsrepon som ytterligare remote-repo: 
+**3. Lägg till uppströmsrepon som ytterligare remote-repo:** 
 
 {% highlight git %}
 $ git remote add upstream https://github.com/ORIGINALÄGARE/ORIGINALREPO.git
@@ -30,7 +30,7 @@ $ git remote add upstream https://github.com/ORIGINALÄGARE/ORIGINALREPO.git
 
 (I mitt exempelfall är uppströmsrepon: https://github.com/GrammaticalFramework/comp-syntax-2020.git)
 
-4. Säkerställ att uppströmsrepon verkligen lagts till:
+**4. Säkerställ att uppströmsrepon verkligen lagts till:**
 
 {% highlight git %}
 $ git remote -v
@@ -42,7 +42,7 @@ $ git remote -v
 
 ################SLUT PÅ KONFIGURERA REMOTE-REPO################
 
-5. Hämta uppströmsrepons grenar och tillhörande commits. Commits som gjorts i master-branchen förvaras i en lokal branch med namnet upstream/master. 
+**5. Hämta uppströmsrepons grenar och tillhörande commits. Commits som gjorts i master-branchen förvaras i en lokal branch med namnet upstream/master.** 
 
 {% highlight git %}
 $ git fetch upstream
@@ -56,7 +56,7 @@ $ git fetch upstream
 > * [new branch]      master                -> upstream/master
 {% endhighlight %}
 
-6. Checka ut din forks lokala masterbranch:
+**6. Checka ut din forks lokala masterbranch:**
 
 {% highlight git %}
 $ git checkout master
