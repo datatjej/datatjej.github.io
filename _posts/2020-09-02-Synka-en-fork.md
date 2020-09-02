@@ -69,7 +69,7 @@ $ git merge upstream/master
 Klaaaart! :D
 
 # Synka via GitHub
-Har aldrig följt den här metoden tidgiare, så jag testar att göra det medan jag skriver. Intstruktioner hittade jag [här](https://www.earthdatascience.org/courses/intro-to-earth-data-science/git-github/github-collaboration/update-github-repositories-with-changes-by-others/). I kort går det ut på att göra en slags omvänd pull request.
+Har aldrig följt den här metoden tidigare, så jag testar att göra det medan jag skriver. Intstruktioner hittade jag [här](https://www.earthdatascience.org/courses/intro-to-earth-data-science/git-github/github-collaboration/update-github-repositories-with-changes-by-others/). I kort går det ut på att göra en slags omvänd pull request.
 
 **1. Inspektera dina remote-fork-vy. Där kan du se hur många commits den ligger efter uppströmsrepon:**
 
