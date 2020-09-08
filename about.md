@@ -4,7 +4,7 @@ title: Om mig
 permalink: /about/
 ---
 
-Masterstudent vid språkteknologiprogrammet vid GU. Här dokumenterar jag nya saker jag lär mig.
+Masterstudent (2019-2021) vid språkteknologiprogrammet vid GU. Här dokumenterar jag nya saker jag lär mig.
 
 ### Kontakta mig
 
