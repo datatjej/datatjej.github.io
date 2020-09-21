@@ -3,7 +3,7 @@ layout: post
 title: 28. Talkamatic Dialogue Manager
 ---
 
-Idag läser jag [Domain-specific and General Syntax and Semantics in the Talkamatic DialogueManager](http://www.cssp.cnrs.fr/eiss11/eiss11_larsson-and-berman.pdf) av Larsson & Berman (2016) som beskriver designfilosofin bakom dialogsystemet TDM (Talkamatic Dialogue Manager). I kort går det ut på att **skilja domän-specifik kunskap från den allmänna dialoghanteringen**. 
+Idag läser jag [Domain-specific and General Syntax and Semantics in the Talkamatic Dialogue Manager](http://www.cssp.cnrs.fr/eiss11/eiss11_larsson-and-berman.pdf) av Larsson & Berman (2016) som beskriver designfilosofin bakom dialogsystemet TDM (Talkamatic Dialogue Manager). I kort går det ut på att **skilja domän-specifik kunskap från den allmänna dialoghanteringen**. 
 
 Men först några ord om dialogsystem. Det finns fyra generella typer:<br>
 1) ändliga automater<br>
