@@ -13,7 +13,8 @@ Men först några ord om dialogsystem. Det finns fyra generella typer:<br>
 
 De **ändliga automaterna** följer en strikt frågeföljd där användarens svar triggar nästa steg i flödesschemat. Systemet har allt dialoginitiativ och tenderar att ignorera eller missförstå svar som inte direkt besvarar en specific systemfråga. De **formulärbaserade dialogsystemen** består av fält (*slots*) och värden (*values*) som ofta motsvarar specifika systemfrågor och användarsvar, t.ex. fältet ANKOMSTSTAD och frågan *"Vart vill du resa?"*. Den här typen av system kan tillåta att användaren själv tar visst talinitiativ genom att låta hen ge mer information än vad som för tillfället efterfrågas:<br>
 - Vart vill du resa?<br>
-- Till Malmö den 22 september<br>
+- Till Malmö den 22 september
+
 Så gott som alla de stora systemen på marknaden är formulärbaserade, exempelvis Siri och Google Assistant. 
 
 De **planbaserade dialogsystemen** var populära på 80- och 90-talet och betraktar dialoger som centrerade kring *planering* - vad man ska säga och göra härnäst. Systemet antar att användarna är rationella varelser som har ett bestämt syfte med sina yttranden. Om någon på en tågstation frågar en tågvärd när nästa tåg till Stockholm avgår kan man anta att personen faktiskt tänkte resa med det tåget och eventuellt skulle vilja ha ytterligare upplysningar, exempelvis om vilken plattform det avgår ifrån (se (Allen & Perrault 1980)[https://nlp.stanford.edu/acvogel/allenperrault.pdf]). De planbaserade systemen kan i teorin hantera väldigt komplexa dialoger, men i praktiken är de dyra att utveckla och går lätt sönder (Larsson 2020-09-01, förläsningsslides).
@@ -36,7 +37,8 @@ I ontologin finns bland annat **predikat** som definierar propositioner och frå
 
 TDM:s **dialogplaner** ger information om hur dialogen med användaren bör fortlöpa. Högst upp deklareras en övordnad plan (action = "top") som definierar vad systemet ska göra i början av varje interaktion (Larsson & Berman 2016:100). Planerna definieras generellt av sitt tillhörande *goal* som beskriver vad planan ska ha uppnått när den är färdig. De finns två slags planer i TDM:<br>
 - **resolve**(q) där q:Question<br>
-- **perform**(a) där a:Action<br>
+- **perform**(a) där a:Action
+
 Planerna består av ett visst antal steg som krävs för att uppnå målet. Ibland kan det vara en handling utanför själva dialogen som måste genomföras, som att ringa den av användaren valda kontakten. Dessa steg har taggen *dev_perform*, eller *dev_query* om det istället handlar om en fråga skickad till service interfacet.
 
 **TDM-språkmodellen** (eller *grammatiken*) definieras av domän-specifik och generell grammatik. Den generella grammatiken beskriver utformingen av *dialogue moves* (*ask*, *answer*, *request*, *confirm*, *greet*) och olika typer av återkoppling, medan den domän-specifika bland annat beskriver vilket eller vilka nyckelord som ska användas som kommando för en viss uppgift.
