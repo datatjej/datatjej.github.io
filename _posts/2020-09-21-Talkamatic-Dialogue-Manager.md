@@ -12,8 +12,8 @@ Men först några ord om dialogsystem. Det finns fyra generella typer:<br>
 4) informationstillståndsbaserade<br>
 
 De **ändliga automaterna** följer en strikt frågeföljd där användarens svar triggar nästa steg i flödesschemat. Systemet har allt dialoginitiativ och tenderar att ignorera eller missförstå svar som inte direkt besvarar en specific systemfråga. De **formulärbaserade dialogsystemen** består av fält (*slots*) och värden (*values*) som ofta motsvarar specifika systemfrågor och användarsvar, t.ex. fältet ANKOMSTSTAD och frågan *"Vart vill du resa?"*. Den här typen av system kan tillåta att användaren själv tar visst talinitiativ genom att låta hen ge mer information än vad som för tillfället efterfrågas:<br>
-- Vart vill du resa?<br>
-- Till Malmö den 22 september
+*- Vart vill du resa?*<br>
+*- Till Malmö den 22 september*
 
 Så gott som alla de stora systemen på marknaden är formulärbaserade, exempelvis Siri och Google Assistant. 
 
