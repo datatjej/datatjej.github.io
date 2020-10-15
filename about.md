@@ -6,7 +6,7 @@ permalink: /about/
 
 Masterstudent (2019-2021) vid språkteknologiprogrammet på GU. Här dokumenterar jag nya saker jag lär mig.
 
-<img style="float: right;" src="profilbild_labb.jpeg">
+<img style="float: right;" src="images/profilbild_labb.jpeg" width="20%" height="20%">
 
 ### Kontakta mig
 
