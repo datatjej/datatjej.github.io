@@ -3,7 +3,7 @@ layout: post
 title: 30. Boktips - "Talk to me" (2019)
 ---
 
-På Göteborgs stadsbibliotek hittade jag en ganska nyutkommen bok på temat röststyrda dialogsystem: *"Talk to me - Amazon, Google, Apple and the race for voice-controlled AI"* av James Vlahos (2019).
+På Göteborgs stadsbibliotek hittade jag av en slump en ganska nyutkommen bok på temat röststyrda dialogsystem: *"Talk to me - Amazon, Google, Apple and the race for voice-controlled AI"* av James Vlahos (2019).
 
 <p align="center">
 <img src="/images/talk_to_me.jpg" alt="Talk to me av James Vlahos" width="30%" height="auto" border="10" /><br>
