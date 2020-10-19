@@ -6,7 +6,7 @@ title: 30. Boktips - "Talk to me" (2019)
 På Göteborgs stadsbibliotek hittade jag en ganska nyutkommen bok på temat röststyrda dialogsystem: *"Talk to me - Amazon, Google, Apple and the race for voice-controlled AI"* av James Vlahos (2019).
 
 <p align="right">
-<img src="/images/talk_to_me.jpg" alt="Talk to me av James Vlahos" width="100%" height="auto" border="10" /><br>
+<img src="/images/talk_to_me.jpg" alt="Talk to me av James Vlahos" width="30%" height="auto" border="10" /><br>
 </p>
 
 Den första delen av boken, med titel "Competition", beskriver bland annat historien bakom **Siri**, som när hon officiellt lanserades med iPhone 4S år 2011 på sätt och vis redan hade 20 år på nacken genom arbetet av Adam Cheyer med flera vid forskningsinstitutionen SRI International: *"Proto-Siri as of the early 1990s was housed as a chunky black box and looked like a shoddy knockoff of a Sony Walkman. [...] The prototype system, called Open Agent Architecture, could help users send emails, create calendars entries, and pull up maps"* (Vlahos 2019:21). 
