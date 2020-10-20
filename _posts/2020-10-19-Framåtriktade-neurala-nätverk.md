@@ -3,7 +3,7 @@ layout: post
 title: 31. Framåtriktade neurala nätverk
 ---
 
-Framåtriktade neurala nätverk, på engelska **feed-forward neural networks**, är den enklaste typen av neuralt nätverk. Det kallas framåtriktat eftersom beräkningen sker iterativt från ett neuronlager till ett annat utan att något skickas tillbaka ([Jurafsky & Martin 2019: kap 7: sida 1](https://web.stanford.edu/~jurafsky/slp3/7.pdf)). Som [tidigare nämnts](https://datatjej.github.io/Logistisk-regression/) är neurala nätverk i grund och botten uppbyggda av logistiska regressionsklassificerare. Men de finns två särskiljande egenskaper.
+Framåtriktade neurala nätverk, på engelska **feed-forward neural networks**, är den enklaste typen av neuralt nätverk. Det kallas framåtriktat eftersom beräkningen sker iterativt från ett neuronlager till ett annat utan att något skickas tillbaka ([Jurafsky & Martin 2019: kap 7: sida 1](https://web.stanford.edu/~jurafsky/slp3/7.pdf)). Som [tidigare nämnts](https://datatjej.github.io/Logistisk-regression/) är neurala nätverk i grund och botten uppbyggda av logistiska regressionsklassificerare. Men det finns två särskiljande egenskaper.
 
 Logistisk regression innebär att ta den **inre produkten** (eng. *dot product*) av en **indatavektor** och en **viktmatris** samt applicera en **normaliserad sigmoid-funktion** (t.ex. softmax) för att generera en sannolikhetsdistribution som summerar till 1. Ett neuralt nätverk lägger till **ett eller flera gömda lager** mellan inputvektorerna och softmax-utdatat. Detta gör det möjligt för nätverket att i princip lära sig vilken funktion som helst. 
 
