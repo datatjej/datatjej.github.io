@@ -25,4 +25,4 @@ Men tillbaka till de framåtriktade neurala nätverken som helhet. De består al
 
 Antalet utmatningsnoder (neuroner) beror på uppgiften. Vid binär klassificering har man ofta bara en utmatningsnod vars värde y är en sannolikhet av endera värden. Vid flerklassklassificering har man ofta flera utmatningsnoder -- en för varje klass -- vars samlade utdata tillsammans bildar en sannolikhetsdistribution över de olika klasserna. Precis som det gömda lagret har utmatningslagret en egen viktmatris *W* var inre produkt med indatavektorn *h* ger ett utdata *z* som måste normaliseras för att bilda en tillåten sannolikhetsdistribution som kan summeras till 1. Detta kan vi göra med **softmax-funktionen**: *softmax(z)*. 
 
-När man pratar om lagren i neurala nätverk brukar man inte räkna med indatalagret. Ett neuralt nätverk med ett enda gömt lager bildar alltså ett två-lagrigt nätverk tillsammans med utdatalagret.
+När man pratar om lagren i neurala nätverk brukar man inte räkna med indata-lagret. Ett neuralt nätverk med ett enda gömt lager bildar alltså tillsammans med utdata-lagret ett **två-lagrigt nätverk**.
