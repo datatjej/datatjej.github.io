@@ -7,7 +7,7 @@ När jag arbetade med en röststörd virtuell assistent under praktikjobbet i so
 
 På den första punkten visade det sig att människor generellt tycker att kvinnliga röster är lättare att gilla ([The impact of gender stereotyping on the perceived likability of virtual assistants](https://aisel.aisnet.org/amcis2020/cognitive_in_is/cognitive_in_is/4/]), Ernst & Herm-Stapelberg 2020), men att manliga röster framstår som mer kompetenta ([Gender stereotyping’s influence on the perceived competence of Siri and co.](https://scholarspace.hmanoa.hawaii.edu/handle/10125/64286), Ernst & Herm-Stapelberg 2020) - vilket kanske förklarar valet av manlig röst för IBM:s allvetande Watson. 
 
-Intressant nog hade Apples första försök till röststyrd assistent, Casper, en ganska androgyn röst. Kolla in den härliga videon från 1992!
+Intressant nog hade Apples första försök till röststyrd assistent, Casper, en ganska androgyn röst. Kolla in den här härliga videon från 1992!
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=8De_KxYt1pQ" target="_blank"><img src="/images/casper.PNG" 
