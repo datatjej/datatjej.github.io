@@ -11,7 +11,7 @@ Detta innebär att RNN:et inte ställer några krav på hur stor föregående ko
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=SEnXr6v2ifU" target="_blank"><img src="/images/rnn_intuition.PNG" 
-alt="Recurrent Neural Networks | MIT 6.S191" width="480" height="360" border="10" /></a></p>
+alt="Recurrent Neural Networks | MIT 6.S191" width="100%" height="auto" border="10" /></a></p>
 
 Istället för att skicka tillbaka felgradienten vid ett enda tidssteg som i framåtriktade neurala nätverk görs detta vid **varje tidssteg och sedan över samtliga tiddsteg** ända tillbaka till början av datasekvensen. Eftersom vi kan ha att göra med många tidssteg, och varje tidssteg måste genomföra en matrismultiplikation med viktmatrisen *W* samt köra resultatet genom en icke-linjär aktiveringsfunktion, kan vi stöta på två problem. Det ena, **exploderande gradient-problemet**, beror på att viktmatrisen eller gradieten av aktiveringsfunktioen har många värden över 1, vilket resulterar i stora felgradienter. Detta kan lösas genom något som kallas **gradientklippning** (eng. *gradient clipping*) och innebär att skala ner stora gradienter. 
 
