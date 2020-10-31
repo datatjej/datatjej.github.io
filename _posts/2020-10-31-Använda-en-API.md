@@ -11,7 +11,7 @@ För att använda en API ordentligt krävs ofta lite kunskap om hur informatione
 API-datan returneras oftast i **JSON-format** (eng. *JavaScript Object Notation*), även om andra format som XML och YAML också är möjliga. Den är organiserad i **nyckel-värde-par** (eng. *key-value pairs*) i en ordboksliknande datastruktur som i bildan nedan. Där syns hur nyckelvärdet *weather* tar en ny ordbok av nyckel-värde-par som värde, innehållandets bland annat *"description":"scattered clouds"*. I bilden ses även nyckel-värde-paret *"temp[eratur]":"12.19 [grader celsius]* och *"name":"Gothenburg"*.  
 
 <p align="center">
-<img src="/images/openweather_json.PNG" alt="JSON-data från OpenWeather" width="100%" height="auto" border="10" /><br>
+<img src="/images/openweather_json.PNG" alt="JSON-data från OpenWeather" width="60%" height="auto" border="10" /><br>
 Väderdata för Göteborg i JSON-format från OpenWeather</p> 
 
 Om man vill manipulera den här datan i ett eget program kan det vara till hjälp att använda sig av färdiga **bibliotek** (sammanställda av wwebbsidan eller företaget vars API man vill använda sig av) som redan innehåller en del funktioner som man kan tänkas behöva. Todoist erbjuder till exempel ett [python-bibliotek](https://github.com/Doist/todoist-python) som går att `pip`-installera i terminalen (`pip3 install todoist-python`) och sedan importera (`from todoist.api import TodoistAPI`) till egna Python-filer. En väldokumenterad API och python-bibliotek underlättar rejält.
