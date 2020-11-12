@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 27. Larsson et al. (2000) och Larsson et al. (2019)
+title: 27. Larsson et al (2000) och Larsson et al (2019)
 ---
 
 Idag tänkte jag försöka sammanfatta två dialogsystemsartiklar som skrivits med nästan 20 års mellanrum. Den ena är [*Using the process of distilling dialogues to understand dialogue systems*](https://www.ida.liu.se/~arnjo82/papers/icslp-sllsaj-00.pdf) av Larsson, Santamarta och Jönsson (2000) och den andra *Towards negotiative dialogue for the Talkamatic Dialogue Manager* av Larsson, Berman och Hjelm (2019). Den senare presenterades under [Swedish Dialogue Workshop](https://sites.google.com/view/swedish-dialogue-workshop-2019/home) i Göteborg förra året. 
 
-Den gemensamma nämnaren för artiklarna är Staffan Larsson, professor i språkteknologi här vid Göteborgs universitet och grundare till [Talkamatic](http://talkamatic.se/), vars dialoghanterare TDM vi kommer att använda i kursen Dialogsystem II (LT2319).
+Den gemensamma nämnaren för båda artiklarna är Staffan Larsson, professor i språkteknologi här vid Göteborgs universitet och grundare till [Talkamatic](http://talkamatic.se/), vars dialoghanterare TDM vi kommer att använda i kursen Dialogsystem II.
 
 Den första artikeln behandlar **destillering av dialoger**, d.v.s. att skriva om annoterade, mänskliga dialoger från talkorpora för att simulera människa-dator-interaktioner och använda dem i dialogsystem. Detta presenteras som ett komplement till dialoger insamlade från **autentiska interaktioner mellan människor** i liknande sammanhang, samt till **Wizard of Oz-metoden** för dialoginsamling, där två personer pratar och den ena personen helt eller delvis simulerar ett datorsystem (vilket kan påverka den som spelar användarparten att formulera sig på ett visst sätt). Författarna menar att dialogdestillering också kan användas för att bättre förstå sig på människa-dator-interaktioner. 
 
