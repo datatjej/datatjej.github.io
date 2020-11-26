@@ -16,7 +16,7 @@ En kodare-avkodare-modell följer i grund och botten samma princip, fast med tv�
 För att ytterligare säkerställa att det som genereras inte bara är det mest troliga utifrån kontexten, utan också passar ihop totalt sett, kan man applicera något som kallas **beam search**. Den här knappt två minuter långa videon beskriver kortfattat hur den här tekniken fungerar (applicerad på en karaktärsbaserad istället för ordbaserad modell, men jag tolkar det som att principen är densamma för ordbaserade modeller):
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=UXW6Cs82UKo"_blank"><img src="/images/beam_search.PNG" 
+<a href="https://www.youtube.com/watch?v=UXW6Cs82UKo"><img src="/images/beam_search.PNG" 
 alt="Beam search" width="100%" height="auto" border="10" /></a></p>
 
 Avslutningsvis, låt oss prata **uppmärksamhet** (eng. *attention*). En nackdel med kontextvektorn som genereras från det sista gömda lagret i kodaren är att den tenderar att vara mer fokuserad på slutdelen av indatasträngen snarare än strängen som helhet och dess individuella delar. Ett banbrytande sätt att lösa detta på är att ersätta den statiska kontextvektorn med en kontextvektor som **uppdateras dynamiskt** utifrån *varje gömt lager* i kodaren varje gång som det sker en beräkning i avkodaren. 
