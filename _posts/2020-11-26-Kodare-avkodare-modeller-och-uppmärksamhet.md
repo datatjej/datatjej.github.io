@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 37. Kodare-avkodare-modeller med uppmärksamhet
+title: 37. Kodare-avkodare-modeller och uppmärksamhet
 ---
 
 Kodare-avkodare-modeller (som jag väljer att kalla dem) kallas **encoder-decoder models** eller **sequence-to-sequence models** (aka *seq2seq*) på engelska och är nätverk som är bra på att generera **kontextanpassade** utdatasekvenser av **godtycklig längd** ([Jurafsky & Martin 2020: kap 10](https://web.stanford.edu/~jurafsky/slp3/10.pdf)). De tidigaste artiklarna från 2014 använder den här typen av neuralt nätverk för att förbättra maskinöversättning mellan franska och engelska, men enligt Jurafsky & Martin har kodare-avkodare-modellerna också visat sig användbara för automatisk textsammanfattning, fråga/svar- och dialogmodellering (ibid). 
