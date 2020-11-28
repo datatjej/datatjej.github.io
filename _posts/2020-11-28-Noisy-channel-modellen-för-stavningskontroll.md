@@ -8,11 +8,9 @@ mathjax: true
 
 Genom att försöka bygga en modell av den brusiga kanalen, och skicka alla ord i språket genom den här modellen, kan vi då hitta det originalord vars förvrängda form motsvarar det felstavade ordet. Modellen kan förstås som en form av **bayesiansk inferens**, där det felstavade ordet är en observation *x* och stavningskontrollen ska hitta originalordet *w* som är mest troligt givet observationen: 
 
-$$ ŵ = argmax(P(w|x)) $$
+ŵ = argmax(P(w|x))
 
 ...där *ŵ* avser det uppskattade rätta ordet av alla möjliga ord i vokabuläret *V*.
-
-$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
 
 Sätter man in den ekvationen i [Bayes teorem](https://datatjej.github.io/Bayes-teorem/):
 
