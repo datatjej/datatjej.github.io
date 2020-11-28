@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 38. Noisy channel-modellen för stavningskontroll
+mathjax: true
 ---
 
 **Noisy channel-modellen** (NCM) är ett formaliserat ramverk med många applikationsområden (bland annat maskinöversättning), men här kommmer fokus att ligga på identifiering och korrigering av stavningsfel. NCM betraktar det felstavade ordet som en **förvrängd** (eng. *distorted*) form av originalordet som skickats genom en "noisy" (brusig) kanal.  Den förvrängda formen kan innebära att enstaka bokstäver bytits ut, försvunnit eller tillkommit. 
