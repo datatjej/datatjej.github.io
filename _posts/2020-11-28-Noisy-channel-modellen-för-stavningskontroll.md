@@ -5,19 +5,25 @@ title: 38. Noisy channel-modellen för stavningskontroll
 
 **Noisy channel-modellen** (NCM) är ett formaliserat ramverk med många applikationsområden (bland annat maskinöversättning), men här kommmer fokus att ligga på identifiering och korrigering av stavningsfel. NCM betraktar det felstavade ordet som en **förvrängd** (eng. *distorted*) form av originalordet som skickats genom en "noisy" (brusig) kanal.  Den förvrängda formen kan innebära att enstaka bokstäver bytits ut, försvunnit eller tillkommit. 
 
-Genom att försöka bygga en modell av den brusiga kanalen, och skicka alla ord i språket genom den här modellen, kan vi då hitta det originalord vars förvrängda form motsvarar det felstavade ordet. Modellen kan förstås som en form av **bayesiansk inferens**, där det felstavade ordet är en observation *x* och stavningskontrollen ska hitta originalordet *w* som är mest troligt givet observationen: $$ ŵ = argmax(P(w|x)) $$ (där *ŵ* avser det uppskattade rätta ordet av alla möjliga ord i vokabuläret *V*).
+Genom att försöka bygga en modell av den brusiga kanalen, och skicka alla ord i språket genom den här modellen, kan vi då hitta det originalord vars förvrängda form motsvarar det felstavade ordet. Modellen kan förstås som en form av **bayesiansk inferens**, där det felstavade ordet är en observation *x* och stavningskontrollen ska hitta originalordet *w* som är mest troligt givet observationen: 
+
+$$ ŵ = argmax(P(w|x)) $$
+
+...där *ŵ* avser det uppskattade rätta ordet av alla möjliga ord i vokabuläret *V*.
+
+$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
 
 Sätter man in den ekvationen i [Bayes teorem](https://datatjej.github.io/Bayes-teorem/):
 
-$$ P(a|b) = (P(b|a)*P(a))/P(b) $$ 
+P(a|b) = (P(b|a)*P(a))/P(b) 
 
 ..får man:
 
-$$ ŵ = argmax(P(x|w)*P(w))/P(x) $$ 
+ŵ = argmax(P(x|w)*P(w))/P(x) 
 
 ...vilket kan förenklas till:
 
-$$ ŵ = argmax(P(x|w)*P(w)) $$ 
+ŵ = argmax(P(x|w)*P(w)) 
 
 ...eftersom det hela tiden är samma observation *x* vi använder. Och istället för att undersöka varje ord i hela vokabuläret kan vi rikta in oss på några **troliga kandidater** och välja ut den mest troliga givet argmax. Listan över kandidater kan tas fram genom att applicera [minimum edit distance-algoritmen](https://datatjej.github.io/Minimum-Edit-Distance/). Den algoritmen kan hantera instättning, borttagning och ersättning av bokstäver. Men för att också hantera bokstäver som bytt plats med varandra finns en annan liknande algoritm: [Damerau-Levenshtein distance-algoritmen](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance).
 
