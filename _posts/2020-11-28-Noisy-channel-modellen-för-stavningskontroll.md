@@ -14,7 +14,7 @@ Genom att försöka bygga en modell av den brusiga kanalen, och skicka alla ord 
 
 Sätter man in den ekvationen i [Bayes teorem](https://datatjej.github.io/Bayes-teorem/):
 
-P(a|b) = (P(b\|a)*P(a))/P(b) 
+P(a\|b) = (P(b\|a)*P(a))/P(b) 
 
 ..får man:
 
@@ -28,7 +28,7 @@ P(a|b) = (P(b\|a)*P(a))/P(b)
 
 När man väl har listan över tänkabara kandidater kan sannolikheten P(w) beräknas genom exempelvis det enskilda ordet frekvens i vokabuläret (unigram) eller deras frekvens givet föregående ord (bigram), osv. Sannolikheten P(x\|w) (aka *kanalmodellen* eller *felmodellen*) kan beräknas genom att ta en rad olika aspekter i beaktning, t.ex. keyboard-layouten eller de typiska felen hos personen som skriver. Man kan också referera till en korpus med felstavade ord och i så fall beräkna sannolikheten för P(endå|ändå) genom att undersöka hur många gåner bokstaven *ä* ersatts med *e*. I så fall kan man ställa upp en **förvirringsmatris** (eng. *confusion matrix*) med samma storlek som alfabetet och räkna hur många gånger en viss bokstav ersatts med en annan.
 
-Brill & Moore (2000) föreslår en mer sofistikerad version av noisy channel-modellen för stavningskontroll som inte bara tar enskilda bostäver i beaktning, utan också kombinationer och stavelser. Man poängterar att även om enskilda bokstavsfel står för en hög andel av alla stavfel, så är det ibland rimligare och mer effektivt att jämföra delar (eng. *partitions*) av en sträng, t.ex. P(ant|ent) istället för P(a|e) i felstavningen *confidant*. De tar även understrängens **position** i ordet i beaktning: *"[p]eople rarely mistype* antler *as* entler*, but often mistype* reluctant *as* reluctent*"* (Brill & Moore 2000:3).  
+Brill & Moore (2000) föreslår en mer sofistikerad version av noisy channel-modellen för stavningskontroll som inte bara tar enskilda bostäver i beaktning, utan också kombinationer och stavelser. Man poängterar att även om enskilda bokstavsfel står för en hög andel av alla stavfel, så är det ibland rimligare och mer effektivt att jämföra delar (eng. *partitions*) av en sträng, t.ex. P(ant\|ent) istället för P(a\|e) i felstavningen *confidant*. De tar även understrängens **position** i ordet i beaktning: *"[p]eople rarely mistype* antler *as* entler*, but often mistype* reluctant *as* reluctent*"* (Brill & Moore 2000:3).  
 
 Referenser:<br>
 - Eric Brill and Robert C. Moore. 2000.  An Improved Error Model for Noisy Channel Spelling Correction. In Proceedings of the 38th Annual Meeting of the Association for Computational Linguistics, pages 286–293, Hong Kong. Association for Computational Linguistics. https://www.aclweb.org/anthology/P00-1037/<br>
