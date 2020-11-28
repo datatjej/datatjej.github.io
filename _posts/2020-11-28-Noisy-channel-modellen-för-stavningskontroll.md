@@ -18,7 +18,7 @@ P(a\|b) = (P(b\|a)*P(a))/P(b)
 
 ..får man:
 
-ŵ = argmax(P(x\|w)*P(w))\/P(x) 
+ŵ = argmax(P(x\|w)*P(w))/P(x) 
 
 ...vilket kan förenklas till:
 
