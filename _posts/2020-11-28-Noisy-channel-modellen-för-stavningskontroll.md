@@ -14,21 +14,15 @@ $$ ŵ = argmax(P(w|x)) $$
 
 Sätter man in den ekvationen i [Bayes teorem](https://datatjej.github.io/Bayes-teorem/):
 
-P(a\|b) = (P(b\|a)*P(a))/P(b) 
-
 $$ P(a|b) = \frac{P(b|a)*P(a)}{P(b)}$$
 
 ..får man:
-
-ŵ = argmax(P(x\|w)*P(w))/P(x) 
 
 $$ ŵ = argmax \frac{P(x|w)*P(w)}{P(x)}$$
 
 ...vilket kan förenklas till:
 
-ŵ = argmax(P(x\|w)*P(w)) 
-
-$$ ŵ = argmax(P(x|w)*P(w) $$
+$$ ŵ = argmax P(x|w)*P(w) $$
 
 ...eftersom det hela tiden är samma observation *x* vi använder. Och istället för att undersöka varje ord i hela vokabuläret kan vi rikta in oss på några **troliga kandidater** och välja ut den mest troliga givet argmax. Listan över kandidater kan tas fram genom att applicera [minimum edit distance-algoritmen](https://datatjej.github.io/Minimum-Edit-Distance/). Den algoritmen kan hantera instättning, borttagning och ersättning av bokstäver. Men för att också hantera bokstäver som bytt plats med varandra finns en annan liknande algoritm: [Damerau-Levenshtein distance-algoritmen](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance).
 
