@@ -4,7 +4,7 @@ title: 38. Noisy channel-modellen för stavningskontroll
 mathjax: true
 ---
 
-**Noisy channel-modellen** (NCM) är ett formaliserat ramverk med många applikationsområden (bland annat maskinöversättning), men här kommmer fokus att ligga på identifiering och korrigering av stavningsfel. NCM betraktar det felstavade ordet som en **förvrängd** (eng. *distorted*) form av originalordet som skickats genom en "noisy" (brusig) kanal.  Den förvrängda formen kan innebära att enstaka bokstäver bytits ut, försvunnit eller tillkommit. 
+**Noisy channel-modellen** (NCM) är ett formaliserat ramverk med många applikationsområden (bland annat maskinöversättning och taligenkänning), men här kommmer fokus att ligga på stavningskontroll. NCM betraktar det felstavade ordet som en **förvrängd** (eng. *distorted*) form av originalordet som skickats genom en "noisy" (brusig) kanal.  Den förvrängda formen kan innebära att enstaka bokstäver bytits ut, försvunnit eller tillkommit.
 
 Genom att försöka bygga en modell av den brusiga kanalen, och skicka alla ord i språket genom den här modellen, kan vi då hitta det originalord vars förvrängda form motsvarar det felstavade ordet. Modellen kan förstås som en form av **bayesiansk inferens**, där det felstavade ordet är en observation *x* och stavningskontrollen ska hitta originalordet *w* som är mest troligt givet observationen: 
 
@@ -32,4 +32,4 @@ Brill & Moore (2000) föreslår en mer sofistikerad version av noisy channel-mod
 
 Referenser:<br>
 - Eric Brill and Robert C. Moore. 2000.  *An Improved Error Model for Noisy Channel Spelling Correction*. In Proceedings of the 38th Annual Meeting of the Association for Computational Linguistics, pages 286–293, Hong Kong. Association for Computational Linguistics. https://www.aclweb.org/anthology/P00-1037/<br>
-- Dan Jurafsky and James H. Martin. 2020. *Speech and Language Processing*. 3rd ed. draft. Kapitel B: https://web.stanford.edu/~jurafsky/slp3/B.pdf  
+- Dan Jurafsky and James H. Martin. 2020. *Speech and Language Processing*. 3rd ed. draft. Kapitel B: https://web.stanford.edu/~jurafsky/slp3/B.pdf
