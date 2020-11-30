@@ -19,7 +19,7 @@ Bollmanns utvärderar dessa fem metoder på åtta olika språks (tyska, engelska
 
 Han avslutar artikeln med några handfasta råd: 1) använd verktyget Norma när datamängen är liten (<500 tokens), 2) använd annars det statistiska maskinöversättningsverktyget [cSMTiser](https://github.com/clarinsi/csmtiser), och 3) använd naiva memoriserings-/lookup-tekniker för ord som finns i vokabuläret när det är möjligt.        
 
-*Referenser*
+**Referenser**
 - Yvonne Adesam, Malin Ahlberg och Gerlof Bouma. 2012. *bokstaffua, bokstaffwa, bokstafwa, bokstaua, bokstawa ... Towards lexical link-up for a corpus of Old Swedish*. I Proceedings of KONVENS 2012 (LThist 2012 workshop), sidorna 365-369. http://www.oegai.at/konvens2012/proceedings/54_adesam12w/54_adesam12w.pdf
 - Marcel Bollmann. 2019. *A Large-Scale Comparison of Historical Text Normalization Systems*. I Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volym 1 (Long and Short Papers), sidorna 3885–3898. Association for Computational Linguistics. http://www.aclweb.org/anthology/N19-1389
 - Eva Pettersson, Beáta Megyesi och Jörg Tiedemann. 2013a. *An SMT Approach to Automatic Annotation of Historical Text*. I Proceedings of the Workshop on Computational Historical Linguistics at NODALIDA 2013. NEALT Proceedings Series 18; Linköping Electronic Conference Proceedings 87:54-69. http://emmtee.net/oe/nodalida13/conference/8.pdf
