@@ -36,4 +36,4 @@ Man gjorde detsamma för 21 andra metaforer med stark visuell koppling (t.ex. "b
 
 **Referenser**
 
-- Y. Bizzoni and S. Dobnik. 2020. [*Sky + fire = sunset. exploring parallels between visually grounded metaphors and image classifiers*](https://gup.ub.gu.se/file/208187). I: Proceedings of the Second Workshop on Figurative Language Processing (FLP) at ACL-2020, pages 126–135, Online, July 2020. Association for Computational Linguistics.
+- Y. Bizzoni and S. Dobnik. 2020. [*Sky + fire = sunset. Exploring parallels between visually grounded metaphors and image classifiers*](https://gup.ub.gu.se/file/208187). I: Proceedings of the Second Workshop on Figurative Language Processing (FLP) at ACL-2020, pages 126–135, Online, July 2020. Association for Computational Linguistics.
