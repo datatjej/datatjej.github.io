@@ -3,7 +3,7 @@ layout: post
 title: 40. Visuellt grundade metaforer, AKA "himmel + eld = solnedgång"
 ---
 
-Spanar på idéer till projekt för AI-kursen och läser därför en artikel av Bizzoni och Dobnik (2020) som handlar om likheterna mellan visuellt grundade metaforer (gjorda av människor) och de missbedömningar som bildklassificerare ibland gör när de konfronteras med nya objekt (t.ex. att ...) De undersöker till vilken grad man kan utnyttja den här mekanismen för att efterlikna mänskligt metaforskapande.
+Spanar på idéer till projekt för AI-kursen och läser därför en artikel av Bizzoni och Dobnik (2020) som handlar om likheterna mellan visuellt grundade metaforer (gjorda av människor) och de missbedömningar som bildklassificerare ibland gör när de konfronteras med nya objekt. De undersöker till vilken grad man kan utnyttja den här mekanismen för att efterlikna mänskligt metaforskapande.
 
 Man definierar **visuellt grundade metaforer** (eng. *visually grounded metaphors*) som metaforer som baserar sig på synliga likheter mellan två objekt, ofta gjorda i syfte att ge en mer levande beskrivning av intrycket som någon eller något gör på en. Man ger som exempel att beskriva en stor person som en "elefant" eller att jämföra någons blåa ögon med en "klar sommarhimmel". Två relevanta termer i det här sammanhanget är **mål** (eng. *target*) -- som referar till målobjektet "blå ögon" -- och **källa** (eng. *source*) som refererar till källan för metaforen: "klar sommarhimmel".       
 
@@ -22,10 +22,10 @@ Man undersökte detta på samtliga modeller och fann att majoriteten av dem gav 
 I den andra delen av studien ville man undersöka om det går att beräkningsmässigt återskapa **kompositionaliteten** i metaforer som "solnedgång är himlen som brinner" eller "snö är en vit matta". Detta gjorde man genom att ta några bilder på en solnedgång, summera deras vektorer och skapa en gemensam solnedgångsvektor. Man gjorde detsamma för eld och himmel och och jämförde sedan cosinuslikheten mellan dessa tre vektorer.
 
 <p align="center">
-<img src="/images/solnedgång1.png" alt="Manetgalax" width="auto" height="auto" border="10" />
+<img src="/images/solnedgång1.PNG" alt="Manetgalax" width="auto" height="auto" border="10" />
 </p>
 <p align="center">
-<img src="/images/solnedgång2.png" alt="Manetgalax" width="auto" height="auto" border="10" /><br>
+<img src="/images/solnedgång2.PNG" alt="Manetgalax" width="auto" height="auto" border="10" /><br>
 </p>
 Figurer från Bozzoni och Dobnik (2020) som visar kosinuslikhet mellan individuella vektorkomponenter (himmel och eld) samt mellan den summerade himmel- och eldvektorn och solnedgångsvektorn.
 
