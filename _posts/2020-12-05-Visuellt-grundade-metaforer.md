@@ -12,7 +12,7 @@ Bozzoni och Dobnik använder sig av förtränade objektklassificerare tillgängl
 
 <p align="center">
 <img src="/images/manetgalax.jpg" alt="Manetgalax" width="40%" height="auto" border="10" /><br>
-<font size="2">Manetgalax.
+<font size="2">Manetgalax.<br>
 (NASA Goddard Space Flight Center from Greenbelt, MD, USA, Public domain, via Wikimedia Commons)</font>  
 </p>
 
