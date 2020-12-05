@@ -22,10 +22,10 @@ Man undersökte detta på samtliga modeller och fann att majoriteten av dem gav 
 I den andra delen av studien ville man undersöka om det går att beräkningsmässigt återskapa **kompositionaliteten** i metaforer som "solnedgång är himlen som brinner" eller "snö är en vit matta". Detta gjorde man genom att ta några bilder på en solnedgång, summera deras vektorer och skapa en gemensam solnedgångsvektor. Man gjorde detsamma för eld och himmel och och jämförde sedan cosinuslikheten mellan dessa tre vektorer.
 
 <p align="center">
-<img src="/images/solnedgång1.PNG" alt="Manetgalax" width="auto" height="auto" border="10" />
+<img src="/images/solnedgång1.PNG" alt="Manetgalax" width="50%" height="auto" border="5" />
 </p>
 <p align="center">
-<img src="/images/solnedgång2.PNG" alt="Manetgalax" width="auto" height="auto" border="10" /><br>
+<img src="/images/solnedgång2.PNG" alt="Manetgalax" width="50%" height="auto" border="5" /><br>
 </p>
 Figurer från Bozzoni och Dobnik (2020) som visar kosinuslikhet mellan individuella vektorkomponenter (himmel och eld) samt mellan den summerade himmel- och eldvektorn och solnedgångsvektorn.
 
