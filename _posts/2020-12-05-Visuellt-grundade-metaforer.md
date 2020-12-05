@@ -24,15 +24,15 @@ I den andra delen av studien ville man undersöka om det går att beräkningsmä
 <p align="center">
 <img src="/images/solnedgång1.PNG" alt="Manetgalax" width="60%" height="auto" border="5" /><br>
 </p>
-Figur från Bozzoni och Dobnik (2020) som visar kosinuslikhet mellan himmelvektorn och solnedgångsvektorn (0,64) samt mellan himmelvektorn och eldvektorn (-0,5).
+Figur från Bozzoni och Dobnik (2020) som visar cosinuslikhet mellan himmelvektorn och solnedgångsvektorn (0,64) samt mellan himmelvektorn och eldvektorn (-0,5).
 <p align="center">
 <img src="/images/solnedgång2.PNG" alt="Manetgalax" width="60%" height="auto" border="5" /><br>
 </p>
-Figur från Bozzoni och Dobnik (2020) som visar kosinuslikheten mellan den syntetiska solnedgångsvektorn (summan av vektorerna för himmel och eld) och den ursprungliga solnedgångsvektorn (genererad från bilder på solnedgångar). 
+Figur från Bozzoni och Dobnik (2020) som visar cosinuslikheten mellan den syntetiska solnedgångsvektorn (summan av vektorerna för himmel och eld) och den ursprungliga solnedgångsvektorn (genererad från bilder på solnedgångar). 
 
-Kosinuslikheten mellan himmelvektorn och solnedgångsvektorn var 0,64. Mellan himmelvektorn och eldvektorn var den däremot negativ: -0,5. Men det visade sig att om man summerade himmelvektorn med eldvektorn för att skapa en syntetisk solnedgångsvektor och jämförde den mot den ursprungliga solnedgångsvektorn så ökade kosinuslikheten från 0,64 till 0,82. 
+Cosinuslikheten mellan himmelvektorn och solnedgångsvektorn var 0,64. Mellan himmelvektorn och eldvektorn var den däremot negativ: -0,5. Men det visade sig att om man summerade himmelvektorn med eldvektorn för att skapa en syntetisk solnedgångsvektor och jämförde den mot den ursprungliga solnedgångsvektorn så ökade cosinuslikheten från 0,64 till 0,82. 
 
-Man gjorde detsamma för 21 andra metaforer med stark visuell koppling (t.ex. "blont hår är floder av guld") och upptäckte samma mönster. Komponenter som sinsemellan inte uppvisar särskilt hög likhet -- "blont hår" och "floder" -- får ökad kosinuslikhet när man summerar den ena komponenten med en modifierare ("floder" + "guld") och jämför på nytt. Tillförlitligheten i detta samband stärktes av att s.k. falska metaforer inte uppvisade samma mönster utan istället fick sämre kosinuslikhet av den här proceduren.
+Man gjorde detsamma för 21 andra metaforer med stark visuell koppling (t.ex. "blont hår är floder av guld") och upptäckte samma mönster. Komponenter som sinsemellan inte uppvisar särskilt hög likhet -- "blont hår" och "floder" -- får ökad cosinuslikhet när man summerar källobjektet med en modifierare ("floder" + "guld") och jämför på nytt. Tillförlitligheten i detta samband stärktes av att s.k. falska metaforer inte uppvisade samma mönster utan istället fick sämre cosinuslikhet av den här proceduren.
 
 **Referenser**
 
