@@ -3,7 +3,7 @@ layout: post
 title: 40. Visuellt grundade metaforer, AKA "himmel + eld = solnedgång"
 ---
 
-Spanar på idéer till projekt för AI-kursen och läser därför en artikel av Bizzoni och Dobnik (2020) som handlar om likheterna mellan visuellt grundade metaforer (gjorda av människor) och de missbedömningar som bildklassificerare ibland gör när de konfronteras med nya objekt. De undersöker till vilken grad man kan utnyttja den här mekanismen för att efterlikna mänskligt metaforskapande.
+Spanar på idéer till projekt för AI-kursen och läser därför en artikel av **Bizzoni och Dobnik (2020)** som handlar om likheterna mellan visuellt grundade metaforer (gjorda av människor) och de missbedömningar som bildklassificerare ibland gör när de konfronteras med nya objekt. De undersöker till vilken grad man kan utnyttja den här mekanismen för att efterlikna mänskligt metaforskapande.
 
 Man definierar **visuellt grundade metaforer** (eng. *visually grounded metaphors*) som metaforer som baserar sig på synliga likheter mellan två objekt, ofta gjorda i syfte att ge en mer levande beskrivning av intrycket som någon eller något gör på en. Man ger som exempel att beskriva en stor person som en "elefant" eller att jämföra någons blåa ögon med en "klar sommarhimmel". Två relevanta termer i det här sammanhanget är **mål** (eng. *target*) -- som referar till målobjektet "blå ögon" -- och **källa** (eng. *source*) som refererar till källan för metaforen: "klar sommarhimmel".       
 
