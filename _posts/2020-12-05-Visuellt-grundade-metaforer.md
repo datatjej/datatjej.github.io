@@ -12,7 +12,7 @@ Bozzoni och Dobnik använder sig av förtränade objektklassificerare tillgängl
 
 <p align="center">
 <img src="/images/manetgalax.jpg" alt="Manetgalax" width="40%" height="auto" border="10" /><br>
-NASA Goddard Space Flight Center from Greenbelt, MD, USA, Public domain, via Wikimedia Commons  
+<font size="2">NASA Goddard Space Flight Center from Greenbelt, MD, USA, Public domain, via Wikimedia Commons</font>  
 </p>
 
 De samlar också in data från internetsökningar bestående av 100 bilder med tillhörande människoskrivna metaforer, t.ex. en bild på en galax som beskrivs som en *manet*, eller en bild på blixtrar som beskrivs som *spindelnät*. Varken galaxer eller blixtrar finns med bland de förtränade 1000 objekten, men det gör däremot beskrivningarna (manet, spindelnät). Det intressanta blir då att se vilken sannolikhet modellerna tillskriver de människogenererade beskrivningarna. 
