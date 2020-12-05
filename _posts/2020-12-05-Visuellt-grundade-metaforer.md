@@ -22,13 +22,13 @@ Man undersökte detta på samtliga modeller och fann att majoriteten av dem gav 
 I den andra delen av studien ville man undersöka om det går att beräkningsmässigt återskapa **kompositionaliteten** i metaforer som "solnedgång är himlen som brinner" eller "snö är en vit matta". Detta gjorde man genom att ta några bilder på en solnedgång, summera deras vektorer och skapa en gemensam solnedgångsvektor. Man gjorde detsamma för eld och himmel och och jämförde sedan cosinuslikheten mellan dessa tre vektorer.
 
 <p align="center">
-<img src="/images/solnedgång1.PNG" alt="Manetgalax" width="60%" height="auto" border="5" /><br>
+<img src="/images/solnedgång1.PNG" alt="solnedgång1" width="60%" height="auto" border="5" /><br>
 </p>
-<font size="2">Figur från Bozzoni och Dobnik (2020) som visar cosinuslikhet mellan himmelvektorn och solnedgångsvektorn (0,64) samt mellan himmelvektorn och eldvektorn (-0,5).</font>
+<font size="2">Figur från Bizzoni och Dobnik (2020) som visar cosinuslikhet mellan himmelvektorn och solnedgångsvektorn (0,64) samt mellan himmelvektorn och eldvektorn (-0,5).</font>
 <p align="center">
-<img src="/images/solnedgång2.PNG" alt="Manetgalax" width="60%" height="auto" border="5" /><br>
+<img src="/images/solnedgång2.PNG" alt="solnedgång2" width="60%" height="auto" border="5" /><br>
 </p>
-<font size="2">Figur från Bozzoni och Dobnik (2020) som visar cosinuslikheten mellan den syntetiska solnedgångsvektorn (summan av vektorerna för himmel och eld) och den ursprungliga solnedgångsvektorn (genererad från bilder på solnedgångar).</font> 
+<font size="2">Figur från Bizzoni och Dobnik (2020) som visar cosinuslikheten mellan den syntetiska solnedgångsvektorn (summan av vektorerna för himmel och eld) och den ursprungliga solnedgångsvektorn (genererad från bilder på solnedgångar).</font> 
 
 Cosinuslikheten mellan himmelvektorn och solnedgångsvektorn var 0,64. Mellan himmelvektorn och eldvektorn var den däremot negativ: -0,5. Men det visade sig att om man summerade himmelvektorn med eldvektorn för att skapa en syntetisk solnedgångsvektor och jämförde den mot den ursprungliga solnedgångsvektorn så ökade cosinuslikheten från 0,64 till 0,82. 
 
