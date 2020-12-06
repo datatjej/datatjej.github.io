@@ -20,47 +20,37 @@ Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än
 
 **3. Lägg till uppströmsrepon som ytterligare remote-repo:** 
 
-{% highlight git %}
-$ git remote add upstream https://github.com/ORIGINALÄGARE/ORIGINALREPO.git
-{% endhighlight %}
+`$ git remote add upstream https://github.com/ORIGINALÄGARE/ORIGINALREPO.git`
 
 (I mitt exempelfall är uppströmsrepon: https://github.com/GrammaticalFramework/comp-syntax-2020.git)
 
 **4. Säkerställ att uppströmsrepon verkligen lagts till:**
 
-{% highlight git %}
-$ git remote -v
-> origin  https://github.com/datatjej/comp-syntax-2020.git (fetch)
-> origin  https://github.com/datatjej/comp-syntax-2020.git (push)
-> upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (fetch)
-> upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (push)
-{% endhighlight %}
+`$ git remote -v`<br>
+`> origin  https://github.com/datatjej/comp-syntax-2020.git (fetch)`<br>
+`> origin  https://github.com/datatjej/comp-syntax-2020.git (push)`<br>
+`> upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (fetch)`<br>
+`> upstream https://github.com/GrammaticalFramework/comp-syntax-2020.git (push)`<br>
 
 **5. Hämta uppströmsrepons grenar och tillhörande commits. Commits som gjorts i master-branchen förvaras i en lokal branch med namnet upstream/master.** 
 
-{% highlight git %}
-$ git fetch upstream
-> remote: Enumerating objects: 142, done.
-> remote: Counting objects: 100% (142/142), done.
-> remote: Compressing objects: 100% (112/112), done.
-> remote: Total 1808 (delta 72), reused 82 (delta 30), pack-reused 1666
-> Receiving objects: 100% (1808/1808), 69.63 MiB | 185.00 KiB/s, done.
-> Resolving deltas: 100% (1025/1025), completed with 2 local objects.
-> From https://github.com/GrammaticalFramework/comp-syntax-2020
-> * [new branch]      master                -> upstream/master
-{% endhighlight %}
+`$ git fetch upstream`<br>
+`> remote: Enumerating objects: 142, done.`<br>
+`> remote: Counting objects: 100% (142/142), done.`<br>
+`> remote: Compressing objects: 100% (112/112), done.`<br>
+`> remote: Total 1808 (delta 72), reused 82 (delta 30), pack-reused 1666`<br>
+`> Receiving objects: 100% (1808/1808), 69.63 MiB | 185.00 KiB/s, done.`<br>
+`> Resolving deltas: 100% (1025/1025), completed with 2 local objects.`<br>
+`> From https://github.com/GrammaticalFramework/comp-syntax-2020`<br>
+`> * [new branch]      master                -> upstream/master`<br>
 
 **6. Checka ut din forks lokala masterbranch:**
 
-{% highlight git %}
-$ git checkout master
-{% endhighlight %}
+`$ git checkout master`
 
 **7. Mergea ändringarna i upstream/master med din lokala masterbranch. Detta påverkar inte dina lokala ändringar på forken.**
 
-{% highlight git %}
-$ git merge upstream/master
-{% endhighlight %}
+`$ git merge upstream/master`
 
 **8. Kom ihåg att pusha de uppdaterade ändringarna på din lokala fork till din remote-fork på GitHub också.** 
 
