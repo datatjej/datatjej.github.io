@@ -14,11 +14,10 @@ Det här ser kanske lite invecklat ut men går förvånansvärt smidigt. Har än
 
 **2. Lista de nuvarande konfigurerade remote-reporna för forken:**
 
-{% highlight git %}
-$ git remote -v
+`$ git remote -v
 > origin  https://github.com/datatjej/comp-syntax-2020.git (fetch)
 > origin  https://github.com/datatjej/comp-syntax-2020.git (push)
-{% endhighlight %}
+`
 
 **3. Lägg till uppströmsrepon som ytterligare remote-repo:** 
 
