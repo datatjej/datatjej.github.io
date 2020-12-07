@@ -10,4 +10,4 @@ Masterstudent (2019-2021) vid språkteknologiprogrammet på GU. Här dokumentera
 
 ### Kontakta mig
 
-[tova.erben@gmail.com](mailto:tova.erben@gmail.com)
+tova.erben snabel-a gmail punkt com
