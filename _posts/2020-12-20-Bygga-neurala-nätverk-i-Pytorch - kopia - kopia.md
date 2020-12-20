@@ -14,7 +14,7 @@ All data som bearbetas i PyTorch måste representeras som **tensorer**. En tenso
 
 Den processen krävde dels lite reflektion över vilka egenskaper som faktiskt är betydelsefulla (POS-tagg, ordet innan, ordet efter, ordinbäddningar eller något helt annat?) och dels att dessa egenskaper sparades som **listor av listor** för varje mening i textdatat. En mening med tre ord skulle då kunna se ut så här: 
 
-*[ [f1, f2, f3, ... , fn ],  [f1, f2, f3, ... , fn] , [f1, f2, f3, ... , fn] ]*
+*[ [f1, f2, f3, ... , fn],  [f1, f2, f3, ... , fn] , [f1, f2, f3, ... , fn] ]*
 
 ...där de inre listorna motsvarar varje ord i meningen och *f* betecknar en av flera utvalda egenskaper hos varje ord, representerad i numerisk form (den ursprungliga formen, t.ex. POS-taggen "JJ" för adjektiv, samt ordet som egenskaperna avser, sparas i någon annan datastruktur för senare konsultering). Den här listor-av-listor-strukturen omvandlas sedan till en tensor genom metoden `torch.Tensor()` (där `torch.FloatTensor()` är defaultvarianten, även om `long`, `double` mfl. också är möjliga).  
 
