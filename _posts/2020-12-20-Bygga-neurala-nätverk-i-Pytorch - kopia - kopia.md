@@ -4,8 +4,6 @@ title: 41. Bygga neurala nätverk i PyTorch
 mathjax: true
 ---
 
-*OBS: Inte helt färdigskrivet, men jag fyller på allteftersom jag lär mig mer. ¯\\\_(ツ)\_/¯* 
-
 Neurala nätverk är grundbulten inom maskininlärning och består av lager på lager av artificiella neuroner som utför matematiska funktioner på indata och ger ett eller flera utdatavärden som prediktion. När vi bygger neurala nätverk i MLT-kurserna är [PyTorch](https://pytorch.org/) det maskininlärningsbibliotek som dominerar. Det är, som namnet antyder, baserat på ramverket Torch och programmeringsspråket Python. Ett annat känt maskininlärningsbibliotek för Python är [Keras](https://keras.io/), baserat på TensorFlow.
 
 <a href="https://commons.wikimedia.org/wiki/File:PyTorch_logo_black.svg">PyTorch</a>, <a href="http://opensource.org/licenses/bsd-license.php">BSD</a>, via Wikimedia Commons
@@ -39,4 +37,6 @@ För att spara och ladda PyTorch-modellerna man tränar upp behöver man tre sak
 - `torch.save`: sparar objekt (modeller, tensorer, ordboksstrukturer) till disk.
 - `torch.load`: laddar sparade objekt till minnet. 
 - `torch.nn.Module.load_state_dict`: laddar modellens parameterar (bl.a. vikter och bias) som ordboksstruktur m.h.a. `state_dict` (en Python-ordbok som mappar varje lager i modellen till motsvarande parametertensor). Även optimerare (`torch.optim`) har en `state_dict` som lagrar optimerarens tillstånd och de hyperparametrar som används.
+
+*OBS: Inte helt färdigskrivet, men jag fyller på allteftersom jag lär mig mer. ¯\\\_(ツ)\_/¯* 
 
