@@ -8,9 +8,8 @@ Neurala nätverk är grundbulten inom maskininlärning och består av lager på 
 
 
 <p align="center">
-<a title="PyTorch, BSD &lt;http://opensource.org/licenses/bsd-license.php&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PyTorch_logo_black.svg"><img width="256" alt="PyTorch logo black" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/256px-PyTorch_logo_black.svg.png"></a>
+<a title="PyTorch, BSD &lt;http://opensource.org/licenses/bsd-license.php&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PyTorch_logo_black.svg"><img width="256" alt="PyTorch logo black" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/256px-PyTorch_logo_black.svg.png"></a><br>
 </p>
-
 
 All data som bearbetas i PyTorch måste representeras som **tensorer**. En tensor är -- precis som NumPys np.array -- en n-dimensionell array, men till skillnad från NumPy-arrayer kan tensorer föras över till en GPU för att snabba på beräkningarna [[1](https://pytorch.org/tutorials/beginner/pytorch_with_examples.html)]. Något som hjälpte mig förstå användandet av tensorer och matriser bättre var när vi fick till uppgift att själva ta ut betydelsefulla egenskaper (eng. *features*) från textdata som förarbete inför skapandet av ett neuralt nätverk för identifiering av läkemedelsnamn i text. 
 
