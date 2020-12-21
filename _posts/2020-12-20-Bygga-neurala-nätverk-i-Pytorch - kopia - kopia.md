@@ -6,7 +6,7 @@ mathjax: true
 
 Neurala nätverk är grundbulten inom maskininlärning och består av lager på lager av artificiella neuroner som utför matematiska funktioner på indata och ger ett eller flera utdatavärden som prediktion. När vi bygger neurala nätverk i MLT-kurserna är [PyTorch](https://pytorch.org/) det maskininlärningsbibliotek som dominerar. Det är, som namnet antyder, baserat på ramverket Torch och programmeringsspråket Python. Ett annat känt maskininlärningsbibliotek för Python är [Keras](https://keras.io/), baserat på TensorFlow.
 
-<br>
+<br><br>
 <p align="center">
 <a title="PyTorch, BSD &lt;http://opensource.org/licenses/bsd-license.php&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:PyTorch_logo_black.svg"><img width="256" alt="PyTorch logo black" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/PyTorch_logo_black.svg/256px-PyTorch_logo_black.svg.png"></a><br>
 </p>
