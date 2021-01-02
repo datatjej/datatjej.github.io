@@ -14,7 +14,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   **Steg 1) Skapa och namnge miljön:**
   
   {% highlight bash %}
-  conda create -n "namn_på_miljön" python==3.7
+  conda create -n namn_på_miljön python=3.7
   {% endhighlight %}
   
   <p align="center">
