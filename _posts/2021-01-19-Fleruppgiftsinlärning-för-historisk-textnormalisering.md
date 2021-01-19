@@ -3,7 +3,7 @@ layout: post
 title: 42. Fleruppgiftsinlärning för historisk textnormalisering
 ---
 
-Läser ännu en rekommenderad artikel på temat textnormalisering: *Few-shot and zero-shot learning for historical text normalization* (Bollmann 2019). Den handlar om hur man kan använda så kallad **multitask learning** (som jag väljer att kalla fleruppgiftsinlärning) för att förbättra resultaten när man har att göra med små träningsset. Bollmann jämför 63 sådana multi-task-arkitekturer för sekvens-till-sekvens-baserad historisk textnormalisering på datasamlingar från åtta olika språk: engelska, tyska, ungerska, isländska, portugisiska, slovenska, spanska och svenska.   
+Läser ännu en rekommenderad artikel på temat textnormalisering: *Few-shot and zero-shot learning for historical text normalization* (Bollmann 2019). Den handlar om hur man kan använda **fleruppgiftsinlärning** (eng. *multitask learning*) för att förbättra resultaten när man har att göra med små träningsset. Bollmann jämför 63 sådana multi-task-arkitekturer för sekvens-till-sekvens-baserad historisk textnormalisering på datasamlingar från åtta olika språk: engelska, tyska, ungerska, isländska, portugisiska, slovenska, spanska och svenska.   
 
 Fleruppgiftsinlärning (MLT) går ut på att försöka förbättra generaliseringen genom att träna en modell på en uppsättning relaterade uppgifter, som exempelvis lemmatisering och grafem-till-fonem-mappning. Bollmann refererar Caruana (1993) som verkar vara den som introducerat begreppet. Caruana (1993:1) beskriver motivationen bakom MLI så här:
 
