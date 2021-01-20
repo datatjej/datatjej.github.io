@@ -44,10 +44,11 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   python3 -m ipykernel install --user --name namn_på_miljön --display-name "namn_på_miljön"
   python3 -m pip install matplotlib
   conda install pandas
-  conda install pytorch torchvision cpuonly -c pytorch #för att installera PyTorch
+  conda install pytorch torchvision -c pytorch #för att installera PyTorch
   {% endhighlight %}
   
   **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook!* 
+
   
   <h2>Om du vill använda den virtuella miljön i Jupyter Notebook:</h2>
   
