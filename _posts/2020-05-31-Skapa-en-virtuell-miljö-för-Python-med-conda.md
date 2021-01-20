@@ -63,3 +63,5 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   **Steg 7) Byt ut miljön i kärnan:**
   
   <img src="/images/change_kernel.PNG" alt="Byt miljö i kärnan" border="10" /> <br>
+  
+  Om du vill ta bort en miljö, använd: `conda remove --name namn_på_miljön --all` 
