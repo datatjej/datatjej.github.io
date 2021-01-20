@@ -34,7 +34,7 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   
   <p align="center">
   <img src="/images/activate_environment.PNG" alt="Aktivering av den virtuella miljön" border="10" /> <br>
-  Observera övergången från (base) till den virtuella miljön (i det här fallet namngiven som "pythorchEnv") efter att den virtuella miljön aktiverats.
+  Observera övergången från (base) till den virtuella miljön (i det här fallet namngiven som "pytorchEnv") efter att den virtuella miljön aktiverats.
   </p>
   
   **Steg 4) Installera ytterligare moduler du vill ha, exempelvis:**
