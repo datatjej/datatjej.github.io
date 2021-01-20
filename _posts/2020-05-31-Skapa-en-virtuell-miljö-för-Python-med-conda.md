@@ -46,7 +46,8 @@ I den här steg-för-steg-guiden tänkte jag visa hur man sätter upp en virtuel
   conda install pandas
   {% endhighlight %}
   
-  **Obs:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook! För PyTorch-installation, gå till [PyTorch-hemsidan](https://pytorch.org/get-started/locally/) för att se vilken version du bör installera.* 
+**Obs 1:** *De tre översta raderna, för jupyter och ipykernel, behövs för att använda miljön i Jupyter Notebook! <br>
+**Obs 2:** För PyTorch, gå till [PyTorch-hemsidan](https://pytorch.org/get-started/locally/) för att se vilken version du bör installera.* 
   
   <h2>Om du vill använda den virtuella miljön i Jupyter Notebook:</h2>
   
