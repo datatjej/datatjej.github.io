@@ -3,13 +3,13 @@ layout: post
 title: 6. Finite-state transducers och finita transduktorer
 ---
 
-**Finita transduktorer** (FT) är något som behandlas i kapitel 3 av *Speech and language processing*, i anslutning till **morfologisk parsning**: "[p]arsing means taking an input and producing some sort of linguistic structure for it" (Jurafsky & Martin 2009:45). För att bygga en morfologisk parser krävs:
+**Finita transduktorer** (FT) är något som behandlas i kapitel 3 av *Speech and language processing*, i anslutning till **morfologisk parsning**: *"[p]arsing means taking an input and producing some sort of linguistic structure for it"* (Jurafsky & Martin 2009:45). För att bygga en morfologisk parser krävs:
 
 - **Lexikon**: en lista över stammar och affix och grundläggande information om dem.
 - **Morfotaktik**: information om vilka morfem som kan följa andra morfem i ett ord.
 - **Stavningsregler**: till exempel kunskapen att engelska ord som slutar på -y får -ies i plural.
 
-FT är ett slags finita automater som kan mappa mellan två uppsättningar av symboler och därför käner igen strängar i **par**. De har en mer generell funktion än finita automater: "...where an FSA defines a formal language by defining a set of strings, an FST defines a *relation* between sets of strings" (Jurafsky & Martin 2009:57). Finita transduktorer får därigenom flera roller: 1) **igenkännare** (den accepterar bara strängpar som uppfyller en viss form av avvisar andra) 2) **generator** (matar ut strängpar), 3) **översättare** (läser in en sträng och matar ut en annan), 4) **uppsättningsrelaterare** (kan beräkna relationer mellan stränguppsättningar).
+FT är ett slags finita automater som kan mappa mellan två uppsättningar av symboler och därför käner igen strängar i **par**. De har en mer generell funktion än finita automater: *"...where an FSA defines a formal language by defining a set of strings, an FST defines a* relation *between sets of strings"* (Jurafsky & Martin 2009:57). Finita transduktorer får därigenom flera roller: 1) **igenkännare** (den accepterar bara strängpar som uppfyller en viss form av avvisar andra) 2) **generator** (matar ut strängpar), 3) **översättare** (läser in en sträng och matar ut en annan), 4) **uppsättningsrelaterare** (kan beräkna relationer mellan stränguppsättningar).
 
 **Tre egenskaper** karaktäriserar FT:
 
