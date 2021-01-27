@@ -23,7 +23,7 @@ Finita tranduktorer är **ofta icke-deterministiska** genom att en given input k
 
 Varken sekventiella eller subsekventiella transduktorer kan dock hantera **tvetydighet** (eng. *ambiguity*), eftersom varje input bara kan omvandla till en output. Därför finns det en utökning av subsekventiella transduktorer som kan hantera tvetydighet utan att tappa i effektivitet, nämligen den **p-subsekventiella transduktorn**. Dessa gör sig lämpliga för att representera ordböcker, morfologiska och fonologiska regler liksom syntaktiska begränsningar. 
 
-Morfologisk parsning med FT sker genom **finit morfologi** (eng. *finite-state morphology*), där man representerar ord som en länk mellan den **lexiala nivån** (eng. *lexical level*) -- som representerar konkatenering av morfem som bygger upp ordet -- och **ytnivån** (eng. *surface level*), som representerar konkateneringen av bokstäver som ordet består av. Jämför med exemplet *cats* i bilden nedan (som leder till en introduktionsvideo om FT om du klickar på den). 
+Morfologisk parsning med FT sker genom **finit morfologi** (eng. *finite-state morphology*), där man representerar ord som en länk mellan den **lexikala nivån** (eng. *lexical level*) -- som representerar konkatenering av morfem som bygger upp ordet -- och **ytnivån** (eng. *surface level*), som representerar konkateneringen av bokstäver som ordet består av. Jämför med exemplet *cats* i bilden nedan (som leder till en introduktionsvideo om FT om du klickar på den). 
 
  <p align="center">
 <a href="https://www.youtube.com/watch?v=SkGM5vujvls" target="_blank"><img src="/images/fst.PNG" 
