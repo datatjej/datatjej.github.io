@@ -45,5 +45,9 @@ För att **spara och ladda** PyTorch-modellerna man tränar upp behöver man tre
 - `torch.load`: laddar sparade objekt till minnet. 
 - `torch.nn.Module.load_state_dict`: laddar modellens parameterar (bl.a. vikter och bias) som ordboksstruktur m.h.a. `state_dict` (en Python-ordbok som mappar varje lager i modellen till motsvarande parametertensor). Även optimerare (`torch.optim`) har en `state_dict` som lagrar optimerarens tillstånd och de hyperparametrar som används.
 
+#Batcher
+#Train
+#Test
+
 *OBS: Inte helt färdigskrivet, men jag fyller på allteftersom jag lär mig mer. ¯\\\_(ツ)\_/¯* 
 
