@@ -3,7 +3,7 @@ layout: post
 title: 43. Moores lag
 ---
 
-**Moores lag** handlar om transistorer. Transistorer är små halvledarkomponenter (eng. *semiconductors*) av material som kisel och silikon vars strömledningsförmåga ligger någonstans mellan fullt strömförande material som koppar och icke-strömförande isolatorer som porslin och plast. Dessa halvledarkomponenter kan manipuleras ("dopas") för att styra när de ska släppa igenom ström, vilket motsvarar datorernas binära system med 1:or (ström) och 0:or (ingen ström).    
+Moores lag (eng. *Moore's law*) handlar om transistorer. Transistorer är små halvledarkomponenter (eng. *semiconductors*) av material som kisel och silikon vars strömledningsförmåga ligger någonstans mellan fullt strömförande material som koppar och icke-strömförande isolatorer som porslin och plast. Dessa halvledarkomponenter kan manipuleras ("dopas") för att styra när de ska släppa igenom ström, vilket motsvarar datorernas binära system med 1:or (ström) och 0:or (ingen ström).    
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=wuLuBroXAKo&t=139s" target="_blank"><img src="/images/transistor.PNG" 
