@@ -16,11 +16,11 @@ Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löp
 
 Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en framåtriktad och bakåtriktad sekvens av gömda tillstånd (eng. *hidden states*):       
    
-$$ h_1^{\text{enc}}^\rightarrow,...,h_n^{\text{enc}}^\rightarrow \text{ och } h_1^{\text{enc}}^\leftarrow,...,h_n^{\text{enc}}^\leftarrow $$
+$$ h_{1}^{\text{enc}}\overrightarrow,...,h_{n}^{\text{enc}}\overrightarrow \text{ och } h_{1}^{\text{enc}}\overleftarrow,...,h_{n}^{\text{enc}}\overleftarrow $$
 
 Den slutgiltiga representationen för varje tecken *i* är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
-$$ h_i^{\text{enc}} = [h_1^{\text{enc}}^\rightarrow;h_1^{\text{enc}}^\leftarrow] $$
+$$ h_{i}^{\text{enc}} = \[h_{1}^{\text{enc}}\overrightarrow;h_{1}^{\text{enc}}\overleftarrow\] $$
 
 Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>.
 
@@ -28,7 +28,7 @@ Slutligen beräknas utdatavärdena för tecknet *j* genom en linjär projektion 
 
 $$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\leq j }^{l}, r_{j}, \theta_{\text{enc}}, \theta_{\text{dec}}) $$
 
-\overrightarrow
+
 
  
 
