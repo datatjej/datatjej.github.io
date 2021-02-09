@@ -16,13 +16,13 @@ Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löp
 
 Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en framåtriktad och bakåtriktad sekvens av gömda tillstånd (eng. *hidden states*):       
    
-$$ h_1^enc^\rightarrow,...,h_n^enc^\rightarrow och h_1^enc^\leftarrow,...,h_n^enc^\leftarrow $$
+$$ h_1^{\text{enc}}^\rightarrow,...,h_n^{\text{enc}}^\rightarrow \text{ och } h_1^{\text{enc}}^\leftarrow,...,h_n^{\text{enc}}^\leftarrow $$
 
 Den slutgiltiga representationen för varje tecken *i* är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
-$$ h_i^enc = [h_1^enc^\rightarrow;h_1^enc^\leftarrow] $$
+$$ h_i^{\text{enc}} = [h_1^{\text{enc}}^\rightarrow;h_1^{\text{enc}}^\leftarrow] $$
 
-Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar *h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>*.
+Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>.
 
 Slutligen beräknas utdatavärdena för tecknet *j* genom en linjär projektion på det nuvarande avkodartillståndet *h<sub>j</sub><sup>enc</sup>* med parametrarna *O ∈ R<sup>|H×|L</sup>*, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, vilket jag nog får gå in på mer grundligt i ett annat inlägg, men som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [2].
 
