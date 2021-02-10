@@ -12,19 +12,17 @@ Man beskriver svårighetsgraden av lemmatisering som beroende av två faktorer: 
   
 De edit tree-baserade metoderna behandlar lemmatisering som en klassificeringsuppgift där klasserna är binära redigeringsträd som skapas utifrån träningsdata: *"[given] a token-lemma pair, its binary edit-tree is induced by computing the prefix and suffix around the longest common subsequence, and recursively building a tree until no common character can be found"* (Manjavacas et al. 2019:2). Den här metoden är speciellt användbar för språk med regelbundna böjningar med suffix.
 
-Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*) $ c_{1}^{x} \ldots c_{n}^{x} $ från en inbäddningsmatris. $ x_{test} $
+Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*) $ c_{1}^{x} \text{,...,} c_{n}^{x} $ från en inbäddningsmatris $ W_{\text{enc}} \in \mathcal{R}^{\|C\| \times d} $ , där $ \|C\| $ är storleken hos teckenvokauläret och $ d $ inbäddningsdimensionaliteten.
 
 Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en framåtriktad och bakåtriktad sekvens av gömda tillstånd (eng. *hidden states*):       
    
-$$$ 
-h_{1}^{\text{enc}} \overrightarrow,...,h_{n}^{\text{enc}}\overrightarrow \text{ och } h_{1}^{\text{enc}}\overleftarrow \ldots h_{n}^{\text{enc}} \overleftarrow 
-$$$
+$$ 
+h_{1}^{\text{enc}} \overrightarrow \text{,...,} h_{n}^{\text{enc}}\overrightarrow \text{ och } h_{1}^{\text{enc}}\overleftarrow \text{,...,} h_{n}^{\text{enc}} \overleftarrow 
+$$
 
 Den slutgiltiga representationen för varje tecken *i* är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
-$$$ 
-h_{i}^{\text{enc}} = [ h_{1}^{\text{enc}} \overrightarrow ; h_{1}^{\text{enc}} \overleftarrow ] 
-$$$
+sdfsdfsdfsd
 
 Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>.
 
