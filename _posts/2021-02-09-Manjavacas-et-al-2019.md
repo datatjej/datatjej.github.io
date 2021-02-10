@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 43. Manjavacas et al. (2019)
+title: 44. Manjavacas et al. (2019)
 mathjax: True
 ---
 
@@ -12,7 +12,7 @@ Man beskriver svårighetsgraden av lemmatisering som beroende av två faktorer: 
   
 De edit tree-baserade metoderna behandlar lemmatisering som en klassificeringsuppgift där klasserna är binära redigeringsträd som skapas utifrån träningsdata: *"[given] a token-lemma pair, its binary edit-tree is induced by computing the prefix and suffix around the longest common subsequence, and recursively building a tree until no common character can be found"* (Manjavacas et al. 2019:2). Den här metoden är speciellt användbar för språk med regelbundna böjningar med suffix.
 
-Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*):
+Författarna beskriver tre olika kodare-avkodar-arkitekturer (ED) som de jämför mot varandra: 1) en klassisk ED (`Plain`), 2) en ED med meningskontext (`Sent`), och 3) en ED med meningskontext tränad på en språkmodell (`Sent-LM`). Den klassiska ED:n, som också verkar ligga till grund för de övriga två, tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*):
 
 $$ c_{1}^{x} \text{,...,} c_{n}^{x} $$ 
 
@@ -30,15 +30,23 @@ Den slutgiltiga representationen för varje tecken $ i $ är en konkaktenering a
 
 $$ h_{i}^{\text{enc}} = [ \overrightarrow{h_{i}^{\text{enc}}} ; \overleftarrow{h_{i}^{\text{enc}}} ] $$
 
-Vid varje avkodningssteg $ j $ genererar en RNN-avkodare ett gömt tillstånd $ h_{j}^{\text{dec}} $ utifrån den lemma-baserade teckeninbäddningen $ c_{j}^{l} $ från 1) inbäddningsmatrisen $ W_{\text{dec}} \in \mathcal{R}^{\|L\| \times d} $, 2) det föregående gömda tillståndet $ h_{j-1}^{\text{dec}} $ och 3) ytterligare kontext. Den här ytterligare kontexten består av en summeringsvektor $ r_{j} $ som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet $ h_{j-1}^{dec} $ och sekvensen av kodar-aktiveringar $ h_{1}^{enc} \text{,....,} h_{n}^{enc} $. 
+Vid varje avkodningssteg $ j $ genererar en RNN-avkodare ett gömt tillstånd $ h_{j}^{\text{dec}} $ utifrån: 
+1) den lemma-baserade teckeninbäddningen $ c_{j}^{l} $ från inbäddningsmatrisen $ W_{\text{dec}} \in \mathcal{R}^{\|L\| \times d} $, 
+2) det föregående gömda tillståndet $ h_{j-1}^{\text{dec}} $, och 
+3) ytterligare kontext. 
 
-Slutligen beräknas utdatavärdena för tecknet $ j $ genom en linjär projektion på det nuvarande avkodartillståndet $ h_{j}^{\text{enc}} $ med parametrarna $ O \in \mathcal{R}^{\|H \times \|L} $, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, vilket jag nog får gå in på mer grundligt i ett annat inlägg, men som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [2].
+Den här ytterligare kontexten består av en summeringsvektor $ r_{j} $ som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet $ h_{j-1}^{dec} $ och sekvensen av kodar-aktiveringar $ h_{1}^{enc} \text{,....,} h_{n}^{enc} $. 
+
+Slutligen beräknas utdatavärdena för tecknet $ j $ genom en linjär projektion på det nuvarande avkodartillståndet $ h_{j}^{\text{enc}} $ med parametrarna $ O \in \mathcal{R}^{\|H \times \|L} $, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [3].
 
 $$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, \theta_{\text{enc}}, \theta_{\text{dec}}) $$
 
+I ekvationen ovan beskrivs den enkla den grundläggande, klassiska ED:n. Här avser $ \theta $ parametrarna/vikterna hos kodaren och avkodaren och $ r_{j} $ teckenkontexten, genererad som en summeringsvektor via uppmärksamhetsmekanismer.  
 
+Den andra ED:n med meningskontext (`Sent`) tar den globala meningskontexten i beaktning genom att för varje löprd $ x_{t} $ extrahera egenskaper på ordnivå via det sista gömda tillståndet från den teckenbaserade bidirektionella avkodaren beskriven ovan.  
 
 
 Referenser
-* [1] 
-* [2] Wanshun Wong. [What is teacher forcing?](https://towardsdatascience.com/what-is-teacher-forcing-3da6217fed1c) towardsdatascience.com
+* [1] Enrique Manjavacas, Ákos Kádár och Mike Kestemont. 2019. Improving Lemmatization of Non-Standard Languages with Joint Learning. NAACL-HLT.
+* [2] Dzmitry Bahdanau, Kyunghyun Cho och Yoshua Bengio. 2014. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473.  
+* [3] Wanshun Wong. 2019. [What is teacher forcing?](https://towardsdatascience.com/what-is-teacher-forcing-3da6217fed1c) towardsdatascience.com (Hämtad: 09-02-2021)
