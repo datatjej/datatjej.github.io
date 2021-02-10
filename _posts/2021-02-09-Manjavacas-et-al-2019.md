@@ -34,13 +34,9 @@ Vid varje avkodningssteg $ j $ genererar en RNN-avkodare ett gömt tillstånd $ 
 
 Slutligen beräknas utdatavärdena för tecknet $ j $ genom en linjär projektion på det nuvarande avkodartillståndet $ h_{j}^{\text{enc}} $ med parametrarna $ O \in \mathcal{R}^{\|H \times \|L} $, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, vilket jag nog får gå in på mer grundligt i ett annat inlägg, men som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [2].
 
-$$$ 
-P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, \theta_{\text{enc}}, \theta_{\text{dec}}) 
-$$$
+$$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, \theta_{\text{enc}}, \theta_{\text{dec}}) $$
 
 
-
- 
 
 
 Referenser
