@@ -20,7 +20,7 @@ $$ \overrightarrow{h_{1}^{\text{enc}}} \text{,...,} \overrightarrow{h_{n}^{\text
 
 Den slutgiltiga representationen för varje tecken $ i $ är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
-$$ h_{i}^{\text{enc}} = \[\overrightarrow{h_{1}^{\text{enc}}} ; \overleftarrow{h_{1}^{\text{enc}}}\] $$
+$$ h_{i}^{\text{enc}} = [ \overrightarrow{h_{1}^{\text{enc}}} ; \overleftarrow{h_{1}^{\text{enc}}} ] $$
 
 Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>.
 
