@@ -12,7 +12,7 @@ Man beskriver svårighetsgraden av lemmatisering som beroende av två faktorer: 
   
 De edit tree-baserade metoderna behandlar lemmatisering som en klassificeringsuppgift där klasserna är binära redigeringsträd som skapas utifrån träningsdata: *"[given] a token-lemma pair, its binary edit-tree is induced by computing the prefix and suffix around the longest common subsequence, and recursively building a tree until no common character can be found"* (Manjavacas et al. 2019:2). Den här metoden är speciellt användbar för språk med regelbundna böjningar med suffix.
 
-Författarna beskriver tre olika kodare-avkodar-arkitekturer (ED) som de jämför mot varandra: 1) en klassisk ED (`Plain`), 2) en ED med meningskontext (`Sent`), och 3) en ED med meningskontext tränad på en språkmodell (`Sent-LM`). Den klassiska ED:n, som också verkar ligga till grund för de övriga två, tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*):
+Författarna beskriver tre olika kodare-avkodar-arkitekturer (ED) som de jämför mot varandra: 1) en klassisk ED (`Plain`), 2) en ED med meningskontext (`Sent`), och 3) en ED med meningskontext tränad på en språkmodell (`Sent-LM`). Den **klassiska ED:n**, som också verkar ligga till grund för de övriga två, tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*):
 
 $$ c_{1}^{x} \text{,...,} c_{n}^{x} $$ 
 
@@ -43,8 +43,13 @@ $$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, \theta_{\t
 
 I ekvationen ovan beskrivs den enkla den grundläggande, klassiska ED:n. Här avser $ \theta $ parametrarna/vikterna hos kodaren och avkodaren och $ r_{j} $ teckenkontexten, genererad som en summeringsvektor via uppmärksamhetsmekanismer.  
 
-Den andra ED:n med meningskontext (`Sent`) tar den globala meningskontexten i beaktning genom att för varje löprd $ x_{t} $ extrahera egenskaper på ordnivå via det sista gömda tillståndet från den teckenbaserade bidirektionella avkodaren beskriven ovan.  
+Den andra **ED:n med meningskontext** (`Sent`) tar den globala meningskontexten i beaktning genom att för varje löpord $ x_{t} $ extrahera egenskaper på ordnivå via det sista gömda tillståndet från den teckenbaserade bidirektionella avkodaren beskriven ovan ($ w_{t} = [ \overrightarrow{h_{i}^{\text{enc}}} ; \overleftarrow{h_{i}^{\text{enc}}} ] $). De extraherade orden kan också berikas med information från en ordinbäddningsmatris, men den informationen visade sig inte gynna lemmatiseringsresultaten nämnvärt för de historiska språken i studien. Mönstern på meningsnivå (eng. *sentence-level features*) beräknas genom att konkatenera de framåtriktade och bakåtriktade aktiveringarna hos ett extra-RNN som arbetar bidirektionellt på meningarna. Den här modellen får följande ekvation:
 
+$$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, s_{t}; \theta_{\text{enc}}, \theta_{\text{dec}}) $$
+
+...där $ s_{t} $ är mönstren på meningsnivå. 
+
+Den trejde och sista ED-modellen är den som förbättrar mönsterigenkänningen på meningsnivå genom att även tränas på språkmodellering, dvs att förutspå nästa ord givet en eller flera tidigare ord. Språkmodellsförlusten tas sedan i beaktning när man försöker lemmatisera utifrån meningskontexten som beskrevs ovan: *"Given the forward and backward subvectors of the sentence encoding $ s^{t} = [ \overrightarrow{s^{t}} ; \overleftarrow{s^{t}} ] $, we train two additional softmax classifiers to predict token $ x^{t+1} $ given $ \overrightarrow{s^{t} $ and $ x^_{t-1} $ given $ \overleftarrow{s^{t}} $ with parameters $ O_{\text{LM fwd}} $ and $ O_{\text{LM bwd} \in \mathcal{R}^{\|S \times \|V \|} $ "* (Manjavacas et al. 2019:4).
 
 Referenser
 * [1] Enrique Manjavacas, Ákos Kádár och Mike Kestemont. 2019. Improving Lemmatization of Non-Standard Languages with Joint Learning. NAACL-HLT.
