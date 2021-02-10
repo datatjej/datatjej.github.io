@@ -12,7 +12,15 @@ Man beskriver svårighetsgraden av lemmatisering som beroende av två faktorer: 
   
 De edit tree-baserade metoderna behandlar lemmatisering som en klassificeringsuppgift där klasserna är binära redigeringsträd som skapas utifrån träningsdata: *"[given] a token-lemma pair, its binary edit-tree is induced by computing the prefix and suffix around the longest common subsequence, and recursively building a tree until no common character can be found"* (Manjavacas et al. 2019:2). Den här metoden är speciellt användbar för språk med regelbundna böjningar med suffix.
 
-Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*) $ c_{1}^{x} \text{,...,} c_{n}^{x} $ från en inbäddningsmatris $ W_{\text{enc}} \in \mathcal{R}^{\|C\| \times d} $ , där $ \|C\| $ är storleken hos teckenvokauläret och $ d $ inbäddningsdimensionaliteten.
+Kodare-avkodar-arkitekturen som Manjavacas et al. (2019) föreslår tar ett löpord $x_{t}$ som indata och läser av det tecken för tecken. Syftet är att avkoda ett mållemma $l_{t}$ -- som är grundat i den mellanliggande representationen av $ x_{t} $ -- ett tecken i taget. För varje löpord $ x_{t} $ extraherar man en sekvens av teckeninbäddningar (eng. *token character embeddings*):
+
+$$ c_{1}^{x} \text{,...,} c_{n}^{x} $$ 
+
+från en inbäddningsmatris:
+
+$$ W_{\text{enc}} \in \mathcal{R}^{\|C\| \times d} $$
+
+...där $ \|C\| $ är storleken hos teckenvokauläret och $ d $ inbäddningsdimensionaliteten.
 
 Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en framåtriktad och bakåtriktad sekvens av gömda tillstånd (eng. *hidden states*):       
    
@@ -20,11 +28,11 @@ $$ \overrightarrow{h_{1}^{\text{enc}}} \text{,...,} \overrightarrow{h_{n}^{\text
 
 Den slutgiltiga representationen för varje tecken $ i $ är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
-$$ h_{i}^{\text{enc}} = [ \overrightarrow{h_{1}^{\text{enc}}} ; \overleftarrow{h_{1}^{\text{enc}}} ] $$
+$$ h_{i}^{\text{enc}} = [ \overrightarrow{h_{i}^{\text{enc}}} ; \overleftarrow{h_{i}^{\text{enc}}} ] $$
 
-Vid varje avkodningssteg *j* genererar en RNN-avkodare ett gömt tillstånd *h<sub>j</sub><sup>dec</sup>* utifrån den lemma-baserade teckeninbäddningen *c<sub>j</sub><sup>l</sup>* från inbäddningsmatrisen *W<sub>dec</sub> ∈ R<sup>|L|×d</sup>, det föregående gömda tillståndet *h<sub>j-1</sub><sup>dec</sup>* och ytterligare kontext. Den här extrakontexten består av en summeringsvektor *r<sub>j</sub> som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet h<sub>j-1</sub><sup>dec</sup>* och sekvensen av kodaraktiveringar h<sub>1</sub><sup>enc</sup>....,h<sub>n</sub><sup>enc</sup>.
+Vid varje avkodningssteg $ j $ genererar en RNN-avkodare ett gömt tillstånd $ h_{j}^{\text{dec}} $ utifrån den lemma-baserade teckeninbäddningen $ c_{j}^{l} $ från 1) inbäddningsmatrisen $ W_{\text{dec}} \in \mathcal{R}^{\|L\| \times d} $, 2) det föregående gömda tillståndet $ h_{j-1}^{\text{dec}} $ och 3) ytterligare kontext. Den här ytterligare kontexten består av en summeringsvektor $ r_{j} $ som skapats via en uppmärksamhetsmekanism (Bahdanau et al. 2014) som tar det tidigare avkodartillståndet $ h_{j-1}^{dec} $ och sekvensen av kodar-aktiveringar $ h_{1}^{enc} \text{,....,} h_{n}^{enc} $. 
 
-Slutligen beräknas utdatavärdena för tecknet *j* genom en linjär projektion på det nuvarande avkodartillståndet *h<sub>j</sub><sup>enc</sup>* med parametrarna *O ∈ R<sup>|H×|L</sup>*, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, vilket jag nog får gå in på mer grundligt i ett annat inlägg, men som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [2].
+Slutligen beräknas utdatavärdena för tecknet $ j $ genom en linjär projektion på det nuvarande avkodartillståndet $ h_{j}^{\text{enc}} $ med parametrarna $ O \in \mathcal{R}^{\|H \times \|L} $, som normaliseras med ett *softmax*-lager. Modellen tränas för att maximera sannolikheten för målteckensekvensen genom något som kallas *teacher forcing*, vilket jag nog får gå in på mer grundligt i ett annat inlägg, men som i kort verkar gå ut på att mata modellen med facit pö om pö så att inte hela teckensekvensen blir fel bara för att något i början blev knasigt och tilläts vara kvar [2].
 
 $$$ 
 P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, \theta_{\text{enc}}, \theta_{\text{dec}}) 
