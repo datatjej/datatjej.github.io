@@ -18,7 +18,7 @@ Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en
    
 $$ \overrightarrow{h_{1}^{\text{enc}}} \text{,...,} \overrightarrow{h_{n}^{\text{enc}}} \text{ och } \overleftarrow{h_{1}^{\text{enc}}} \text{,...,} \overleftarrow{h_{n}^{\text{enc}}}  $$
 
-Den slutgiltiga representationen för varje tecken *i* är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
+Den slutgiltiga representationen för varje tecken $ i $ är en konkaktenering av de framåtriktade och bakåtriktade tillstånden: 
 
 $$ h_{i}^{\text{enc}} = \[\overrightarrow{h_{1}^{\text{enc}}} ; \overleftarrow{h_{1}^{\text{enc}}}\] $$
 
