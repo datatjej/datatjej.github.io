@@ -49,7 +49,7 @@ $$ P(l_t|x_t) =  \prod^{m}_{j=1} P(c_{j}^{l} | c_{\lt j }^{l}, r_{j}, s_{t}; \th
 
 ...där $ s_{t} $ är mönstren på meningsnivå. 
 
-Den trejde och sista ED-modellen är den som förbättrar mönsterigenkänningen på meningsnivå genom att även tränas på språkmodellering, dvs att förutspå nästa ord givet en eller flera tidigare ord. Språkmodellsförlusten tas sedan i beaktning när man försöker lemmatisera utifrån meningskontexten som beskrevs ovan: *"Given the forward and backward subvectors of the sentence encoding $ s^{t} = [ \overrightarrow{s^{t}} ; \overleftarrow{s^{t}} ] $, we train two additional softmax classifiers to predict token $ x^{t+1} $ given $ \overrightarrow{s^{t}} $ and $ x^_{t-1} $ given $ \overleftarrow{s^{t}} $ with parameters $ O_{\text{LM fwd}} $ and $ O_{\text{LM bwd} \in \mathcal{R}^{\|S \times \|V \|} $ "* (Manjavacas et al. 2019:4).
+Den trejde och sista ED-modellen är den som förbättrar mönsterigenkänningen på meningsnivå genom att även tränas på språkmodellering, dvs att förutspå nästa ord givet en eller flera tidigare ord. Språkmodellsförlusten tas sedan i beaktning när man försöker lemmatisera utifrån meningskontexten som beskrevs ovan: *"Given the forward and backward subvectors of the sentence encoding $ s^{t} = [ \overrightarrow{s^{t}} ; \overleftarrow{s^{t}} ] $, we train two additional softmax classifiers to predict token $ x^{t+1} $ given $ \overrightarrow{s^{t}} $ and $ x^{t-1} $ given $ \overleftarrow{s^{t}} $ with parameters $ O_{\text{LM fwd}} $ and $ O_{\text{LM bwd} \in \mathcal{R}^{\|S \times \|V \|} $ "* (Manjavacas et al. 2019:4).
 
 Referenser
 * [1] Enrique Manjavacas, Ákos Kádár och Mike Kestemont. 2019. Improving Lemmatization of Non-Standard Languages with Joint Learning. NAACL-HLT.
