@@ -29,13 +29,13 @@ $$ \text{recall} = \frac{TP}{TP + FN} $$
 
 $$ \text{F1} = 2 \cdot \frac{\text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}} $$ 
       
-Så hur skiljer sig F1 från accuracy? Enligt den här [towardsdatascience-artileln](https://towardsdatascience.com/whats-the-deal-with-accuracy-precision-recall-and-f1-f5d8b4db1021) av Cristopher Riggio ger F1 större vikt till false positives och false positives och mindre vikt till true negatives. Detta illustreras i bilden nedan där sammma dataset och utfall ger 90 % accuracy och F1-värdet 0:
+Så hur skiljer sig F1 från accuracy? Enligt den här [towardsdatascience-artikeln](https://towardsdatascience.com/whats-the-deal-with-accuracy-precision-recall-and-f1-f5d8b4db1021) av Cristopher Riggio ger F1 större vikt till *false positives* och *false negatives* och mindre vikt till *true negatives*. Detta illustreras i bilden nedan där sammma dataset och utfall ger 90 % accuracy och F1-värdet 0:
 
 <p align="center">
 <img src="/images/f1_score.PNG" alt="Jupyter Notebook-exempel" width="auto" height="auto" border="10" /><br>
 </p>
 
-Enligt den här [Medium-artikeln](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2) av Purva Huigol är F1 därför bättre än accuracy när det råder obalans i datasetet, vilket det ofta gör i praktiken.
+Enligt den här [Medium-artikeln](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2) av Purva Huigol är F1 därför ett bättre mått än accuracy när det råder obalans i datasetet (vilket det ofta gör i verkligheten).
 
 När det kommer till maskinöversättning och andra typer av textgenererande uppgifter är det istället ett annat utvärderingsmått som brukar användas: **BLEU** (*BiLingual Evaluation Understudy*). Tanken bakom BLEU är att den maskingenererade översättningen borde innehålla många av de ord och fraser som återfinns i den människoskrivna översättningen av samma text - ju fler desto bättre ([Jurafsky & Martin onlineutkast 2021: kap 11](https://web.stanford.edu/~jurafsky/slp3/11.pdf)). 
 
