@@ -13,7 +13,7 @@ $$ \text{accuracy} = \frac{TP + TN}{TP + TN + FP + FN} $$
 Notera att accuracy kan bli missvisande vid **obalanserade dataset**. Om en datasamling med tweets för sentimentanalys innehåller 80 % positiva tweets och 20 % negativa, så skulle en modell som klassificerar *alla* tweets som positiva ge 80 % noggrannhet. 
 
 <p align="center">
-<img src="/images/precision_recall.PNG" alt="precision och recall" width="40%" height="auto" border="10" /><br>
+<img src="/images/precision_recall.png" alt="precision och recall" width="40%" height="auto" border="10" /><br>
 <font size="2"><a href="https://commons.wikimedia.org/wiki/File:Precisionrecall.svg">Walber</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</font>  
 </p>
 
