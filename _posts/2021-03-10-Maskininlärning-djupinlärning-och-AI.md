@@ -3,7 +3,7 @@ layout: post
 title: 46. Maskininlärning, djupinlärning och AI
 ---
 
-I den här texten tänkte jag försöka reda ut skillnaden mellan maskininlärning (ML), djupinlärning (DL) och artificiell intelligens (AI) - tre begrepp som figurerat flitigt under min utbildning. 
+I den här texten tänkte jag försöka reda ut skillnaden mellan maskininlärning (ML), djupinlärning (DL) och artificiell intelligens (AI).
 
 **Maskininlärning** är ett stort forskningsområde (som även innefattar djupinlärning) och som i kort går ut på att lära datorer att hitta mönster i data som sedan kan generaliseras till osedd data. ML kan delas in i *övervakad* och *icke-övervakad inlärning*, där den förra använder data som annoterats med de kategorier eller klasser man vill kunna förutspå, medan den senare använder ouppmärkt data. Övervakad inlärning är vanligast både inom ML och DL, men icke-övervakad inlärning används för bland annat klusteranalys och inte minst för att skapa ordinbäddningar.
 
