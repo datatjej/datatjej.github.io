@@ -17,7 +17,7 @@ DL drar alltså nytta av det faktum att features på högre nivå ofta är uppby
 
 **Artificiell intelligens** beskrivs i den engelskspråkiga [Wikipedia-artikeln](https://en.wikipedia.org/wiki/Artificial_intelligence) som intelligens uppvisad av maskiner. Men i vår AI-kurs i MLT-programmet har AI snarare handlat om s.k. "situated agents", dvs program eller robotar som genom sensorer tillåts interagera med sin omgivning. Ta till exempel en objektsklassificerare som lär sig nya objekt genom en kamerasensor, eller en robot som med hjälp av människors instruktioner lär sig hitta nya färdvägar eller skapa inre represenationer av en kontorsbyggnad och dess olika rum. 
 
-Ofta brukar skillnaden mellan AI, ML och DL illustreras som tre överlappande cirklar där AI är den yttersta cirkeln, med ML som inre cirkel och underfält samt DL som allra innersta cirkel och underfält till ML. 
+Ofta brukar skillnaden mellan AI, ML och DL illustreras som tre överlappande cirklar där AI är den yttersta cirkeln, med ML som underfält till AI och DL som och underfält till ML: 
 
 <p align="center">
 <img src="/images/ml_som_underfält_till_ai.jpg" alt="Förhållandet mellan AI, ML och DL" width="60%" height="auto" border="10" /><br>
@@ -25,7 +25,7 @@ Ofta brukar skillnaden mellan AI, ML och DL illustreras som tre överlappande ci
 </p>
 
 
-Detta skulle innebära att all form av ML (och DL) också är AI. Men utifrån definitionen av AI som jag tar med mig från programmet skulle deras inbördes ordning snarare se ut så här:  
+Detta skulle innebära att all form av ML (och DL) också är AI. Men utifrån definitionen av AI som jag tar med mig från MLT-programmet skulle deras inbördes ordning snarare se ut så här:  
 
 <p align="center">
 <img src="/images/ai_ml_dl.jpg" alt="Förhållandet mellan AI, ML och DL" width="auto" height="auto" border="10" /><br>
