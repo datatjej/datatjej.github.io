@@ -20,7 +20,7 @@ DL drar alltså nytta av det faktum att features på högre nivå ofta är uppby
 Ofta brukar skillnaden mellan AI, ML och DL illustreras som tre överlappande cirklar där AI är den yttersta cirkeln, med ML som inre cirkel och underfält samt DL som allra innersta cirkel och underfält till ML. 
 
 <p align="center">
-<img src="/images/ml_som_underfält_till_ai.jpg" alt="Förhållandet mellan AI, ML och DL" width="auto" height="auto" border="10" /><br>
+<img src="/images/ml_som_underfält_till_ai.jpg" alt="Förhållandet mellan AI, ML och DL" width="60%" height="auto" border="10" /><br>
 <font size="2"><a href="https://commons.wikimedia.org/wiki/File:Fig-X_All_ML_as_a_subfield_of_AI.jpg">Yakoove</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</font>  
 </p>
 
