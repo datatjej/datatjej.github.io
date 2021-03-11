@@ -4,6 +4,8 @@ title: 45. Utvärdera mera!
 mathjax: True
 ---
 
+## Binär klassificering
+
 Några av de första mätmetoderna jag stötte på under MLT-programmet var *accuracy*, *precision*, *recall* och *F1* - som alla används flitigt för binära klassificeringsuppgifter inom maskininlärning, t.ex. att identifiera en tweet som positiv eller negativ. De grundar sig på antalet *true positives* (TP, tweets korrekt klassificerade som positiva), *true negatives* (TN, korrekt klassificerade som negativa), *false* positives* (FP, felaktigt klassificerades som positiva) och *false negatives* (FN, felaktigt klassificerades som negativa).       
 
 Den första, **accuracy** (kanske *noggrannhet* eller *riktighet* på svenska?) kan definieras som antalet riktiga klassificeringar delat med det totala antalet klassificeringar - mer formellt så här:
@@ -36,6 +38,26 @@ Så hur skiljer sig F1 från accuracy? Enligt den här [towardsdatascience-artik
 </p>
 
 Enligt den här [Medium-artikeln](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2) av Purva Huigol är F1 ett bättre mått än accuracy när det råder obalans i datasetet (vilket det ofta gör i praktiken).
+
+## Flerklassig klassificering
+
+Vid klassificering med fler än två klasser (där varje objekt bara kan tillhöra en klass) finns det två angreppssätt: micro- och macromedelvärde av precisionen.
+
+**Micromedelvärdet** (eng. *micro averaging*) innebär att man tar TP, TN, FP och FN för varje enskild klass och sedan beräknar allt tillsammans:
+
+$$ \text{precision_micro} = \frac{TP_a + TP_b + ... + TP_k }{(TP_a + TP_b + ... TP_k) + (FP_a + FP_b + ... FP_k)} $$ 
+
+Det här sättet att beräkna medelvärdet av precisionen ger varje observation i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)).   
+
+**Macromedelvärdet** (eng. *micro averaging*) innebär istället att man först beräknar den enskilda precisionen ($ P_klass = \frac{TP}{TP+FP} $) för varje klassetikett och sedan dividerar med antalet klasser ($ \text{k} $):
+
+$$ \text{precision_macro} = \frac{P_a + P_b + ... + P_k }{k} $$
+
+Det här sättet att beräkna medelvärdet av precisionen ger varje klass i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)). 
+
+[Det här svaret](https://datascience.stackexchange.com/a/24051) i forumet StackExchange förklarar det här bra med ett enkelt exempel. 
+
+## Textgenerering
 
 När det kommer till maskinöversättning och andra typer av textgenererande uppgifter är det istället ett annat utvärderingsmått som brukar användas: **BLEU** (*BiLingual Evaluation Understudy*). Tanken bakom BLEU är att den maskingenererade översättningen borde innehålla många av de ord och fraser som återfinns i den människoskrivna översättningen av samma text - ju fler desto bättre ([Jurafsky & Martin onlineutkast 2021: kap 11](https://web.stanford.edu/~jurafsky/slp3/11.pdf)). 
 
