@@ -4,6 +4,8 @@ title: 45. Utvärdera mera!
 mathjax: True
 ---
 
+Låt oss kika på några vanliga utvärderingsmått för klassificering och textgenerering.
+
 ## Binär klassificering
 
 Några av de första mätmetoderna jag stötte på under MLT-programmet var *accuracy*, *precision*, *recall* och *F1* - som alla används flitigt för binära klassificeringsuppgifter inom maskininlärning, t.ex. att identifiera en tweet som positiv eller negativ. De grundar sig på antalet *true positives* (TP, tweets korrekt klassificerade som positiva), *true negatives* (TN, korrekt klassificerade som negativa), *false* positives* (FP, felaktigt klassificerades som positiva) och *false negatives* (FN, felaktigt klassificerades som negativa).       
