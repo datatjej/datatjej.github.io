@@ -39,23 +39,23 @@ Så hur skiljer sig F1 från accuracy? Enligt den här [towardsdatascience-artik
 
 Enligt den här [Medium-artikeln](https://medium.com/analytics-vidhya/accuracy-vs-f1-score-6258237beca2) av Purva Huigol är F1 ett bättre mått än accuracy när det råder obalans i datasetet (vilket det ofta gör i praktiken).
 
-## Flerklassig klassificering
+## Flerklassklassificering
 
 Vid klassificering med fler än två klasser (där varje objekt bara kan tillhöra en klass) finns det två angreppssätt: micro- och macromedelvärde av precisionen.
 
-**Micromedelvärdet** (eng. *micro averaging*) innebär att man tar TP, TN, FP och FN för varje enskild klass och sedan beräknar allt tillsammans:
+**Micromedelvärdet** (eng. *micro averaging*) innebär att man tar TP, TN, FP och FN för varje enskild klass och sedan behandlar allt tillsammans:
 
 $$ \text{precision_micro} = \frac{TP_a + TP_b + ... + TP_k }{(TP_a + TP_b + ... TP_k) + (FP_a + FP_b + ... FP_k)} $$ 
 
-Det här sättet att beräkna medelvärdet av precisionen ger varje observation i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)).   
+Det här sättet att beräkna medelvärdet av precisionen ger *varje observation* i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)).   
 
-**Macromedelvärdet** (eng. *micro averaging*) innebär istället att man först beräknar den enskilda precisionen ($ P_klass = \frac{TP}{TP+FP} $) för varje klassetikett och sedan dividerar med antalet klasser ($ \text{k} $):
+**Macromedelvärdet** (eng. *macro averaging*) innebär istället att man först beräknar den enskilda precisionen ($ P_klass = \frac{TP}{TP+FP} $) för varje klassetikett och sedan dividerar med antalet klasser ($ \text{k} $):
 
 $$ \text{precision_macro} = \frac{P_a + P_b + ... + P_k }{k} $$
 
-Det här sättet att beräkna medelvärdet av precisionen ger varje klass i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)). 
+Det här sättet att beräkna medelvärdet av precisionen ger *varje klass* i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)). 
 
-[Det här svaret](https://datascience.stackexchange.com/a/24051) i forumet StackExchange förklarar det här bra med ett enkelt exempel. 
+[Det här svaret](https://datascience.stackexchange.com/a/24051) i forumet StackExchange illustrerar det här bra med ett enkelt exempel. 
 
 ## Textgenerering
 
