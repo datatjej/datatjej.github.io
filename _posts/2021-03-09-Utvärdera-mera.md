@@ -47,13 +47,13 @@ Vid klassificering med fler än två klasser (där varje objekt bara kan tillhö
 
 **Micromedelvärdet** (eng. *micro averaging*) innebär att man tar TP, TN, FP och FN för varje enskild klass och sedan behandlar allt tillsammans:
 
-$$ precision_{micro} = \frac{TP_a + TP_b + ... + TP_k }{(TP_a + TP_b + ... TP_k) + (FP_a + FP_b + ... FP_k)} $$ 
+$$ \text{precision_{micro}} = \frac{TP_a + TP_b + ... + TP_k }{(TP_a + TP_b + ... TP_k) + (FP_a + FP_b + ... FP_k)} $$ 
 
 Det här sättet att beräkna medelvärdet av precisionen ger *varje observation* i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)).   
 
 **Macromedelvärdet** (eng. *macro averaging*) innebär istället att man först beräknar den enskilda precisionen ($ P_{klass} = \frac{TP}{TP+FP} $) för varje klassetikett och sedan dividerar med antalet klasser (*k*):
 
-$$ precision_{macro} = \frac{P_a + P_b + ... + P_k }{k} $$
+$$ \text{precision_{macro}} = \frac{P_a + P_b + ... + P_k }{k} $$
 
 Det här sättet att beräkna medelvärdet av precisionen ger *varje klass* i testdatat samma vikt ([Vaughan 2020](https://cran.r-project.org/web/packages/yardstick/vignettes/multiclass.html)). 
 
