@@ -41,7 +41,7 @@ Hur hänger då självuppmärksamhet och månghövdad självuppmärksamhet ihop?
 
 Det är den här delen av arkitekturen som tillåter modellen att på olika sätt få bättre tillgång till övriga positioner i indatasekvensen under kodning och avkodning. Eftersom Transformer saknar RNN:ens sekventiella natur använder Vaswani et al. även **positionsinbäddningar** (eng. *positional embeddings*) som håller koll på indataelementens relativa och absoluta position i strängen. 
 
-*Rekommenderad läsning*
+**Rekommenderad läsning**
 * Alammer, Jay. [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/).
 * Harvard NLP. [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html).
 * Jurafsky & Martin. [Deep  Learning  Architectures for Sequence Processing](https://web.stanford.edu/~jurafsky/slp3/9.pdf).
