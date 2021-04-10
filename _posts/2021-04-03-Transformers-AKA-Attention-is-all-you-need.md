@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 47. Transformers AKA "Attention is all you need"
+title: 47. Transformers, AKA "Attention is all you need"
 mathjax: True
 ---
 
