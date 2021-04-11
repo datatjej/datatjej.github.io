@@ -10,7 +10,7 @@ Fick ett mejl från GitHub om att de [snart inte längre kommer att tillåta lö
 För att veta när man ska använda tokens och när SSH-nycklar behöver man känna till att det finns flera sätt att klona ett GitHub-repo på: HTTPS och SSH.
 
 <p align="center">
-<img src="/images/https_ssh.PNG" alt="Olika alternativ för att clonea ett GitHub-repo" width="70%" height="auto" border="10" /><br>
+<img src="/images/https_ssh.PNG" alt="Olika alternativ för att clonea ett GitHub-repo" width="auto" height="auto" border="10" /><br>
 </p>
  
 Både HTTPS och SSH är protokoll för kryptering av data. HTTPS ([*Hypertext Transfer Protocol Secure*](https://en.wikipedia.org/wiki/HTTPS)) används på internet för att autentisera en webbsida och skydda data som skickas mellan användaren och webbsidan. SSH ([*Secure Shell Protocoll*](https://en.wikipedia.org/wiki/Secure_Shell_Protocol)) används för att säkert ansluta sig till andra datorer, något vi t.ex. gör i skolan när vi kopplar upp oss mot MLT-programmets egen server.    
@@ -33,7 +33,7 @@ Det finns [tydliga instruktioner](https://docs.github.com/en/github/authenticati
 Jag hade sedan tidigare en token sparad på datorn som jag ville ta bort från min GitHub-profil och generera på nytt (detta görs under `Settings` --> `Developer Settings` --> `Personal Access Tokens`). Jag fick då problemet att det här fönstret började dyka upp varje gång jag försökte pusha något:
 
 <p align="center">
-<img src="/images/github_login.PNG" alt="GitHub inloggningsfönster via Git Credential Manager for Windows" width="70%" height="auto" border="10" /><br>
+<img src="/images/github_login.PNG" alt="GitHub inloggningsfönster via Git Credential Manager for Windows" width="auto" height="auto" border="10" /><br>
 </p>
 
 Det verkade vara kopplat till [Git Credential Manager for Windows](http://microsoft.github.io/Git-Credential-Manager-for-Windows/Docs/CredentialManager.html) som är en autentiseringshanterare för Git som antagligen installerades i samband med att jag skaffade [Git for Windows](https://gitforwindows.org/) (en Git-verktygslåda för Windows som kommer med de användbara applikationerna **Git BASH** och **Git GUI**). Det finns säkert fördelar med att använda en Git-specifik autentiseringshanterare, men eftersom den inte verkade oumbärlig så valde jag att ta bort den och istället använda Windows egna autentiseringshanterare (`wincred`)
