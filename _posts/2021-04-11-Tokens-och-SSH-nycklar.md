@@ -53,7 +53,7 @@ Det går att **avaktivera eller avinstallera Git Credential Manager for Windows*
 
 **SSH-nycklar** används alltså när man vill klona och utföra andra Git-operationer på en GitHub-repo med SSH. Precis som för tokens finns det också [tydliga instruktioner](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) i GitHubs dokumentation för hur man går till väga för att skapa dem. Den väsentliga skillnaden i proceduren är att tokens genereras på GitHub-sidan och sedan används lokalt medan SSH-nycklar först genereras lokalt och sedan läggs till manuellt på GitHub-kontot. Innan man klonar med SSH måste SSH-nyckeln finnas på plats både i datorn och på GitHub-kontot, och vid kloningen anger man lösenordet (eng. *passphrase*) man valt för sin SSH-nyckel. 
 
-Om man har en massa en GitHub-repos som man redan klonat med HTTPS men av någon anledning vill ändra till SSH så går det lätt att ordna. Det enda man behöver göra är att öppna sin git-terminal i mappen för projektet man vill **ändra autentisering** för och antingen skriva:
+Om man har en massa GitHub-repon som man redan klonat med HTTPS men av någon anledning vill ändra till SSH så går det lätt att ordna. Det enda man behöver göra är att öppna sin Git-terminal i mappen för projektet man vill **ändra autentisering** för och antingen skriva:
 
 `git remote set-url origin https://github.com/ANVÄNDARNAMN/REPONAMN.git` 
 
