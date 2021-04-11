@@ -21,10 +21,12 @@ Jag är fortfarande inte helt säker om den ena sättet att klona har någon fö
 ## Tokens
 
 **Personliga åtkomsttoken** (PAT, eng. *personal access tokens*) är ett alternativ till lösenord som innebär att systemet du vill använda genererar en lösenordstoken åt dig. Fördelen med PAT är att de är [[1](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)]: <br>
+
 1) *unika* och kan genereras för en enda användning eller enhet, <br>
 2) *återkallbara* utifall att man vill stoppa åtkomst som inte längre behövs, <br> 
 3) *begränsade* på så sätt att man kan anpassa åtkomsten till vissa funktioner, <br>
 4) *slumpmässigt genererade* och därför svåra att knäcka. <br>
+
 Ett GitHub-konto kan ha flera olika tokens kopplade till sig för olika enheter och ändamål.
 
 Det finns [tydliga instruktioner](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) i GitHubs dokumentation för hur man genererar en token under "Settings" i sin GitHub-profil och sedan använder den. En token kan -- precis som ett lösenord -- sparas i cachen på datorn så att man inte behöver ange det varje gång man vill clonea eller pusha något. Läs mer om det [här](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git).   
