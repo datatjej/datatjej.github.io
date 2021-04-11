@@ -11,6 +11,7 @@ För att veta när man ska använda tokens och när SSH-nycklar behöver man kä
 
 <p align="center">
 <img src="/images/https_ssh.PNG" alt="Olika alternativ för att clonea ett GitHub-repo" width="70%" height="auto" border="10" /><br>
+<font size="2">HTTPS och SSH. Två av tre möjliga sätt att klona ett GitHub-repo.</font>
 </p>
  
 Både HTTPS och SSH är protokoll för kryptering av data. HTTPS ([*Hypertext Transfer Protocol Secure*](https://en.wikipedia.org/wiki/HTTPS)) används på internet för att autentisera en webbsida och skydda data som skickas mellan användaren och webbsidan. SSH ([*Secure Shell Protocoll*](https://en.wikipedia.org/wiki/Secure_Shell_Protocol)) används för att säkert ansluta sig till andra datorer, något vi t.ex. gör i skolan när vi kopplar upp oss mot MLT-programmets egen server.    
@@ -34,6 +35,7 @@ Jag hade sedan tidigare en token sparad på datorn som jag ville ta bort från m
 
 <p align="center">
 <img src="/images/github_login.PNG" alt="GitHub inloggningsfönster via Git Credential Manager for Windows" width="70%" height="auto" border="10" /><br>
+<font size="2">Inloggningsfönstret från Git Credential Manager for Windows.</font>
 </p>
 
 Det verkade vara kopplat till [Git Credential Manager for Windows](http://microsoft.github.io/Git-Credential-Manager-for-Windows/Docs/CredentialManager.html) som är en autentiseringshanterare för Git som antagligen installerades i samband med att jag skaffade [Git for Windows](https://gitforwindows.org/) (en Git-verktygslåda för Windows som kommer med de användbara applikationerna **Git BASH** och **Git GUI**). Det finns säkert fördelar med att använda en Git-specifik autentiseringshanterare, men eftersom den inte verkade oumbärlig så valde jag att ta bort den och istället använda Windows egna autentiseringshanterare (`wincred`)
@@ -42,6 +44,7 @@ Det går att **avaktivera eller avinstallera Git Credential Manager for Windows*
 
 <p align="center">
 <img src="/images/autentiseringshanteraren.PNG" alt="Windows egna autentiseringshanterare i Kontrollpanelen" width="auto" height="auto" border="10" /><br>
+<font size="2">Autentiseringsuppgifter för bl.a. Github sparade via Windows egen autentiseringshanterare.</font>
 </p>
 
 ## SSH-nycklar
@@ -60,4 +63,5 @@ Om man har en massa en GitHub-repos som man redan klonat med HTTPS men av någon
 
  <p align="center">
 <img src="/images/ssh2https.PNG" alt="Kommando för att ändra från SSH till HTTPS" width="80%" height="auto" border="10" /><br>
+<font size="2">Exempel på hur det går till om man vill byta från SSH-autentiserad repo till HTTPS.</font>  
 </p>
