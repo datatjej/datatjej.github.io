@@ -41,7 +41,7 @@ Det verkade vara kopplat till [Git Credential Manager for Windows](http://micros
 Det går att **avaktivera eller avinstallera Git Credential Manager for Windows** genom att följa tipsen i [den här](https://stackoverflow.com/questions/37182847/how-do-i-disable-git-credential-manager-for-windows) Stackoverflow-tråden. Jag gjorde det och öppnade sedan ett Git BASH-fönster där jag skrev in kommandot `git config --global credential.helper wincred` för att koppla Windows egna autentiseringshanterare till Git. Därefter pushade jag ändringar i ett befintligt projekt och skrev in min nygenererade token istället för mitt GitHub-lösenord i lösenordsfältet. Det sparades då på platsen i **Kontrollpanelen** som ses i bilden nedan och behövde inte anges på nytt senare.
 
 <p align="center">
-<img src="/images/autentiseringshanteraren.PNG" alt="Windows egna autentiseringshanterare i Kontrollpanelen" width="70%" height="auto" border="10" /><br>
+<img src="/images/autentiseringshanteraren.PNG" alt="Windows egna autentiseringshanterare i Kontrollpanelen" width="auto" height="auto" border="10" /><br>
 </p>
 
 ## SSH-nycklar
