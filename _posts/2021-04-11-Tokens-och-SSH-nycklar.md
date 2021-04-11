@@ -7,14 +7,14 @@ Fick ett mejl från GitHub om att de [snart inte längre kommer att tillåta lö
 
 ## Två sätt att klona
 
-För att veta när man ska använda tokens och när SSH-nycklar behöver man känna till att det finns flera sätt att klona ett GitHub-repo på: HTTPS och SSH.
+För att veta när och hur man ska använda tokens eller SSH-nycklar behöver man känna till att det finns flera sätt att klona ett GitHub-repo på: HTTPS och SSH.
 
 <p align="center">
 <img src="/images/https_ssh.PNG" alt="Olika alternativ för att clonea ett GitHub-repo" width="70%" height="auto" border="10" /><br>
 <font size="2">HTTPS och SSH. Två av tre möjliga sätt att klona ett GitHub-repo.</font>
 </p>
  
-Både HTTPS och SSH är protokoll för kryptering av data. **HTTPS** ([*Hypertext Transfer Protocol Secure*](https://en.wikipedia.org/wiki/HTTPS)) används på internet för att autentisera en webbsida och skydda data som skickas mellan användaren och webbsidan. **SSH** ([*Secure Shell Protocoll*](https://en.wikipedia.org/wiki/Secure_Shell_Protocol)) används för att säkert ansluta sig till andra datorer, något vi t.ex. gör i skolan när vi kopplar upp oss mot MLT-programmets egen server.    
+Både HTTPS och SSH är protokoll för kryptering av data. **HTTPS** ([*Hypertext Transfer Protocol Secure*](https://en.wikipedia.org/wiki/HTTPS)) används på internet för att autentisera en webbsida och skydda data som skickas mellan användaren och webbsidan. För närvarande tillåter GitHub antingen kontolösenord eller specialgenererade tokens när man utför Git-operationer på ett HTTPS-klonat repo. **SSH** ([*Secure Shell Protocoll*](https://en.wikipedia.org/wiki/Secure_Shell_Protocol)) används för att säkert ansluta sig till andra datorer, något vi t.ex. gör i skolan när vi kopplar upp oss mot MLT-programmets egen server. För att klona ett GitHub-repo via SSH krävs det att man har en SSH-nyckel sparad på datorn.    
 
 Jag är fortfarande inte helt säker om den ena sättet att klona har någon fördel gentemot den andra när det kommer till GitHub. Någonstans läste jag att vissa brandväggar inte nödvändigtvis accepterar SSH-nycklar och att HTTPS-baserade tokenlösningar då kan vara bättre. Tokens kan också upplevas som smidigare att fixa i ordning än SSH-nycklar. Trots det verkar många på nätet föredra SSH framför tokens, och fördelen med det kanske klarnar med tiden.
 
