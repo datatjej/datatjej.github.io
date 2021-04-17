@@ -51,7 +51,7 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 </p>
 
 <p align="center">
-<img src="/images/progress_bar_twitter.PNG" alt="De handskrivna förloppsindikatorernas utseende på Twitter." width="auto" height="70%" border="10" /><br>
+<img src="/images/progress_bar_twitter.PNG" alt="De handskrivna förloppsindikatorernas utseende på Twitter." width="auto" height="50%" border="10" /><br>
 <font size="2">De handskrivna förloppsindikatorernas utseende på Twitter.</font>
 </p>
 
