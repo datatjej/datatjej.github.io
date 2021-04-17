@@ -23,7 +23,7 @@ Den första uppgiften för projektet är att hämta data från Folkhälsomyndigh
 Tyvärr finns det också mycket annat oväsentligt på sidan: sidomenyer, brödtext, länkar, andra tabeller, m.m. Jag vill bara hämta informationen från den här tabellen. Konsten att hämta ut information av intresse på nätet kallas data- eller webbskrapning (eng. *web scraping*). De tutorials jag hittat börjar alla med tipset att väja "Inspect"-alternativet när man högerklickar på sidan och undersöka hur datat är strukturerat. 
 
 <p align="center">
-<img src="/images/inspect_element.PNG" alt="Alternativet Inspect Element när man högerklickar på en sida" width="70%" height="auto" border="10" /><br>
+<img src="/images/inspect_element.PNG" alt="Alternativet Inspect Element när man högerklickar på en sida" width="50%" height="auto" border="10" /><br>
 <font size="2">I Firefox heter "Inspect"-alternativet i högerklicksmenyn "Inspect Element".</font>
 </p>
 
