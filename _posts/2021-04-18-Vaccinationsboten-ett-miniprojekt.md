@@ -3,7 +3,9 @@ layout: post
 title: 49. Vaccinationsboten - ett miniprojekt
 ---
 
-Jag har länge velat göra något enklare programmeringsprojekt som inte är kopplat till mina studier. Såg en Twitter-bot som kvittrade ut en förloppsindikator för hur många procent av USA:s befolkning som hunnit vaccineras mot covid-19 och tänkte att det vore nice att göra något liknande för Sveriges vaccinationsstatistik. Jag kan inte längre hitta den ursprungliga boten, men hittade [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet (trist bara att längden på förloppsindikatorn verkar statisk) och [den här](https://twitter.com/uk_vaccination) för Storbritannien (som faktiskt är väldigt snyggt gjord eftersom visar både statisk för första och andra dosen, samt har en dynamisk indikator).
+Jag har länge velat göra något enklare programmeringsprojekt som inte är kopplat till mina studier. Såg en Twitter-bot som kvittrade ut en förloppsindikator för hur många procent av USA:s befolkning som hunnit vaccineras mot covid-19 och tänkte att det vore nice att göra något liknande för Sveriges vaccinationsstatistik. 
+
+Jag kan inte längre hitta den ursprungliga boten, men hittade [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet (trist bara att längden på förloppsindikatorn verkar statisk) och [den här](https://twitter.com/uk_vaccination) för Storbritannien (som faktiskt är väldigt snyggt gjord eftersom visar både statisk för första och andra dosen, samt har en dynamisk indikator).
 
 ## Twitter Developer-konto 
 
@@ -14,7 +16,7 @@ Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa et
 Den första uppgiften för projektet är att hämta data från Folkhälsomyndigheten. På deras hemsida presenteras antalet och andelen personer (=>18 år) som vaccinerats så här:
 
 <p align="center">
-<img src="/images/fohm_table.PNG" alt="FOHM:s tabell över antalet vaccinerade" width="70%" height="auto" border="10" /><br>
+<img src="/images/fohm_tabell.PNG" alt="FOHM:s tabell över antalet vaccinerade" width="70%" height="auto" border="10" /><br>
 <font size="2">Folkhälsomyndighetens tabell över antalet och andelen vaccinerade med 1:a och 2:a dosen bland personer 18 år eller äldre.</font>
 </p>
 
