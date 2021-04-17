@@ -7,7 +7,7 @@ Jag har länge velat göra något enklare programmeringsprojekt som inte är kop
 
 Jag kan inte längre hitta den ursprungliga boten, men hittade [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet (trist bara att längden på förloppsindikatorn verkar statisk) och [den här](https://twitter.com/uk_vaccination) för Storbritannien (som faktiskt är väldigt snyggt gjord eftersom visar både statisk för första och andra dosen, samt har en dynamisk indikator).
 
-## Twitter Developer-konto 
+## Skaffa Twitter Developer-konto 
 
 Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa ett [developer-konto](https://developer.twitter.com/en/apply-for-access) på Twitter. Man måste ge en kort beskrivning av sitt projekt och vilka funkioner man tänkte använda, men det går väldigt snabbt och verkar godkännas på en gång. Jag gjorde först misstaget att ansöka om ett developer-konto kopplat till mitt personliga Twitter-konto, men eftersom jag ville ha ett separat konto för boten skaffade jag det och ansökte sedan på nytt med det kontot.  
 
