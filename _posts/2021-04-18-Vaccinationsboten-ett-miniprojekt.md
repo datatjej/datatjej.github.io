@@ -13,7 +13,7 @@ Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa et
 
 ## Hämta data från Folkhälsomyndigheten
 
-Den första uppgiften för projektet är att hämta data från Folkhälsomyndigheten. På deras hemsida presenteras antalet och andelen personer (=>18 år) som vaccinerats så här:
+Den första uppgiften för projektet är att hämta data från [Folkhälsomyndigheten](https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/statistik-over-registrerade-vaccinationer-covid-19/). På deras hemsida presenteras antalet och andelen personer (=>18 år) som vaccinerats så här:
 
 <p align="center">
 <img src="/images/fohm_tabell.PNG" alt="FOHM:s tabell över antalet vaccinerade" width="70%" height="auto" border="10" /><br>
