@@ -57,7 +57,7 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 
 ## Automatisera boten med GitHub Actions
 
-För automatiseringen av boten drog jag stor nytta av [den här guiden](https://blog.esciencecenter.nl/twitter-bots-for-science-1cf3f19dcda8) av Patrick Bos. Den introducerade mig till något som jag faktiskt var helt obekant med tidigare: GitHub Actions. Med hjälp av en YAML-fil som man lägger in under `.github/workflows/` i repon kan man trigga GitHub att köra koden utifrån olika *actions* (t.ex. att någon pushar till ett repo) eller schemalagda tidpunkter. Eftersom FOHM uppdaterar sin statistik varje dag från tisdag till fredag vid 14-tiden valde jag att köra programmet de dagarna vid halv 3. Notera att tidpunkten måste anges i [cron-syntax](https://crontab.guru/) och [UCT-tid](https://sv.wikipedia.org/wiki/Koordinerad_universell_tid). 
+För automatiseringen av boten drog jag stor nytta av [den här guiden](https://blog.esciencecenter.nl/twitter-bots-for-science-1cf3f19dcda8) av Patrick Bos. Den introducerade mig till något som jag faktiskt var helt obekant med tidigare: GitHub Actions. Med hjälp av en YAML-fil som man lägger in under `.github/workflows/` i repon kan man trigga GitHub att köra koden utifrån olika händelser (t.ex. att någon pushar till ett repo) eller schemalagda tidpunkter. Eftersom FOHM uppdaterar sin statistik varje dag från tisdag till fredag vid 14-tiden valde jag att köra programmet de dagarna vid halv 3. Notera att tidpunkten måste anges i [cron-syntax](https://crontab.guru/) och [UCT-tid](https://sv.wikipedia.org/wiki/Koordinerad_universell_tid). 
 
 ```yaml
 name: Tweet latest vaccination statistics for Sweden
