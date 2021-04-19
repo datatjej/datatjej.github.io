@@ -5,7 +5,7 @@ title: 49. Vaccinationsboten - ett miniprojekt
 
 Jag har länge velat göra något enklare programmeringsprojekt som inte är kopplat till mina studier. Såg en Twitter-bot som kvittrade ut en förloppsindikator för hur många procent av USA:s befolkning som hunnit vaccineras mot covid-19 och tänkte att det vore nice att göra något liknande för Sveriges vaccinationsstatistik. 
 
-Jag kan inte längre hitta den ursprungliga boten men hittade [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet (trist bara att längden på förloppsindikatorn verkar statisk) och [den här](https://twitter.com/uk_vaccination) för Storbritannien (som faktiskt är väldigt snyggt gjord eftersom visar både statisk för första och andra dosen, samt har en dynamisk indikator).
+Jag kan inte längre hitta den ursprungliga boten men såg [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet och [den här](https://twitter.com/uk_vaccination) för Storbritannien. För Sveriges del har jag hittills försökt hålla mig uppdaterad om statistiken genom att kika på SVT:s snygga [grafiska representation](https://www.svt.se/datajournalistik/corona-vaccin/) av andelen vaccinerade. Den bygger på data från Folkhälsomyndigheten, som i sin tur har hämtat den från Nationella vaccinationsregistret.
 
 ## Skaffa Twitter Developer-konto 
 
