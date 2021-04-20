@@ -55,6 +55,14 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 <font size="2">De handskrivna förloppsindikatorernas utseende på Twitter.</font>
 </p>
 
+**ETA (20-04-2021):** Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 % stor. Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men väl på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
+
+<p align="center">
+<img src="/images/block_progress_bar.JPEG" alt="Förloppsindiktarorer med blockelement av samma storlek" width="auto" height="auto" border="10" /><br>
+<font size="2">Utseendet hos de nya förloppsindikatorerna med blockelement av samma storlek.</font>
+</p>
+     
+
 ## Automatisera boten med GitHub Actions
 
 För automatiseringen av boten drog jag stor nytta av [den här guiden](https://blog.esciencecenter.nl/twitter-bots-for-science-1cf3f19dcda8) av Patrick Bos. Den introducerade mig till något som jag faktiskt var helt obekant med tidigare: [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions). Med hjälp av en YAML-fil som man lägger in under `.github/workflows/` i repon kan man trigga GitHub att köra koden utifrån olika händelser (t.ex. att någon pushar till ett repo) eller schemalagda tidpunkter. Eftersom FOHM uppdaterar sin statistik varje dag från tisdag till fredag vid 14-tiden valde jag att köra programmet de dagarna vid halv 3. Notera att tidpunkten måste anges i [cron-syntax](https://crontab.guru/) och [UCT-tid](https://sv.wikipedia.org/wiki/Koordinerad_universell_tid). 
