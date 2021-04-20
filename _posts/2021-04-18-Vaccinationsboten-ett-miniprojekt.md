@@ -58,7 +58,7 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 **ETA (20-04-2021):** Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 % stor. Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men väl på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
 
 <p align="center">
-<img src="/images/block_progress_bar.JPEG" alt="Förloppsindiktarorer med blockelement av samma storlek" width="auto" height="auto" border="10" /><br>
+<img src="/images/block_progress_bar.jpeg" alt="Förloppsindiktarorer med blockelement av samma storlek" width="auto" height="auto" border="10" /><br>
 <font size="2">Utseendet hos de nya förloppsindikatorerna med blockelement av samma storlek.</font>
 </p>
      
@@ -116,3 +116,5 @@ Boten heter [@vaccination_SE](https://twitter.com/vaccination_SE) och källkoden
 <img src="/images/vaccination_bot.PNG" alt="vaccination-bot-SE." width="70%" height="auto" border="10" /><br>
 <font size="2">Vaccinationsbotens första tweet till världen.</font>
 </p>
+
+**ETA 20-04-2021:** Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen av koden skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag sätta schemat till 10 min tidigare.
