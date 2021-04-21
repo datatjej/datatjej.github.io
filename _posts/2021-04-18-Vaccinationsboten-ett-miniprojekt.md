@@ -117,4 +117,4 @@ Boten heter [@vaccination_SE](https://twitter.com/vaccination_SE) och källkoden
 <font size="2">Vaccinationsbotens första tweet till världen.</font>
 </p>
 
-**ETA 20-04-2021:** Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen av koden skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag sätta schemat till 10 min tidigare.
+**ETA (20-04-2021):** Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag sätta schemat till 10 min tidigare.
