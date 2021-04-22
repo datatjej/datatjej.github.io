@@ -55,7 +55,7 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 <font size="2">De handskrivna förloppsindikatorernas utseende på Twitter.</font>
 </p>
 
-**Uppdatering (20-04-2021):** Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 % stor! Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men väl på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
+**Uppdatering (20-04-2021):** Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 %! Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men däremot på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
 
 <p align="center">
 <img src="/images/block_progress_bar.jpeg" alt="Förloppsindiktarorer med blockelement av samma storlek" width="70%" height="auto" border="10" /><br>
