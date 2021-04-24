@@ -113,8 +113,8 @@ En tredje och sista viktig komponent för att köra koden är [Tweepy](https://w
 Boten heter [@vaccination_SE](https://twitter.com/vaccination_SE) och källkoden går att hitta [här](https://github.com/datatjej/vaccination-bot-SE). Även om det inte var ett superavancerat projekt är jag ändå glad över att ha klarat av det och känner att jag lärt mig mycket på vägen. Det ska bli spännande att se hur väl GitHub Actions fungerar de närmaste dagarna och om det dyker upp några buggar.
 
 <p align="center">
-<img src="/images/vaccination_bot.PNG" alt="vaccination-bot-SE." width="70%" height="auto" border="10" /><br>
-<font size="2">Vaccinationsbotens första tweet till världen.</font>
+<img src="/images/vaccination_SE.PNG" alt="vaccination-bot-SE." width="70%" height="auto" border="10" /><br>
+<font size="2">Vaccinationsbotens slutgiltiga utseende.</font>
 </p>
 
 **Uppdatering (20-04-2021):** Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag tidigarelägga schemat med 10 min.
