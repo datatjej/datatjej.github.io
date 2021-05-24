@@ -3,9 +3,9 @@ layout: post
 title: 25. Larsson (2015) och Larsson (2017)
 ---
 
-Så här i början av höstterminen när man fortfarande ligger i fas och inte vill halka efter tänkte jag använde det här utrymmet så som jag från början avsåg att använda det - för rena kursanteckningar. För första lektion i dialogsystem II som börjar den här veckan har vi två läsanvisngar: [Larsson (2015)](https://flov.gu.se/digitalAssets/1536/1536925_semdial2015_godial_proceedings.pdf#page=197) och [Larsson (2017)](https://www.aclweb.org/anthology/W17-5503.pdf). Den första artikeln har vi redan haft som läsning i NLP-kursen, men jag minns inte om jag tog några anteckningar då, så here we go!
+Så här i början av höstterminen när man fortfarande ligger i fas och inte vill halka efter tänkte jag använde det här utrymmet så som jag från början avsåg att använda det - för rena kursanteckningar. För första lektion i *Dialogsystem II* som börjar den här veckan har vi två läsanvisngar: [Larsson (2015)](https://flov.gu.se/digitalAssets/1536/1536925_semdial2015_godial_proceedings.pdf#page=197) och [Larsson (2017)](https://www.aclweb.org/anthology/W17-5503.pdf). Den första artikeln har vi redan haft som läsning i NLP-kursen, men jag minns inte om jag tog några anteckningar då, så here we go!
 
-**Larsson (2015)** undersöker hur dialogsystemen hos Apple, Google och Microsoft hanterar några vanliga fenomen i mänskliga dialoger: 1) *over-answering*, 2) *other-answering* och 3) *answer revision*. **1) Over-answering** innebär att användaren **ger mer information än vad som förväntas**, t.ex.<br>
+**Larsson (2015)** undersöker hur dialogsystemen hos Apple, Google och Microsoft hanterar några vanliga fenomen i mänskliga dialoger: 1) *over-answering*, 2) *other-answering* och 3) *answer revision*. **Over-answering** innebär att användaren **ger mer information än vad som förväntas**, t.ex.<br>
 
 - Ring ett samtal.<br>
 - Okej, vem vill du ringa?<br>
@@ -14,7 +14,7 @@ Så här i början av höstterminen när man fortfarande ligger i fas och inte v
 
 Dialogen ovan är inte alls problematisk för en människa, men för ett dialogsystem som förväntar sig en bit information i taget (- Vem vill du ringa? - Mira - På vilket nummer, hem eller mobil? - Mobil) kan det bli förvirrande. Larssons undersökning visar också att dåvarande Siri och Cortana kunde hantera over-answering, men däremot inte Google Now (nuvarande Google Assistant).
 
-**2) Other-answering** innebär att användaren **ger ett svar på en annan fråga** än den som systemet precis ställt, t.ex:<br>
+**Other-answering** innebär att användaren **ger ett svar på en annan fråga** än den som systemet precis ställt, t.ex:<br>
 
 - Ring ett samtal.<br>
 - Okej, vem vill du ringa?<br>
@@ -22,7 +22,7 @@ Dialogen ovan är inte alls problematisk för en människa, men för ett dialogs
 
 Larssons undersökning visade att såväl Google Now som Cortana förväntade sig rätt svar vid rätt tillfälle från användaren (även om systemet tänkt fråga om vilket nummer som avses -- hem, arbete eller mobil -- redan i nästa fråga), medan Siri kunde hantera other-answering.
 
-Den tredje och sista användarinputen som tas upp, **3) answer revision**, avser de tillfällen då användaren **rättar ett tidigare givet svar**, t.ex:<br>
+Den tredje och sista användarinputen som tas upp, **answer revision**, avser de tillfällen då användaren **rättar ett tidigare givet svar**, t.ex:<br>
 
 - Ring Mira. <br>
 - Ok, arbete eller mobil? <br>
@@ -32,7 +32,7 @@ I idealfallet skulle systemet svara något i stil med: "Okej, ringer Peter istä
 
 <p align="center">
 <img src="/images/google_assistant_labb.PNG" alt="Resultat av labb med Google Assistant" width="100%" height="auto" border="10" /><br>
-Figur 1. Resultatet av min egen labbundersökning med Google Assistant på svenska år 2019. 
+Figur 1. Resultatet av min egen undersökning med Google Assistant på svenska år 2019. 
 </p>
 
 **Larsson (2017)** behandlar **användarinitierade underdialoger**, *"i.e. interactions where a system question is responded to with a question or request from the user, who thus unitiates a sub-dialogue"* (Larsson 2017:1). Han citerar [Łupkowski & Ginzburg (2013)](https://hal.archives-ouvertes.fr/hal-01138036/document) som lyfter fram att frågor som svar på frågor utgör så mycket som 20 % av alla frågosvar i British National Corpus - det är alltså inget marginellt fenomen. 

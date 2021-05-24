@@ -3,7 +3,7 @@ layout: post
 title: 35. Använda en API
 ---
 
-För det egna projektarbetet i kursen Dialogsystem II blev vi instruerade att leta upp en API för en tjänst och integrera den i en chattbot. En **API** (eng. *application programming interface*) är ett mjukvarulager som tillåter dig att kommunicera med en extern webbsidas server, exempelvis för att logga in på en sida via ditt Google-konto (sidan måste då kommunicera med Googles API) eller för att, som i mitt fall, kunna få mitt dialogsystem att hämta information från mitt Todoist-konto. 
+För det egna projektarbetet i kursen *Dialogsystem II* blev vi instruerade att leta upp en API för en tjänst och integrera den i en chattbot. En **API** (eng. *application programming interface*) är ett mjukvarulager som tillåter dig att kommunicera med en extern webbsidas server, exempelvis för att logga in på en sida via ditt Google-konto (sidan måste då kommunicera med Googles API) eller för att, som i mitt fall, kunna få mitt dialogsystem att hämta information från mitt Todoist-konto. 
 
 För att använda en API ordentligt krävs ofta lite kunskap om hur informationen som API:n kan returnera ser ut, och hur man gör själva anropen. I sin enklaste form kan ett API-anrop göras via en URL-sträng som inkluderar vissa parameterar. I en av våra tidigare labbar använde vi exempelvis en URL av det här formatet:<br> `http://api.openweathermap.org/data/2.5/weather?q={city},{country}&units={unit}&APPID={key}`<br> 
 ...för att hämta väderdata från webbsidan [OpenWeather](https://openweathermap.org/). Parametern "key" avser här en användares egna **API-nyckel**, som är unik för användaren och fungerar som ett slags ID.

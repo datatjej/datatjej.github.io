@@ -3,7 +3,7 @@ layout: post
 title: 20. Lambdakalkyl med lite curry
 ---
 
-Inom kursen **komputationell semantik** (LT2213) konfronterades vi i förra veckan med något nytt och läskigt: **lambdakalkyl** (eng. *lambda calculus*). Sedan dess har jag skjutit upp att sätta mig in i det på allvar, men eftersom vi har en inlämningsuppgift på ämnet som strax måste in tänkte jag ta kvällen i akt och läsa på så mycket som möjligt innan jag går och lägger mig. Nu kör vi!
+Inom kursen *Komputationell semantik* (LT2213) konfronterades vi i förra veckan med något nytt och läskigt: **lambdakalkyl** (eng. *lambda calculus*). Sedan dess har jag skjutit upp att sätta mig in i det på allvar, men eftersom vi har en inlämningsuppgift på ämnet som strax måste in tänkte jag ta kvällen i akt och läsa på så mycket som möjligt innan jag går och lägger mig. Nu kör vi!
 
 <p align="center">
 <img src="/images/gillar.png" alt="Exempel på lambdauttryck" width="100%" height="auto" border="10" /><br>

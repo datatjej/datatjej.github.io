@@ -5,15 +5,15 @@ title: 49. Vaccinationsboten - ett miniprojekt
 
 Jag har länge velat göra något enklare programmeringsprojekt som inte är kopplat till mina studier. Såg en Twitter-bot som kvittrade ut en förloppsindikator för hur många procent av USA:s befolkning som hunnit vaccineras mot covid-19 och tänkte att det vore nice att göra något liknande för Sveriges vaccinationsstatistik. 
 
-Jag kan inte längre hitta den ursprungliga boten men såg [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet och [den här](https://twitter.com/uk_vaccination) för Storbritannien. För Sveriges del har jag hittills försökt hålla mig uppdaterad om statistiken genom att kika på SVT:s snygga [grafiska representation](https://www.svt.se/datajournalistik/corona-vaccin/) av andelen vaccinerade. Den bygger på data från Folkhälsomyndigheten som i sin tur hämtar den från Nationella vaccinationsregistret.
+Jag kan inte längre hitta den ursprungliga boten men såg [den här](https://twitter.com/vaccination_bar) som gör något liknande för världens befolkning som helhet och [den här](https://twitter.com/uk_vaccination) för Storbritannien. För Sveriges del har jag hittills försökt hålla mig uppdaterad om statistiken genom att kika på SVT:s snygga [grafiska representation](https://www.svt.se/datajournalistik/corona-vaccin/) av andelen vaccinerade. Den bygger på data från Folkhälsomyndigheten, som i sin tur hämtar den från Nationella vaccinationsregistret.
 
 ## Skaffa Twitter Developer-konto 
 
-Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa ett [developer-konto](https://developer.twitter.com/en/apply-for-access) på Twitter. Man måste ge en kort beskrivning av sitt projekt och vilka funkioner man tänkte använda, men det går väldigt snabbt och verkar godkännas på en gång. Jag gjorde först misstaget att ansöka om ett developer-konto kopplat till mitt personliga Twitter-konto, men eftersom jag ville ha ett separat konto för boten skaffade jag det och ansökte sedan på nytt med det kontot.  
+Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa ett [developer-konto](https://developer.twitter.com/en/apply-for-access) på Twitter. Man måste ge en kort beskrivning av sitt projekt och vilka funktioner man tänkte använda, men det går väldigt snabbt och verkar godkännas på en gång. Jag gjorde först misstaget att ansöka om ett developer-konto kopplat till mitt personliga Twitter-konto, men eftersom jag ville ha ett separat konto för boten skaffade jag det och ansökte sedan på nytt med just det kontot.  
 
 ## Hämta data från Folkhälsomyndigheten
 
-Den första uppgiften för projektet är att hämta data från [Folkhälsomyndigheten](https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/statistik-over-registrerade-vaccinationer-covid-19/). På deras hemsida presenteras antalet och andelen personer (=>18 år) som vaccinerats så här:
+Den första uppgiften för projektet är att hämta data från [Folkhälsomyndigheten](https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/statistik-och-analyser/statistik-over-registrerade-vaccinationer-covid-19/). På deras hemsida presenteras antalet och andelen personer (>=18 år) som vaccinerats så här:
 
 <p align="center">
 <img src="/images/fohm_tabell.PNG" alt="FOHM:s tabell över antalet vaccinerade" width="90%" height="auto" border="10" /><br>
@@ -99,7 +99,7 @@ jobs:
 
 I YAML-filen specificerar Bos också vilka andra program som koden är beroende av (genom att länka till en `requirements.txt`-fil) så att de kan installeras innan koden körs. Här initierar han också de miljövarialber, `env`, som behövs för Twitter-kontots API (api-nyckel, access-token, etc.) och som i sin tur göms undan i "Secrets"-delen av GitHub (en annan ny komponent för mig!). Den hittar man genom att gå till `Settings` --> `Secrets`.
 
-I programkoden importerar han en speciell argumentparsare - `configargparse` - som kan användas för att dels fånga upp miljövariablerna som anges i YAML-filen (och som sparas krypterade i `Secrets`), men även variabler som anges i en separat konfigureringsfil. Detta gör det enklare att testa koden både i molnet och lokalt eftersom man då enkelt kan komma åt API-nycklarna på hemmadatorn genom den separata filen (som man skyddar från att pusha med `.gitignore`).
+I programkoden importeras en speciell argumentparsare - `configargparse` - som kan användas för att dels fånga upp miljövariablerna som anges i YAML-filen (och som sparas krypterade i `Secrets`), men även variabler som anges i en separat konfigureringsfil. Detta gör det enklare att testa koden både i molnet och lokalt eftersom man då enkelt kan komma åt API-nycklarna på hemmadatorn genom den separata filen (som man skyddar från att pusha med `.gitignore`).
 
 En tredje och sista viktig komponent för att köra koden är [Tweepy](https://www.tweepy.org/), ett Python-bibliotek för att kommunicera med Twitters API. Det går att se hur Bos kombinerar den med `configargparse` [här](https://github.com/egpbos/covid_vaccine_progress_bot/blob/main/run.py). Och i [den här](https://realpython.com/twitter-bot-python-tweepy/#creating-twitter-api-authentication-credentials) guiden finns ytterligare information för hur man kan använda Tweepy för fler ändamål än att bara skriva tweets.    
 
