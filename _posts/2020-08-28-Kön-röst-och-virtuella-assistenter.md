@@ -5,7 +5,7 @@ title: 24. Kön, röst och virtuella assistenter
 
 När jag arbetade med en röststörd virtuell assistent under praktikjobbet i somras började jag fundera över valet av kvinnlig eller manlig röst i sådana assistenter (tänk Siri, Google Assistant, Cortana och Alexa som alla har kvinnlig röst som default-läge) och vad som överhuvudtaget får en röst att låta karaktäristiskt kvinnlig eller manlig. 
 
-På den första punkten visade det sig att människor generellt tycker att kvinnliga röster är lättare att gilla ([The impact of gender stereotyping on the perceived likability of virtual assistants](https://aisel.aisnet.org/amcis2020/cognitive_in_is/cognitive_in_is/4/]), Ernst & Herm-Stapelberg 2020), men att manliga röster framstår som mer kompetenta ([Gender stereotyping’s influence on the perceived competence of Siri and co.](https://scholarspace.hmanoa.hawaii.edu/handle/10125/64286), Ernst & Herm-Stapelberg 2020) - vilket kanske förklarar valet av manlig röst för IBM:s allvetande Watson. 
+På den första punkten visade det sig att människor generellt tycker att kvinnliga röster är lättare att gilla [[1](#fotnot1)], men att manliga röster framstår som mer kompetenta [[2](#fotnot2)] - vilket kanske förklarar valet av manlig röst för IBM:s allvetande Watson. 
 
 Intressant nog hade Apples första försök till röststyrd assistent, Casper, en ganska androgyn röst. Kolla in den här härliga videon från 1992!
 
@@ -28,3 +28,7 @@ Poon & Ng fann att grundfrekvensen, precis som Nørgaard var inne på, är den f
 alt="How Do We Change Our Mouths to Shape Waves? Formants" width="520" height="360" border="10" /></a></p>
 
 För att runda av och komma tillbaka till de mer språkteknologiska aspekterna av det här med röst och kön: Det går förstås att skapa program som utifrån parametrarna ovan och annoterad data kan gissa talarens biologiska kön - men är det något vi *borde* göra? Vad skulle ett sådant verktyg kunna användas till? Ge mer könsriktad reklam? Kanske ge vissa användare ett helt annat bemötande när de interagerar med en virtuell assistent? Det hela blir lätt problematiskt om det beräkande könet inte stämmer överens med det upplevda (t.ex. trans, icke-binär) eller om informationen används för förstärka förlegade könsnormer. [Den här artikeln](https://edition.cnn.com/2019/11/21/tech/ai-gender-recognition-problem/index.html) beskriver mer ingående **farorna med AI som förutspår kön**.
+
+**Referenser**
+<a name="fotnot1">[1]</a>: [The impact of gender stereotyping on the perceived likability of virtual assistants](https://aisel.aisnet.org/amcis2020/cognitive_in_is/cognitive_in_is/4/]) - Ernst & Herm-Stapelberg 2020 <br>
+<a name="fotnot2">[2]</a>: [Gender stereotyping’s influence on the perceived competence of Siri and co.](https://scholarspace.hmanoa.hawaii.edu/handle/10125/64286), Ernst & Herm-Stapelberg 2020  
