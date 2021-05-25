@@ -3,7 +3,7 @@ layout: post
 title: 24. Kön, röst och virtuella assistenter
 ---
 
-När jag arbetade med en röststörd virtuell assistent under praktikjobbet i somras började jag fundera över valet av kvinnlig eller manlig röst i sådana assistenter (tänk Siri, Google Assistant, Cortana och Alexa som alla har kvinnlig röst som default-läge), och vad som överhuvudget får en röst att låta karaktäristiskt kvinnlig eller manlig. 
+När jag arbetade med en röststörd virtuell assistent under praktikjobbet i somras började jag fundera över valet av kvinnlig eller manlig röst i sådana assistenter (tänk Siri, Google Assistant, Cortana och Alexa som alla har kvinnlig röst som default-läge) och vad som överhuvudtaget får en röst att låta karaktäristiskt kvinnlig eller manlig. 
 
 På den första punkten visade det sig att människor generellt tycker att kvinnliga röster är lättare att gilla ([The impact of gender stereotyping on the perceived likability of virtual assistants](https://aisel.aisnet.org/amcis2020/cognitive_in_is/cognitive_in_is/4/]), Ernst & Herm-Stapelberg 2020), men att manliga röster framstår som mer kompetenta ([Gender stereotyping’s influence on the perceived competence of Siri and co.](https://scholarspace.hmanoa.hawaii.edu/handle/10125/64286), Ernst & Herm-Stapelberg 2020) - vilket kanske förklarar valet av manlig röst för IBM:s allvetande Watson. 
 
