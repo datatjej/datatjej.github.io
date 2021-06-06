@@ -9,7 +9,7 @@ Jag kan inte längre hitta den ursprungliga boten men såg [den här](https://tw
 
 ## Skaffa Twitter Developer-konto 
 
-Jag har aldrig skapat något Twitter-bot tidigare och började med att skaffa ett [developer-konto](https://developer.twitter.com/en/apply-for-access) på Twitter. Man måste ge en kort beskrivning av sitt projekt och vilka funktioner man tänkte använda, men det går väldigt snabbt och verkar godkännas på en gång. Jag gjorde först misstaget att ansöka om ett developer-konto kopplat till mitt personliga Twitter-konto, men eftersom jag ville ha ett separat konto för boten skaffade jag det och ansökte sedan på nytt med just det kontot.  
+Jag har aldrig skapat någon Twitter-bot tidigare och började med att skaffa ett [developer-konto](https://developer.twitter.com/en/apply-for-access) på Twitter. Man måste ge en kort beskrivning av sitt projekt och vilka funktioner man tänkte använda, men det går väldigt snabbt och verkar godkännas på en gång. Jag gjorde först misstaget att ansöka om ett developer-konto kopplat till mitt personliga Twitter-konto, men eftersom jag ville ha ett separat konto för boten skaffade jag det och ansökte sedan på nytt med just det kontot.  
 
 ## Hämta data från Folkhälsomyndigheten
 
