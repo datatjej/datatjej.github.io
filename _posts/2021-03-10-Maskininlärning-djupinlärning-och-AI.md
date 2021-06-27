@@ -9,7 +9,7 @@ I den här texten tänkte jag försöka reda ut skillnaden mellan maskininlärni
 
 Konventionell maskininlärning har länge använt sig av handplockade *features* (ofta utvalda av en domänexpert) för att träna datamodeller. Inom t.ex. sentimentanalys kan det innebära att man förlitar sig på närvaron av specifika nyckelord, emojis, punktuation, negation m.m. för att träna upp en modell att klassificera en recension som positiv, negativ eller neutral [[1](https://www.researchgate.net/publication/288013084_Coooolll_A_Deep_Learning_System_for_Twitter_Sentiment_Classification)]. Inom datorseendefältet kan handplockade features för att upptäcka cancerceller i tredimensionella röntgenbilder vara exempelvis bildintensitet, topologisk struktur och textur [[2](https://www.nature.com/articles/s41598-020-77264-y)]. Den här typen av ML dominerade länge och handplockade features kan än idag vara värdefulla när man inte har så mycket annoterad data att tillgå [[2](https://www.nature.com/articles/s41598-020-77264-y)]. Men de kan vara tidskrävande att ta fram och kan dessutom missa mer komplexa mönster i datat. 
   
-**Djupinlärning** är en gren av ML där datorn själv får undersöka rådatat för att upptäcka värdefulla mönster som kan användas som prediktorer i klassificeringen. DL-metoder är "djupa" efter som de består av flera icke-linjära neuronlager som successivt bidrar till en mer komplex representation [[3](https://www.nature.com/articles/nature14539)]:
+**Djupinlärning** är en gren av ML där datorn själv får undersöka rådatat för att upptäcka värdefulla mönster som kan användas som prediktorer i klassificeringen. DL-metoder är "djupa" eftersom de består av flera icke-linjära neuronlager som successivt bidrar till en mer komplex representation [[3](https://www.nature.com/articles/nature14539)]:
 
 > "An image, for example, comes in the form of an array of pixel values, and the learned features in the first layer of representation typically represent the presence of absence of edges at particular orientations and locations in the image. The second layer typically detects motifs by spotting particular arrangements of edges, regardless of small variations in the edge positions" (LeCun et al. 2015).  
 
@@ -31,3 +31,5 @@ Detta skulle innebära att all form av ML (och DL) också är AI. Men utifrån d
 <img src="/images/ai_ml_dl.jpg" alt="Förhållandet mellan AI, ML och DL" width="auto" height="auto" border="10" /><br>
 <font size="2"><a href="https://commons.wikimedia.org/wiki/File:Fig-y_Part_of_ML_as_subfield_of_AI_or_AI_as_subfield_of_ML.jpg">Yakoove</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</font>  
 </p>
+
+Enligt den här sättet att illustrera fälten är inte all ML som görs per automatik också AI, utan det krävs exempelvis någon form av interaktion med omgivningen i samband med inlärningen. 
