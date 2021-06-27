@@ -16,7 +16,7 @@ Oavsett vilken typ av inlärning man arbetar med måste den [aktiveringsfunktion
 
 För regressionsuppgifter är *mean squared error* (`nn.MSELoss()` i PyTorch) en vanlig förlustfunktion:
 
-$$ MSE = \sqrt{(\frac{1}{n})\sum_{i=1}^{n}(y_{i} - ŷ_{i})^{2}} $$
+$$ MSE = (\frac{1}{n})\sum_{i=1}^{n}(y_{i} - ŷ_{i})^{2} $$
 
 ...som ger medelvärdet av skillnaden mellan prediktionen (*ŷ*) och facitvärdet (*y*) i kvadrat utifrån ett dataset av storlek *n* och *n* prediktioner. Den appliceras under antagandet att målvariabeln är normalfördelad (en [Gausskurva](https://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning#/media/Fil:Standard_deviation_diagram.svg) till utseendet) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] och att aktiveringsfunktionen i utdatalagret är linjär [[2](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)]. I och med kvadreringen straffar den i högre grad fel som skiljer sig mycket från facit.
 
