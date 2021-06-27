@@ -42,7 +42,7 @@ class RMSLELoss(nn.Module):
 
 Om man har att göra med värden som i huvudsak följer en Gausskurva men ändå har en del extremvärden som ligger långt ifrån medelvärdet kan man använda *mean absolute error* (MAE) som förlustfunktion [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)]. MAE beräknas genom att ta medelvärdet av summan av absolutvärdet mellan alla prediktioner och deras facitvärden [[4](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-absolute-error)]:
 
-$$ MAE = \sqrt{(\frac{1}{n})\sum_{i=0}^{n}(\lvert y - ŷ_{i} \rvert} $$
+$$ MAE = (\frac{1}{n})\sum_{i=0}^{n}(\lvert y - ŷ_{i} \rvert $$
 
 ## Klassificeringsförlust
 
