@@ -20,7 +20,7 @@ från en inbäddningsmatris:
 
 $$ W_{\text{enc}} \in \mathcal{R}^{\|C\| \times d} $$
 
-...där $ \|C\| $ är storleken hos teckenvokauläret och $ d $ inbäddningsdimensionaliteten.
+...där $ \|C\| $ är storleken hos teckenvokabuläret och $ d $ inbäddningsdimensionaliteten.
 
 Teckeninbäddningarna skickas in i en bidirektionell RNN-kodare som beräknar en framåtriktad och bakåtriktad sekvens av gömda tillstånd (eng. *hidden states*):       
    
