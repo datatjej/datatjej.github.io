@@ -24,7 +24,7 @@ $$ MSE = (\frac{1}{n})\sum_{i=1}^{n}(y_{i} - ŷ_{i})^{2} $$
 
 En variant av MSE är *mean squared logarithmic error loss* (MSLE). Den används med fördel när målvariablen har större spridning i sina värden och vi därför inte vill hårdstraffa felen som skiljer sig mycket från facitvärdet. Den betraktar istället *den procentuella skillnanden* mellan prediktion och målvärde och beräknas genom att ta ut medelvärdet av felet i kvadrat på den naturliga logartimen av prediktionsvärdet [[4](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle))]:
 
-$$ MSLE = \sqrt{(\frac{1}{n})\sum_{i=0}^{n}($log{y_{i} + 1} - $log{ŷ_{i} + 1} $ y_{i})^{2}} $$
+$$ MSLE = (\frac{1}{n})\sum_{i=0}^{n}(\log{y_{i} + 1} - \log{ŷ_{i} + 1}^{2} $$
 
 Kodblocket nedan visar hur man kan implementera MSLE i PyTorch [[5](https://discuss.pytorch.org/t/rmsle-loss-function/67281)]:
 
