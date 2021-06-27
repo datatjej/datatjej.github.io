@@ -18,7 +18,7 @@ För regressionsuppgifter är *mean squared error* (`nn.MSELoss()` i PyTorch) en
 
 $$ MSE = \sqrt{(\frac{1}{n})\sum_{i=1}^{n}(y_{i} - ŷ_{i})^{2}} $$
 
-..som ger medelvärdet av skillnaden mellan prediktionen (*ŷ*) och facitvärdet (*y*) i kvadrat utifrån ett dataset av storlek *n* och *n* prediktioner. Den appliceras under antagandet att målvariabeln är normalfördelad (en [Gausskurva](https://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning#/media/Fil:Standard_deviation_diagram.svg) till utseendet) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] och att aktiveringsfunktionen i utdatalagret är linjär [[2](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)]. I och med kvadreringen straffar den i högre grad fel som skiljer sig mycket från facit.
+...som ger medelvärdet av skillnaden mellan prediktionen (*ŷ*) och facitvärdet (*y*) i kvadrat utifrån ett dataset av storlek *n* och *n* prediktioner. Den appliceras under antagandet att målvariabeln är normalfördelad (en [Gausskurva](https://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning#/media/Fil:Standard_deviation_diagram.svg) till utseendet) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] och att aktiveringsfunktionen i utdatalagret är linjär [[2](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)]. I och med kvadreringen straffar den i högre grad fel som skiljer sig mycket från facit.
 
 #### Mean Squared Logarithmic Error (MSLE)
 
@@ -57,12 +57,12 @@ Vid binär klassificering är *binary cross entropy loss* (`nn.BCELoss` i Pytorc
 $$ BCE = \frac{-1}{utdatastorlek})\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} + (1-y_{i}) \cdot  \log{(1 - ŷ_{i})} $$
 
 ...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata (där $ utdatastorlek $ är den totala mängden utdatavärden) och $ y_{i} $ det motsvarande facitvärdet [[5](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
-)]. Även om man jobbar med binär klassificering så kan antalet kan antalet etiketter/klasser variera i exempelvis en receptklassificerar som klassificerar recept utifrån om de är nötfria, glutenfria, veganvänliga, etc. Med BCE används enbart sigmoid som aktiveringsfunktion, och den måste sättas in innan sista utdatalagret [[5](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
+)]. Även om man jobbar med binär klassificering så kan antalet kan antalet etiketter/klasser variera i exempelvis en receptklassificerar som klassificerar recept utifrån om de är nötfria, glutenfria, veganvänliga, etc. Med BCE används enbart sigmoid som aktiveringsfunktion, och den måste sättas in innan sista utdatalagret [[6](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 )]. 
 
 #### Hinge Loss (HL)
 
-En annan förlustfunktion vid binär klassificering är *hinge loss* (`nn.HingeEmbeddingLoss` i PyTorch). Det känns som att jag måste läsa in mig lite mer på stödvektormaskiner (eng. *support vector machines*) - för vilka den här typen av förlustfunktion huvudsakligen utvecklades [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] - för att få en bättre förståelse för HL. En källa nämner i alla fall att HL straffar prediktioner som inte har rätt tecken (+/-) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)], och en annan att dess variant *squared hinge loss* kan användas när man *inte* är så intresserad av hur säker klassificeraren är i sina beräkningar [[6](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge)].  
+En annan förlustfunktion vid binär klassificering är *hinge loss* (`nn.HingeEmbeddingLoss` i PyTorch). Det känns som att jag måste läsa in mig lite mer på stödvektormaskiner (eng. *support vector machines*) - för vilka den här typen av förlustfunktion huvudsakligen utvecklades [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] - för att få en bättre förståelse för HL. En källa nämner i alla fall att HL straffar prediktioner som inte har rätt tecken (+/-) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)], och en annan att dess variant *squared hinge loss* kan användas när man *inte* är så intresserad av hur säker klassificeraren är i sina beräkningar [[7](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge)].  
 
 
 ### Flerklassklassificering
@@ -75,7 +75,7 @@ Vid flerklassklassificering vill man kunna tillskriva ett objekt enbart en av fl
 
 $$ CCEL = -\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} $$
 
-...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata och $ y_{i} $ det motsvarande facitvärdet. De olika klasserna måste representeras med [*one-hot encoding*]-vektor(https://en.wikipedia.org/wiki/One-hot) [[?](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification)], och aktiveringsfunktionen vid CCEL måste vara softmax. 
+...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata och $ y_{i} $ det motsvarande facitvärdet. De olika klasserna måste representeras med [*one-hot encoding*]-vektor(https://en.wikipedia.org/wiki/One-hot) [[8](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification)], och aktiveringsfunktionen vid CCEL måste vara softmax. 
 
 
 ### Referenser
@@ -83,6 +83,8 @@ $$ CCEL = -\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} $$
 [2] - [Loss and Loss Functions for Training Deep Learning Neural Networks](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com. <br>    
 [3] - [How to Choose Loss Functions When Training Deep Learning Neural Networks](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.  <br>    
 [4] - [Mean Squared Logarithmic Error](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)). peltarion.com. <br>    
-[5] - [Binary Crossentropy](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
+[5] - [RMSLE loss function (diskussionforumsinlägg)](https://discuss.pytorch.org/t/rmsle-loss-function/67281), 2020. discuss.pytorch.org. <br>
+[6] - [Binary Crossentropy](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 ). peltarion.com. <br>    
-[6] - [Squared Hinge](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge). peltarion.com <br>
+[7] - [Squared Hinge](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge). peltarion.com <br>
+[8] - [Understanding Loss Functions in Machine Learning](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification), av Prashanth Saravanan (2021). section.io. <br>
