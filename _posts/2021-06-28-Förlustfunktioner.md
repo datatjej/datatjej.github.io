@@ -79,12 +79,12 @@ $$ CCEL = -\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} $$
 
 
 ### Referenser
-[1] - [Common Loss Functions in Machine Learning](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23)), av Ravindra Parmar (2018). towardsdatascience.com. <br>     
-[2] - [Loss and Loss Functions for Training Deep Learning Neural Networks](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com. <br>    
-[3] - [How to Choose Loss Functions When Training Deep Learning Neural Networks](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.  <br>    
-[4] - [Mean Squared Logarithmic Error](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)). peltarion.com. <br>    
+[1] - [Common Loss Functions in Machine Learning](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23)), av Ravindra Parmar (2018). towardsdatascience.com.
+[2] - [Loss and Loss Functions for Training Deep Learning Neural Networks](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.   
+[3] - [How to Choose Loss Functions When Training Deep Learning Neural Networks](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.
+[4] - [Mean Squared Logarithmic Error](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)). peltarion.com.   
 [5] - [RMSLE loss function (diskussionforumsinlägg)](https://discuss.pytorch.org/t/rmsle-loss-function/67281), 2020. discuss.pytorch.org. <br>
 [6] - [Binary Crossentropy](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
-). peltarion.com. <br>    
+). peltarion.com.    
 [7] - [Squared Hinge](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge). peltarion.com <br>
-[8] - [Understanding Loss Functions in Machine Learning](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification), av Prashanth Saravanan (2021). section.io. <br>
+[8] - [Understanding Loss Functions in Machine Learning](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification), av Prashanth Saravanan (2021). section.io.
