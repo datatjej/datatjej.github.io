@@ -75,7 +75,7 @@ Vid flerklassklassificering vill man kunna tillskriva ett objekt enbart en av fl
 
 $$ CCEL = -\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} $$
 
-...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata och $ y_{i} $ det motsvarande facitvärdet. De olika klasserna måste representeras med [*one-hot encoding*]-vektor(https://en.wikipedia.org/wiki/One-hot) [[8](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification)], och aktiveringsfunktionen vid CCEL måste vara softmax. 
+...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata och $ y_{i} $ det motsvarande facitvärdet. De olika klasserna måste representeras med [*one-hot encoding*](https://en.wikipedia.org/wiki/One-hot)-vektor [[8](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification)] och aktiveringsfunktionen vid CCEL måste vara softmax. 
 
 
 ### Referenser
