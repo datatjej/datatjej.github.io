@@ -4,7 +4,7 @@ title: 50. Förlustfunktioner - när liten förlust är stort vinst
 mathjax: true
 ---
 
-Förlustfunktioner (eng. *loss function*) används inom maskin- och djupinlärning för att undersöka hur mycket en modells prediktioner skiljer sig från facit. Man söker att **optimera förlustfunktionen**, vilket innebär att hitta det globala minimumet i funktionen -- där paramterarna (som kan uppgå till miljontals) ger minst förlust -- vilket kan göras med stokastisk [gradientnedstining](https://datatjej.github.io/Stokastisk-gradientnedstigning/). Men hur tar man då fram själva förlustfunktionen?
+Förlustfunktioner (eng. *loss function*) används inom maskin- och djupinlärning för att undersöka hur mycket en modells prediktioner skiljer sig från facit. Man söker att **optimera förlustfunktionen**, vilket innebär att hitta det globala minimumet i funktionen -- där paramterarna (som kan uppgå till miljontals) ger minst förlust -- vilket kan göras med [stokastisk gradientnedstining](https://datatjej.github.io/Stokastisk-gradientnedstigning/). Men hur tar man då fram själva förlustfunktionen?
 
 Det finns två olika sorters förlustfunktioner beroende på vilken typ av inlärning man sysslar med: 1) regressionsförlust och 2) klassificeringsförlust [[1]](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23). En klassificeringsmodell har som utdata ett begränsat antal etiketter, medan regression matar ut ett värde på en kontinuerlig skala givet ett visst antal förklarande variabler, exempelvis priset på en lägenhet i Göteborg givet läge, byggår och antal kvadratmeter. 
 
