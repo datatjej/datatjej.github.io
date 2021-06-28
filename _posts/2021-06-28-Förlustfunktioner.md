@@ -54,7 +54,7 @@ Valet av förlustfunktion vid klassificeringsuppgifter beror först och främst 
 
 Vid binär klassificering är *binary cross entropy loss* (`nn.BCELoss` i Pytorch) en vanlig förlustfunktion. Den beräknas genom att ta fram följande medelvärde:
 
-$$ BCE = \frac{-1}{utdatastorlek})\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} + (1-y_{i}) \cdot  \log{(1 - ŷ_{i})} $$
+$$ BCE = -\frac{1}{utdatastorlek})\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} + (1-y_{i}) \cdot  \log{(1 - ŷ_{i})} $$
 
 ...där $ ŷ_{i} $ är det $ i $:e skalärvärdet i modellens utdata (där $ utdatastorlek $ är den totala mängden utdatavärden) och $ y_{i} $ det motsvarande facitvärdet [[5](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
 )]. Även om man jobbar med binär klassificering så kan antalet kan antalet etiketter/klasser variera i exempelvis en receptklassificerar som klassificerar recept utifrån om de är nötfria, glutenfria, veganvänliga, etc. Med BCE används enbart sigmoid som aktiveringsfunktion, och den måste sättas in innan sista utdatalagret [[6](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
@@ -79,12 +79,12 @@ $$ CCEL = -\sum_{i=1}^{utdatastorlek} y_{i} \cdot \log{ŷ_{i}} $$
 
 
 ### Referenser
-[1] - [Common Loss Functions in Machine Learning](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23)), av Ravindra Parmar (2018). towardsdatascience.com.
-[2] - [Loss and Loss Functions for Training Deep Learning Neural Networks](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.   
-[3] - [How to Choose Loss Functions When Training Deep Learning Neural Networks](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com.
-[4] - [Mean Squared Logarithmic Error](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)). peltarion.com.   
-[5] - [RMSLE loss function (diskussionforumsinlägg)](https://discuss.pytorch.org/t/rmsle-loss-function/67281), 2020. discuss.pytorch.org. <br>
+[1] - [Common Loss Functions in Machine Learning](https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23)), av Ravindra Parmar (2018). towardsdatascience.com
+[2] - [Loss and Loss Functions for Training Deep Learning Neural Networks](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com
+[3] - [How to Choose Loss Functions When Training Deep Learning Neural Networks](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/), av Jason Brownlee (2019). machinelarningmastery.com
+[4] - [Mean Squared Logarithmic Error](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)). peltarion.com
+[5] - [RMSLE loss function (diskussionforumsinlägg)](https://discuss.pytorch.org/t/rmsle-loss-function/67281), 2020. discuss.pytorch.org
 [6] - [Binary Crossentropy](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/binary-crossentropy
-). peltarion.com.    
+). peltarion.com  
 [7] - [Squared Hinge](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/squared-hinge). peltarion.com <br>
-[8] - [Understanding Loss Functions in Machine Learning](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification), av Prashanth Saravanan (2021). section.io.
+[8] - [Understanding Loss Functions in Machine Learning](https://www.section.io/engineering-education/understanding-loss-functions-in-machine-learning/#loss-functions-for-classification), av Prashanth Saravanan (2021). section.io
