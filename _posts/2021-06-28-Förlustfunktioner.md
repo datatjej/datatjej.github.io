@@ -16,15 +16,15 @@ Oavsett vilken typ av inlärning man arbetar med måste den [aktiveringsfunktion
 
 För regressionsuppgifter är *mean squared error* (`nn.MSELoss()` i PyTorch) en vanlig förlustfunktion:
 
-$$ MSE = (\frac{1}{n})\sum_{i=1}^{n}(y_{i} - ŷ_{i})^{2} $$
+$$ MSE = \frac{1}{N}\sum_{i=0}^{N}(y_{i} - ŷ_{i})^{2} $$
 
-...som ger medelvärdet av skillnaden mellan prediktionen (*ŷ*) och facitvärdet (*y*) i kvadrat utifrån ett dataset av storlek *n* och *n* prediktioner. Den appliceras under antagandet att målvariabeln är normalfördelad (en [Gausskurva](https://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning#/media/Fil:Standard_deviation_diagram.svg) till utseendet) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] och att aktiveringsfunktionen i utdatalagret är linjär [[2](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)]. I och med kvadreringen straffar den i högre grad fel som skiljer sig mycket från facit.
+...som ger medelvärdet av skillnaden mellan prediktionen ($ ŷ $) och facitvärdet ($ y $) i kvadrat utifrån ett dataset av storlek $ N $ och $ N $ prediktioner. Den appliceras under antagandet att målvariabeln är normalfördelad (en [Gausskurva](https://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning#/media/Fil:Standard_deviation_diagram.svg) till utseendet) [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)] och att aktiveringsfunktionen i utdatalagret är linjär [[2](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/)]. I och med kvadreringen straffar den i högre grad fel som skiljer sig mycket från facit.
 
 #### Mean Squared Logarithmic Error (MSLE)
 
 En variant av MSE är *mean squared logarithmic error loss* (MSLE). Den används med fördel när målvariablen har större spridning i sina värden och vi därför inte vill hårdstraffa felen som skiljer sig mycket från facitvärdet. Den betraktar istället *den procentuella skillnanden* mellan prediktion och målvärde och beräknas genom att ta ut medelvärdet av felet i kvadrat på den naturliga logartimen av prediktionsvärdet [[4](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle))]:
 
-$$ MSLE = (\frac{1}{n})\sum_{i=0}^{n}(\log{y_{i} + 1} - \log{ŷ_{i} + 1}^{2} $$
+$$ MSLE = \frac{1}{N}\sum_{i=0}^{N}(\log{(y_{i} + 1)} - \log{(ŷ_{i} + 1)}^{2} $$
 
 Kodblocket nedan visar hur man kan implementera MSLE i PyTorch [[5](https://discuss.pytorch.org/t/rmsle-loss-function/67281)]:
 
@@ -43,7 +43,7 @@ class RMSLELoss(nn.Module):
 
 Om man har att göra med värden som i huvudsak följer en Gausskurva men ändå har en del extremvärden som ligger långt ifrån medelvärdet kan man använda *mean absolute error* (MAE) som förlustfunktion [[3](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)]. MAE beräknas genom att ta medelvärdet av summan av absolutvärdet mellan alla prediktioner och deras facitvärden [[4](https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-absolute-error)]:
 
-$$ MAE = (\frac{1}{n})\sum_{i=0}^{n}(\lvert y - ŷ_{i} \rvert $$
+$$ MAE = \frac{1}{N}\sum_{i=0}^{N}\lvert y - ŷ_{i}\rvert $$
 
 ## Klassificeringsförlust
 
