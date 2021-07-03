@@ -3,7 +3,7 @@ layout: post
 title: 48. Tokens och SSH-nycklar (GitHub)
 ---
 
-Fick ett mejl från GitHub om att de [snart inte längre kommer att tillåta lösenordsbaserad autentisering](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). Tog en djup suck och insåg att det nog är dags att sätta sig in i hur tokens och SSH-nycklar egentligen fungerar.
+Fick ett mejl från GitHub om att de [snart inte längre kommer att tillåta lösenordsbaserad autentisering](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/). Drog en djup suck och insåg att det nog är dags att sätta sig in i hur tokens och SSH-nycklar egentligen fungerar.
 
 ## Två sätt att klona
 
