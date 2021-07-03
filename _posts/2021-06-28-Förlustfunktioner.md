@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 50. Förlustfunktioner, AKA när liten förlust är stor vinst
+title: 50. Förlustfunktioner, AKA "när liten förlust är stor vinst"
 mathjax: true
 ---
 
