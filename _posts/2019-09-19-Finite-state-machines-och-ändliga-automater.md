@@ -11,7 +11,7 @@ En ändlig automat representeras som en **riktad graf** (eng. *directed graph*),
 
 <p align="center">
 <img src="/images/directed.svg" alt="rigraf" width="480" height="360" border="10" /> <br>
-Illustration av enkelriktad graf (Wikipedia 2019).</p>
+<font size="2">En enkelriktad graf.</font></p>
 
 Automaten består av ett antal **tillstånd** (eng. *states*) som representeras av noderna i grafen, och där tillstånd 0 är **startillståndet**. Tanken är att maskinen börjar från nod 0 (starttillståndet) och sedan kollar av varje tecken i en sträng. Om nästa tecken i strängen stämmer överens med den symbol som bågen till nästa tillstånd representerar, korsar den bågen över till nästa nod. Om stränginputen tagit slut när vi kommit till **slutnoden** i grafen (eng. *final state*/*accepting state*) har den lyckats matcha den eftersökta strängen. Om ett givet tecken inte accepteras av maskinen hamnar den automatiskt i ett **tomt tillstånd**, på engelska *fail state* eller *sink state*.
 
