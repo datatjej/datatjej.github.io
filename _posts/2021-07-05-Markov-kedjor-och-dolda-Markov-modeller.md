@@ -10,7 +10,7 @@ HHM beskrivs i samma kapitel som en förstärkt (eng. *augmented*) Markov-kedja.
 
 
 <p align="center">
-<img src="/images/markov_kedja.png" alt="En enkel Markov-kedja" width="70%" height="auto" border="10" /><br>
+<img src="/images/markov_kedja.PNG" alt="En enkel Markov-kedja" width="70%" height="auto" border="10" /><br>
 <font size="2"><a href="https://commons.wikimedia.org/wiki/File:Markovkate_01.svg">Joxemai4</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</font>
 </p>
 
@@ -20,5 +20,4 @@ Ett svar i den här [StackExchange-tråden](https://stats.stackexchange.com/ques
 
 Sannolikheterna för de olika uttalen (observationerna) av ett givet ord (det dolda tillståndet) kallas **emissionssannolikheterna**, medan sannolikheterna för alla ord givet ett visst ord (alla möjliga tillstånd givet det nuvarande tillståndet) kallas **transitionssannolikheter**.
 
-**Fun fact:** Markov-kedjor och -modeller har fått sitt namn efter den ryske matematikern Andrej Markov. Han testade sin hypotes om Markov-antagandet genom att räkna vokal- och konsonantpar i den ryska versromanen *Eugen Onegin* och undersöka i vilken omfattning man kunde förutspå en vokal givet en konsontant och vice versa (läs mer om det [här](https://www.americanscientist.org/article/first-links-in-the-markov-chain).  
-
+<font size="2">**Fun fact:** Markov-kedjor och -modeller har fått sitt namn efter den ryske matematikern Andrej Markov. Han testade sin hypotes om Markov-antagandet genom att räkna vokal- och konsonantpar i den ryska versromanen *Eugen Onegin* och undersöka i vilken omfattning man kunde förutspå en vokal givet en konsontant och vice versa (läs mer om det [här](https://www.americanscientist.org/article/first-links-in-the-markov-chain).</font>  
