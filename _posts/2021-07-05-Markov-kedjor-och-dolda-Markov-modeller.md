@@ -10,7 +10,7 @@ HHM beskrivs i samma kapitel som en förstärkt (eng. *augmented*) Markov-kedja.
 
 
 <p align="center">
-<img src="/images/markov_kedja.png" alt="En enkel Markov-kedja" width="70%" height="auto" border="10" /><br>
+<img src="/images/markov_kedja.png" alt="En enkel Markov-kedja" width="50%" height="auto" border="10" /><br>
 <font size="2"><a href="https://commons.wikimedia.org/wiki/File:Markovkate_01.svg">Joxemai4</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</font>
 </p>
 
