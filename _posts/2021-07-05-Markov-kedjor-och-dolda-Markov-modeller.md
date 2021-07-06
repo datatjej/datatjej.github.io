@@ -18,7 +18,7 @@ Skillnaden mellan en Markov-kedja och en dold Markov-modell (HHM) är att Markov
 
 Ett svar i den här [StackExchange-tråden](https://stats.stackexchange.com/questions/148023/markov-chains-vs-hmm) förklarar på ett bra sätt hur man kan applicera HHM på ett problem som taligenkänning. Med en Markov-kedja kan man skapa en språkmodell utifrån textdata som beräknar sannolikheten för varje ord i vokabuläret givet det nuvarande ordet (tillståndet). Men eftersom ord kan uttalas olika beroende på person och sammanhang går det inte att applicera den här modellen på tal rakt av. Den missar kanske att det alternativa uttalet /ɕɛks/ är detsamma som /kɛks/ och därför också referar till det (numera dolda) ordtillståndet "kex": 
 
-*"So you could get lots of people to read aloud the text that you used for your original training, you could get a distribution for the pronunciations for each word, and then combine your original model with the pronunciation model and you have a Hidden Markov Model (an HMM)."* ([ibid](https://stats.stackexchange.com/questions/148023/markov-chains-vs-hmm).
+*"So you could get lots of people to read aloud the text that you used for your original training, you could get a distribution for the pronunciations for each word, and then combine your original model with the pronunciation model and you have a Hidden Markov Model (an HMM)."* ([ibid](https://stats.stackexchange.com/questions/148023/markov-chains-vs-hmm)).
 
 Sannolikheterna för de olika uttalen (observationerna) av ett givet ord (det dolda tillståndet) kallas **emissionssannolikheterna**, medan sannolikheterna för alla ord givet ett visst ord (alla möjliga tillstånd givet det nuvarande tillståndet) kallas **transitionssannolikheter**.
 
