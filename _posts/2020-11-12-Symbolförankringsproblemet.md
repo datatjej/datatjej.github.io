@@ -3,7 +3,7 @@ layout: post
 title: 36. Symbolförankringsproblemet
 ---
 
-I kursen *AI: kognitiva system* läser vi den här veckan artiklar med koppling till det som jag väljer att kalla *symbolförankringsproblemet* på svenska, och som går under benämningen **symbol grounding problem** ([Harnad 1990](https://www.sciencedirect.com/science/article/abs/pii/0167278990900876)) på engelska. Symbolförankringsproblemet har sitt urprung i kognitionsforskningens (och semantikens) försök att modellera hur vi människor kopplar ihop *ord* (och andra *symboler*) med deras respektive *betydelser* -- vilket i sin tur väcker frågan vad betydelse eller mening egentligen är ([en.wikipedia.org: Symbol grounding problem](https://en.wikipedia.org/wiki/Symbol_grounding_problem), 11-11-2020).
+I kursen *AI: kognitiva system* läser vi den här veckan artiklar med koppling till det som jag väljer att kalla *symbolförankringsproblemet* på svenska, och som går under benämningen **symbol grounding problem** ([Harnad 1990](https://www.sciencedirect.com/science/article/abs/pii/0167278990900876)) på engelska. Symbolförankringsproblemet har sitt urprung i kognitionsforskningens (och semantikens) försök att modellera hur vi människor kopplar ihop *ord* (och andra *symboler*) med deras respektive *betydelser* -- vilket i sin tur väcker frågan vad betydelse eller mening egentligen är ([Symbol grounding problem](https://en.wikipedia.org/wiki/Symbol_grounding_problem), 11-11-2020).
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=eJhhwX4KWyM" target="_blank"><img src="/images/symbol_grounding_problem.PNG" 
