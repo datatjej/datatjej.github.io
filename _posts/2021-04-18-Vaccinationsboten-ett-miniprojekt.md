@@ -55,7 +55,7 @@ Jag försökte till en början få till förloppsindikatorerna med hjälp av `tq
 <font size="2">De handskrivna förloppsindikatorernas utseende på Twitter.</font>
 </p>
 
-**Uppdatering (20-04-2021):** Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 %! Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men däremot på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
+*Uppdatering (20-04-2021):* Hade helt missat att inte bara längden på förloppsindikatorn blev skev, utan också procentenhetens längd. Indikatorn med 20,4 % ser ju ut att vara nästan 50 %! Detta beror på att blockelementets storlek är större än punkterna, vilket inte syns i terminalutskriften men däremot på Twitter. Har nu löst detta genom att ersätta både procentblocket och punkterna med blockelement av samma storlek:
 
 <p align="center">
 <img src="/images/block_progress_bar.jpeg" alt="Förloppsindiktarorer med blockelement av samma storlek" width="70%" height="auto" border="10" /><br>
@@ -117,6 +117,6 @@ Boten heter [@vaccination_SE](https://twitter.com/vaccination_SE) och källkoden
 <font size="2">Vaccinationsbotens slutgiltiga utseende.</font>
 </p>
 
-**Uppdatering (20-04-2021):** Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag tidigarelägga schemat med 10 min.
+*Uppdatering (20-04-2021):* Boten kördes på autopilot för första gången idag och det funkade! :D Men körningen skedde först 12 min efter utsatt tid, vilket tydligen är [ganska vanligt](https://stackoverflow.com/questions/65132563/why-is-github-actions-workflow-scheduled-with-cron-not-triggering-at-the-right-t). För att kompensera fördröjningen tänkte jag tidigarelägga schemat med 10 min.
 
-**Uppdatering (11-08-2021):** Fyra månader senare fick jag mitt första runtime error när FHM plötsligt la till en punkt i slutet av tabellbeskrivningen, vilket gjorde att `find_parent()`-metoden i `BeautifulSoup`-paketet inte längre kunde hitta tabellen utifrån caption-taggen. Fixade det enkelt genom att lägga till den saknade punkten i koden, men det hela visar ändå på hur bräckligt webbskrapning kan vara inför ändringar på webbsidan.
+*Uppdatering (11-08-2021):* Fyra månader senare fick jag mitt första runtime error när FHM plötsligt la till en punkt i slutet av tabellbeskrivningen, vilket gjorde att `find_parent()`-metoden i `BeautifulSoup`-paketet inte längre kunde hitta tabellen utifrån caption-taggen. Fixade det genom att lägga till den saknade punkten i koden, men det hela visar ändå på hur bräckligt webbskrapning kan vara inför ändringar på webbsidan.
