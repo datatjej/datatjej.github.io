@@ -16,7 +16,7 @@ Sätter man in den ekvationen i [Bayes teorem](https://datatjej.github.io/Bayes-
 
 $$ P(a|b) = \frac{P(b|a)*P(a)}{P(b)}$$
 
-..får man:
+...får man:
 
 $$ ŵ = argmax \frac{P(x|w)*P(w)}{P(x)}$$
 
