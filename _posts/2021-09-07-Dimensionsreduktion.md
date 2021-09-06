@@ -23,6 +23,6 @@ Det finns flera sätt att generera låg-dimensionella vektorrum:<br>
 Nackdelen med dimensionsreduktion är att de resulterande vektorerna oftast blir svårbegripliga för människor att läsa och tolka rakt av.
 
 **Referenser:**<br>
-- ["Dimensionality Reduction"](https://en.wikipedia.org/wiki/Curse_of_dimensionality), Wikipedia, 07-09-2021.
-- ["Curse of Dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality), Wikipedia, 07-09-2021.
+- [Dimensionality Reduction](https://en.wikipedia.org/wiki/Curse_of_dimensionality), Wikipedia, 07-09-2021.
+- [Curse of Dimensionality](https://en.wikipedia.org/wiki/Curse_of_dimensionality), Wikipedia, 07-09-2021.
 - Föreläsningsslides från andra föreläsningen i kursen *Machine Learning for Statistical NLP* (LT2222), VT 2021.   
