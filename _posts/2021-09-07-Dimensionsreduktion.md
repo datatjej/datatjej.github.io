@@ -20,7 +20,7 @@ Det finns flera sätt att generera låg-dimensionella vektorrum:<br>
     - uppdatera dem på basis av att kunna rekonstruera "objektiv" data
     - Ex: autoencoders, djupinlärning
   
-Nackdelen med dimensionsreduktion är att de resulterande vektorerna oftast svårbegripliga för människor.
+Nackdelen med dimensionsreduktion är att de resulterande vektorerna oftast blir svårbegripliga för människor att läsa och tolka rakt av.
 
 **Referenser:**<br>
 - ["Dimensionality Reduction"](https://en.wikipedia.org/wiki/Curse_of_dimensionality), Wikipedia, 07-09-2021.
