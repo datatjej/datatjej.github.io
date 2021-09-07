@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 53. Latent semantisk analys (LSA)
+title: 53. Latent semantisk analys
 ---
 
-Latent semantisk analys (eng. *latent semantic analysis*) (LSA) är en oövervakad metod för att analysera relationer mellan dokument utifrån de ord som förekommer i dem - även känt som ämnesigenkänning (eng. *topic recognition*). På en term-dokument-matris med tillhörande frekvenser (dvs. hur många gånger varje ord i vokabuläret förekommer i varje dokument) utför man en [dimensionsreducering](https://datatjej.github.io/Dimensionsreduktion/) med hjälp av en teknik som kallas singulärvärdesuppdelning (eng. *singular value decomposition*) (SVD).
+Latent semantisk analys (eng. *latent semantic analysis*) (LSA) är en oövervakad metod för att analysera dolda ("latenta") relationer mellan dokument utifrån de ord som förekommer i dem - även känt som ämnesigenkänning (eng. *topic recognition*). 
+
+På en term-dokument-matris med tillhörande frekvenser (dvs. hur många gånger varje ord i vokabuläret förekommer i varje dokument) utför man en [dimensionsreducering](https://datatjej.github.io/Dimensionsreduktion/) med hjälp av en teknik som kallas singulärvärdesuppdelning (eng. *singular value decomposition*) (SVD).
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=Fy0bF7u6W20" target="_blank"><img src="/images/latent_semantic_analysis.PNG" 
