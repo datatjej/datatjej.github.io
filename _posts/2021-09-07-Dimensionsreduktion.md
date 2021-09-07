@@ -7,7 +7,9 @@ Dimensionsreduktion (eng. *dimensionality reduction*) handlar om att reducera h�
 
 Om man har ett vektorrumsmodell för dokument av typen *bag of words* så får varje dokumentvektor lika många dimensioner som antalet ord i det samlade vokabuläret. Men eftersom det bara är dimensionerna vars ord faktiskt förekommer i dokumentet som får ett värde (t.ex. råfrekvens, binärt värde eller tf idf-värde) blir varje dokumentvektor väldigt gles (eng. *sparse*).
 
-Glesa, hög-dimensionella vektorer ligger till grund för något som kallas **dimensionalitetsförbannelsen** (eng. *curse of dimensionality*) och som bland annat innebär att det blir svårare att gruppera objekt utifrån särskiljande egenskaper eftersom dessa blir mer svårhittade. Dimensionalitetsförbannelsen gör det också svårare att applicera analysmetoder som kräver statistisk signifikans, eftersom *"[i]n order to obtain a statistically sound and reliable result, the amount of data needed to support the result often grows exponentially with the dimensionality"* ([Wikipedia](https://en.wikipedia.org/wiki/Curse_of_dimensionality)).
+Glesa, hög-dimensionella vektorer ligger till grund för något som kallas **dimensionalitetsförbannelsen** (eng. *curse of dimensionality*) och som bland annat innebär att det blir svårare att gruppera objekt utifrån särskiljande egenskaper eftersom dessa blir mer svårhittade. 
+
+Dimensionalitetsförbannelsen gör det också svårare att applicera analysmetoder som kräver statistisk signifikans, eftersom *"[i]n order to obtain a statistically sound and reliable result, the amount of data needed to support the result often grows exponentially with the dimensionality"* ([Wikipedia](https://en.wikipedia.org/wiki/Curse_of_dimensionality)).
 
 Det finns flera sätt att generera låg-dimensionella vektorrum:<br>
 - genom valet av *features* (t.ex. testa sig fram och se vad som ger bäst resultat)
