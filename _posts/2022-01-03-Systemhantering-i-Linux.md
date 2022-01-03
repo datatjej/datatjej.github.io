@@ -1,12 +1,9 @@
 ---
-
 layout: post
-
 title: 54. Systemhantering i Linux
-
 ---
 
-Linux är ett populärt operativsystem för serveradministration eftersom det är 1) säkert, 2) stabilt och 3) flexibelt [1]. 
+Linux är ett populärt operativsystem för serveradministration eftersom det är 1) säkert, 2) stabilt och 3) flexibelt [[1](https://www.youtube.com/watch?v=WMy3OzvBWc0)]. 
 
 ## Init
 Init (förkortning av *initialization*) är den första processen som startas upp när man bootar ett Unix-baserat (t.ex. Linux, Mac OS) datorsystem [[2](https://en.wikipedia.org/wiki/Init)]. Den är ursprunget till alla efterföljande processer. Det är operativsystemskärnan (eng. *kernel*) som initierar init under uppstarten och ett misslyckande att köra init kan leda till något som kallas [kernel panic](https://sv.wikipedia.org/wiki/Kernel_panic).
