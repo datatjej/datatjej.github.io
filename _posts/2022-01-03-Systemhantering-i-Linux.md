@@ -3,13 +3,7 @@ layout: post
 title: 54. Systemhantering i Linux
 ---
 
-Linux är ett populärt operativsystem för serveradministration eftersom det är 1) säkert, 2) stabilt och 3) flexibelt [[1](https://www.youtube.com/watch?v=WMy3OzvBWc0)].
-
-...
-...
-...
-...
-...
+Linux-familjen består av en samling operativsystem (t.ex. Ubuntu, Fedora, Debian, ...) som har gemensamt att de använder Linux-operativsystemkärnan. Det är en så kallad [FOSS](https://sv.wikipedia.org/wiki/FOSS)-mjukvara som började utvecklas av finländaren Linus Torvalds 1991. Linux är ett populärt operativsystem för serveradministration eftersom det är 1) säkert, 2) stabilt och 3) flexibelt [[1](https://www.youtube.com/watch?v=WMy3OzvBWc0)].
 
 ## Init
 Init (förkortning av *initialization*) är den första processen som startas upp när man bootar ett Unix-baserat (t.ex. Linux, Mac OS) datorsystem [[2](https://en.wikipedia.org/wiki/Init)]. Den är ursprunget till alla efterföljande processer. Det är operativsystemskärnan (eng. *kernel*) som initierar init under uppstarten och ett misslyckande att köra init kan leda till något som kallas [kernel panic](https://sv.wikipedia.org/wiki/Kernel_panic).
@@ -41,6 +35,8 @@ Snapshot-filer (`.snapshot`) skapas när man kör kommandot `systemctl snapshot`
 
 ## Systemctl
 Systemctl är det centrala verktyget för att kontrollera init-systemet. Service-applikationerna kan exempelvis startas (om), stopppas eller laddas om (dvs ladda om konfig-filerna utan att starta om tjänsten, om den möjligheten finns) med systemctl-kommandot `sudo systemctl <start/restart/stop/reload> <applikation>.service`. Suffixet `.service` kan utelämnas helt, t.ex. `sudo systemctl stop solr`.
+
+**Fun fact:** Versionshanteringssystemet Git utvecklades 2005 för just versionshantering av källkoden i Linux-kärnan.
 
 ## Referenser
 
