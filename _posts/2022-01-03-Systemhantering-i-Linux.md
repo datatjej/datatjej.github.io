@@ -44,5 +44,4 @@ Systemctl är det centrala verktyget för att kontrollera init-systemet. Service
 [2] https://en.wikipedia.org/wiki/Init <br>
 [3] https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files <br>
 [4] https://www.computernetworkingnotes.com/linux-tutorials/systemd-units-explained-with-types-and-states.html <br>
-[5] https://man7.org/linux/man-pages/man5/systemd.target.5.html <br>
-[6] https://www.linux.com/news/all-about-linux-swap-space/ <br>
+- Föreläsningsslides från andra föreläsningen i kursen *Machine Learning for Statistical NLP* (LT2222), VT 2021.  
