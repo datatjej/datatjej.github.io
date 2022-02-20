@@ -4,6 +4,7 @@ title: 55. HTTP-kommunikation och TSL-certifikat
 ---
 
 All datakommunikation över internet regleras under kommunikationdprotokollet HTTP (*Hypertext Transfer Protocol*) som började utvecklas av Tim Berners Lee vid partikelfysiklaboratoriet CERN i Genève 1989 och introduceras till en bredare allmänhet under början av 90-talet. Med den allra första versionen, som kommit att kallas HTML 0.9. kunde man bara skicka HTML-sidor från webbservrar till webbklienter, och det som returnerades var antingen den önskade webbsidan eller en specialgenererad HTML-sida som beskrev problem i kommunikationen. Status- eller felkoder fanns inte [[1](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)].
+
  
 ## HTTPS
 År 1995 introduceras kryptering via HTTPS, det vill säga HTTP i kombination av säkerhetsprotokollet SLL (*Secure Socket Layer*) från företaget Netscape. Syftet var att kryptera meddelandena som sänds mellan server och klient och samtidigt garantera autenticeringen mellan dem. Detta var framför allt viktigt för e-handlare och deras kunder som ville kunna skicka kortuppgifter utan att få dem avlästa av utomstående. SSL kom så småningom att ersättas av TSL (*Transport Layer Security*) som även fick spridning utanför e-handeln [[2](https://www.wired.com/2017/01/half-web-now-encrypted-makes-everyone-safer/)]. Med tiden har HTTPS blivit den dominerande kommunikationsprotokollet hos webbsidor på internet. 
