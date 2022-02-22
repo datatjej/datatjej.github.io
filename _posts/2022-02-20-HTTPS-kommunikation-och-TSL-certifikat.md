@@ -13,13 +13,17 @@ Datakommunikation över internet regleras under kommunikationdprotokollet HTTP (
 TSL-protokollet kräver att webbisidor kan legitimera sig gentemot webbklienter med ett digitalt certifikat. Det digitala certifikatet visar att webbservern är den som den utger sig för att vara inom PKI (*Public Key Infrastructure*) - infrastrukturen för krypteringsnycklar. Certifikaten ufärdas av en certifikatutfärdare (CA) som kan vara av antingen kommersiell och icke-kommersiell natur (som vid exempelvis stora institutioner och organisationer som har sina egna utfärdare).
 
 ## Java-kryptering
-Applikationer som ska kommunicera över TSL i sin nätverkstrafik behöver också kunna identifiera sig via TSL-certifikat. Detta görs i form av lösenordsskyddade filer (för Java-applikationer antingen det äldre Java-specifika formatet JKS eller det nyare och språkneutrala PKCS12) som läggs in i samma filsystem som applikationen samt en certifikathanterare (`keytool` i Java JDK). 
+Applikationer som ska kommunicera över TSL i sin nätverkstrafik behöver också kunna identifiera sig via TSL-certifikat. Detta görs i form av lösenordsskyddade certifikatfiler (för Java-applikationer antingen det äldre Java-specifika formatet JKS eller det nyare och språkneutrala PKCS12) som läggs in i samma filsystem som applikationen samt en certifikathanterare (`keytool` i Java JDK). 
 
 ### Key store
 I Javas key store lagras de egna certifikaten med tillhörande privata nycklar som användas vid autenticeringsprocedurer via HTTPS. När applikationen kommunicerar med en annan enhet letar den upp sin privata nyckel i key store:n och presenterar motsvarande publika nyckel tillsammans med certifikatet [[4](https://www.baeldung.com/java-keystore-truststore-difference)].
 
 ### Trust store
 I trust store:n lagras andra enheters certifikat som man litar på. I Java kallas den `cacerts` och den skapas i mappen `$JAVA_HOME/jre/lib/security` [[4](https://www.baeldung.com/java-keystore-truststore-difference)]. 
+
+Man kan lista innehållet i trust store:n med följande kommando:
+`keytool -list -keystore <namn på trust store:n>.jks` 
+
 
 ## Referenser
 
