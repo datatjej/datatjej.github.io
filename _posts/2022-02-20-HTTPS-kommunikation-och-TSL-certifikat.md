@@ -28,7 +28,7 @@ Man kan lista innehållet i trust store-nyckelringen med följande kommando:
 `keytool -list -keystore <namn på trust store:n>.jks` 
 
 ## Teckenkodning
-URL:er som skickas över internet teckenkodas [ASCII](https://sv.wikipedia.org/wiki/ASCII) (*American Standard Code for Information Interchange*). När URL:er innehåller tecken som inte finns i ASCII-uppsättningen måste dessa konverteras, vilket görs med `%`-tecken följt av två hexadecimaler [[6](https://www.w3schools.com/tags/ref_urlencode.asp)]. Inom programmering kan just kodningen av URL-strängar medföra problem när den görs felaktigt.
+URL:er som skickas över internet teckenkodas med [ASCII](https://sv.wikipedia.org/wiki/ASCII) (*American Standard Code for Information Interchange*). När URL:er innehåller tecken som inte finns i ASCII-uppsättningen måste dessa konverteras, vilket görs med en kombination av `%`-tecknet följt av två hexadecimaler [[6](https://www.w3schools.com/tags/ref_urlencode.asp)]. I programmeringsprojekt kan just kodningen av URL-strängar medföra problem när den görs felaktigt. Man måste bland annat se till att bevara URI-schemat (`https://`) och snedstrecken i URL-path:en [[7](https://stackoverflow.com/questions/51292397/which-parts-of-a-url-must-be-encoded)].
 
 ## Referenser
 
@@ -39,4 +39,5 @@ URL:er som skickas över internet teckenkodas [ASCII](https://sv.wikipedia.org/w
 [5] [Usage statistics of Default protocol https for websites](https://w3techs.com/technologies/details/ce-httpsdefault). W3techs.com - Web Technology Surveys (20-02-2022).<br>
 [5] [Difference Between a Java Keystore and a Truststore](https://www.baeldung.com/java-keystore-truststore-difference). Baeldung.com (30-09-2021).
 [6] [HTML URL Encoding Reference](https://www.w3schools.com/tags/ref_urlencode.asp). W3Schools.com (26-02-2022). 
+[7] [Which parts of a URL must be encoded?](https://stackoverflow.com/questions/51292397/which-parts-of-a-url-must-be-encoded). Stackoverflow.com (03-03-2022). 
 
