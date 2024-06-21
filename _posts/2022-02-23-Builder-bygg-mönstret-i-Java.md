@@ -3,7 +3,7 @@ layout: post
 title: 56. Builder-designmönstret i Java
 ---
 
-Builder-designmönstret i Java är ett sätt att bygga oföränderliga objekt (eng. *immutable objects*) med hjälp av en och samma objektsuppbyggnadsprocess [[1](https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/)]. Oföränderliga objekt kännetecknas av att deras tillstånd (eng. *state*) inte kan förändras när de en gång skapats, något som ofta är önskvärt av flera anledningar, bl.a. enkelhet i design och användning och möjlighet till [multikörning](https://sv.wikipedia.org/wiki/Multik%C3%B6rning). De har inga set-metoder, bara `final` eller `private`-fält, tillåter inte underklassar att override:a metoder och inte innehåller heller inga metoder för att ändra föränderliga objekt eller referenser till dem [[2](https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html)].
+Builder-designmönstret i Java är ett sätt att bygga oföränderliga objekt (eng. *immutable objects*) med hjälp av en och samma objektsuppbyggnadsprocess [[1](https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/)]. Oföränderliga objekt kännetecknas av att deras tillstånd (eng. *state*) inte kan förändras när de en gång skapats, något som ofta är önskvärt av flera anledningar, bl.a. enkelhet i design och användning. De har inga set-metoder, bara `final` eller `private`-fält, tillåter inte underklassar att override:a metoder och innehåller heller inga metoder för att ändra föränderliga objekt eller referenser till dem [[2](https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html)].
 
 ## Frivilliga parametrar
 I Java kan man, till skillnad från exempelvis Python, inte sätta frivilliga parametrar i sin konstruktor av en klass. Detta leder till att man måste skriva flera konstuktorer för olika kombinationer av parametrar, något som kan leda till mycket upprepningar av den här typen (där icke-obligatoriska parametrar förses med ett default-värde):
@@ -19,14 +19,14 @@ public class Apartment {
 public Apartment(String address) {
     this.address = address;
     this.sqMeter = 0;
-    this.hasDishwasher = false;
-    this.defects = new ArrayList<>();
+    this.hasDishwasher = false;         //default-värde
+    this.defects = new ArrayList<>();   //default-värde
 }
 
 public Apartment(String address, int sqMeter) {
     this.address = address;
     this.sqMeter = sqMeter;
-    this.hasDishwasher = false;
+    this.hasDishwasher = false;         //default-värde
     this.defects = new ArrayList<>();
 }
 
@@ -34,7 +34,7 @@ public Apartment(String address, int sqMeter, boolean hasDishwasher) {
     this.address = address;
     this.sqMeter = sqMeter;
     this.hasDishwasher = hasDishwasher;
-    this.defects = new ArrayList<>();
+    this.defects = new ArrayList<>();  //default-värde
 }
 
 // etc.
@@ -43,7 +43,7 @@ public Apartment(String address, int sqMeter, boolean hasDishwasher) {
 
 ## Teleskopisk konstrukor
 
-Upprepningen av kod ovan kan man delvis komma undan med hjälp av en så kallad teleskopisk konstruktor, där varje konstruktor gör ett anrop till ett annan konstruktor med stegvis fler input-parametrar [[3](http://www.javabyexamples.com/telescoping-constructor-in-java)]:
+Kodupprepningen ovan kan man delvis komma undan med hjälp av en så kallad teleskopisk konstruktor, där varje konstruktor gör ett anrop till ett annan konstruktor med stegvis fler input-parametrar [[3](http://www.javabyexamples.com/telescoping-constructor-in-java)]:
 
 ```java
 public class Apartment {
